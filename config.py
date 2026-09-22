@@ -184,6 +184,10 @@ ROUND_LINEUP_OVERRIDES = {
         "LAW":{"team":"Red Bull"},
         "TSU":{"team":"VCARB","pu":"RedBullFord","fastf1_code":"TSU","name":"Yuki Tsunoda","number":22},
     },
+        15: {
+        "LAW":{"team":"Red Bull"},
+        "TSU":{"team":"VCARB","pu":"RedBullFord","fastf1_code":"TSU","name":"Yuki Tsunoda","number":22},
+    },
 }
 
 
@@ -249,6 +253,19 @@ DRIVER_SUBSTITUTIONS = {
         "unavailable":{"HAD":"Wrist injury — not racing at Madrid"},
         "moved":{"LAW":"Red Bull"},
         "added":[{"code":"TSU","name":"Yuki Tsunoda","team":"VCARB","reason":"Reserve driver continuing in Lawson's Racing Bulls seat"}],
+    },
+        15: {
+        "banner":"Red Bull confirmed the Azerbaijan lineup with Liam Lawson continuing alongside Verstappen at Red Bull and Yuki Tsunoda continuing alongside Lindblad at Racing Bulls.",
+        "unavailable":{"HAD":"Not in the Azerbaijan race lineup"},
+        "moved":{"LAW":"Red Bull"},
+        "added":[
+            {
+                "code":"TSU",
+                "name":"Yuki Tsunoda",
+                "team":"VCARB",
+                "reason":"Continuing in Lawson's Racing Bulls seat"
+            }
+        ],
     },
 }
 

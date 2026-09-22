@@ -1,0 +1,367 @@
+{
+  "circuit_name": "Azerbaijan",
+  "circuit_type": "power",
+  "race_round": 15,
+  "year": 2026,
+  "source": "qualifying",
+  "pred_type": "quali",
+  "overall_confidence": 0.6075406612394062,
+  "n_historical_races": 14,
+  "methodology_notes": [
+    "Sessions requested: Q, SQ",
+    "Used 14 source session(s) after weighting/filtering",
+    "Target circuit type: power",
+    "Primary signal: lap_time_gap_pct",
+    "Secondary signal: qualifying-derived braking_harvest_ratio (hrv adjustment applied)",
+    "Weighting: circuit similarity \u00d7 recency \u00d7 regulation epoch \u00d7 persistent upgrades \u00d7 session type \u00d7 fingerprint confidence",
+    "Earlier regulation regimes are down-weighted"
+  ],
+  "predictions": [
+    {
+      "driver_code": "ANT",
+      "team": "Mercedes",
+      "pu_name": "Mercedes",
+      "predicted_delta_s": 0.0,
+      "delta_range_low": -0.11806083891769817,
+      "delta_range_high": 0.1180608389176982,
+      "predicted_straight_gap_kph": 1.840566029458723,
+      "predicted_harvest_ratio": 0.8010338486965948,
+      "confidence": 0.8027259603094472,
+      "n_races_used": 14,
+      "regulation_notes": [
+        "ADUO allocated, not deployed: ADUO upgrade allocated (1, 2\u20134% behind benchmark ICE) but not yet used. Fresh PU components fitted earlier in the season were treated as reliability measures rather than a performance homologation.",
+        "Compression ratio hot-test rule active from Monaco (R6) \u2014 loophole closed; pace advantage narrowed"
+      ]
+    },
+    {
+      "driver_code": "NOR",
+      "team": "McLaren",
+      "pu_name": "Mercedes",
+      "predicted_delta_s": 0.020132079473458908,
+      "delta_range_low": -0.12561190459931795,
+      "delta_range_high": 0.1658760635462358,
+      "predicted_straight_gap_kph": 0.5622839780714957,
+      "predicted_harvest_ratio": 0.775505677708681,
+      "confidence": 0.6639151601415845,
+      "n_races_used": 6,
+      "regulation_notes": [
+        "ADUO allocated, not deployed: ADUO upgrade allocated (1, 2\u20134% behind benchmark ICE) but not yet used. Fresh PU components fitted earlier in the season were treated as reliability measures rather than a performance homologation.",
+        "Compression ratio hot-test rule active from Monaco (R6) \u2014 loophole closed; pace advantage narrowed"
+      ]
+    },
+    {
+      "driver_code": "RUS",
+      "team": "Mercedes",
+      "pu_name": "Mercedes",
+      "predicted_delta_s": 0.06716529871877155,
+      "delta_range_low": -0.11654870911330362,
+      "delta_range_high": 0.2508793065508467,
+      "predicted_straight_gap_kph": 1.1282683658355694,
+      "predicted_harvest_ratio": 0.8154489622732383,
+      "confidence": 0.7608645418343034,
+      "n_races_used": 14,
+      "regulation_notes": [
+        "ADUO allocated, not deployed: ADUO upgrade allocated (1, 2\u20134% behind benchmark ICE) but not yet used. Fresh PU components fitted earlier in the season were treated as reliability measures rather than a performance homologation.",
+        "Compression ratio hot-test rule active from Monaco (R6) \u2014 loophole closed; pace advantage narrowed"
+      ]
+    },
+    {
+      "driver_code": "LEC",
+      "team": "Ferrari",
+      "pu_name": "Ferrari",
+      "predicted_delta_s": 0.1552047191152514,
+      "delta_range_low": 0.008789524969008755,
+      "delta_range_high": 0.30161991326149407,
+      "predicted_straight_gap_kph": -0.07963814428157795,
+      "predicted_harvest_ratio": 0.7822468884320138,
+      "confidence": 0.7234814199204427,
+      "n_races_used": 10,
+      "regulation_notes": [
+        "Post-ADUO: ADUO upgrade 1 deployed at Austria (R8), 2 allocated (>4% deficit). ICE/fuel changes were reported as a modest performance step.",
+        "Post-second-ADUO: ADUO upgrade 2 deployed at Monza (R13), including the latest Ferrari PU specification and redesigned turbocharger work."
+      ]
+    },
+    {
+      "driver_code": "HAM",
+      "team": "Ferrari",
+      "pu_name": "Ferrari",
+      "predicted_delta_s": 0.18436779343151416,
+      "delta_range_low": -0.01213541233680443,
+      "delta_range_high": 0.38087099919983275,
+      "predicted_straight_gap_kph": -0.926789064892968,
+      "predicted_harvest_ratio": 0.7854725309906329,
+      "confidence": 0.6937273714835988,
+      "n_races_used": 10,
+      "regulation_notes": [
+        "Post-ADUO: ADUO upgrade 1 deployed at Austria (R8), 2 allocated (>4% deficit). ICE/fuel changes were reported as a modest performance step.",
+        "Post-second-ADUO: ADUO upgrade 2 deployed at Monza (R13), including the latest Ferrari PU specification and redesigned turbocharger work."
+      ]
+    },
+    {
+      "driver_code": "PIA",
+      "team": "McLaren",
+      "pu_name": "Mercedes",
+      "predicted_delta_s": 0.18874825724709948,
+      "delta_range_low": 0.04589070628752731,
+      "delta_range_high": 0.3316058082066717,
+      "predicted_straight_gap_kph": 2.4350952010023255,
+      "predicted_harvest_ratio": 0.7367197303675519,
+      "confidence": 0.6657919306833022,
+      "n_races_used": 6,
+      "regulation_notes": [
+        "ADUO allocated, not deployed: ADUO upgrade allocated (1, 2\u20134% behind benchmark ICE) but not yet used. Fresh PU components fitted earlier in the season were treated as reliability measures rather than a performance homologation.",
+        "Compression ratio hot-test rule active from Monaco (R6) \u2014 loophole closed; pace advantage narrowed"
+      ]
+    },
+    {
+      "driver_code": "VER",
+      "team": "Red Bull",
+      "pu_name": "RedBullFord",
+      "predicted_delta_s": 0.2268790334626965,
+      "delta_range_low": 0.04271356887276345,
+      "delta_range_high": 0.4110444980526296,
+      "predicted_straight_gap_kph": 2.3051133949891094,
+      "predicted_harvest_ratio": 0.7875216656389407,
+      "confidence": 0.6856075578437009,
+      "n_races_used": 9,
+      "regulation_notes": [
+        "ADUO benchmark: best ICE on grid; chassis performance is a separate signal"
+      ]
+    },
+    {
+      "driver_code": "LIN",
+      "team": "VCARB",
+      "pu_name": "RedBullFord",
+      "predicted_delta_s": 0.8244286819818742,
+      "delta_range_low": 0.49488815143154,
+      "delta_range_high": 1.1539692125322085,
+      "predicted_straight_gap_kph": 2.674623339181075,
+      "predicted_harvest_ratio": 0.7848672713032656,
+      "confidence": 0.6336969442767649,
+      "n_races_used": 10,
+      "regulation_notes": [
+        "ADUO benchmark: best ICE on grid; chassis performance is a separate signal"
+      ]
+    },
+    {
+      "driver_code": "LAW",
+      "team": "Red Bull",
+      "pu_name": "RedBullFord",
+      "predicted_delta_s": 0.8289456237501156,
+      "delta_range_low": 0.3804406971341671,
+      "delta_range_high": 1.2774505503660643,
+      "predicted_straight_gap_kph": 1.446842182677514,
+      "predicted_harvest_ratio": 0.7291140237301037,
+      "confidence": 0.5053762519648146,
+      "n_races_used": 4,
+      "regulation_notes": [
+        "ADUO benchmark: best ICE on grid; chassis performance is a separate signal"
+      ]
+    },
+    {
+      "driver_code": "COL",
+      "team": "Alpine",
+      "pu_name": "Mercedes",
+      "predicted_delta_s": 0.861039949885434,
+      "delta_range_low": 0.28827242603614717,
+      "delta_range_high": 1.4338074737347208,
+      "predicted_straight_gap_kph": -3.201701861714621,
+      "predicted_harvest_ratio": 0.7918922863615356,
+      "confidence": 0.49003636116566707,
+      "n_races_used": 5,
+      "regulation_notes": [
+        "ADUO allocated, not deployed: ADUO upgrade allocated (1, 2\u20134% behind benchmark ICE) but not yet used. Fresh PU components fitted earlier in the season were treated as reliability measures rather than a performance homologation.",
+        "Compression ratio hot-test rule active from Monaco (R6) \u2014 loophole closed; pace advantage narrowed"
+      ]
+    },
+    {
+      "driver_code": "GAS",
+      "team": "Alpine",
+      "pu_name": "Mercedes",
+      "predicted_delta_s": 0.9385056885128371,
+      "delta_range_low": 0.12281769015612881,
+      "delta_range_high": 1.7541936868695456,
+      "predicted_straight_gap_kph": -1.6024666972350448,
+      "predicted_harvest_ratio": 0.8767169419801893,
+      "confidence": 0.4481767830574948,
+      "n_races_used": 5,
+      "regulation_notes": [
+        "ADUO allocated, not deployed: ADUO upgrade allocated (1, 2\u20134% behind benchmark ICE) but not yet used. Fresh PU components fitted earlier in the season were treated as reliability measures rather than a performance homologation.",
+        "Compression ratio hot-test rule active from Monaco (R6) \u2014 loophole closed; pace advantage narrowed"
+      ]
+    },
+    {
+      "driver_code": "BOR",
+      "team": "Audi",
+      "pu_name": "Audi",
+      "predicted_delta_s": 1.2466436256692872,
+      "delta_range_low": 0.4670858786528284,
+      "delta_range_high": 2.026201372685746,
+      "predicted_straight_gap_kph": -1.7530482457454442,
+      "predicted_harvest_ratio": 0.7827606505212824,
+      "confidence": 0.5883402227784563,
+      "n_races_used": 14,
+      "regulation_notes": [
+        "Post-ADUO: ADUO upgrade 1 deployed at Barcelona (R7), 2 allocated (>4% deficit). Reported as driveability/throttle-response work around the large turbocharger rather than a clearly measured outright power step."
+      ]
+    },
+    {
+      "driver_code": "HUL",
+      "team": "Audi",
+      "pu_name": "Audi",
+      "predicted_delta_s": 1.4550877962737616,
+      "delta_range_low": 1.0031859880144025,
+      "delta_range_high": 1.9069896045331207,
+      "predicted_straight_gap_kph": -1.9358677795354515,
+      "predicted_harvest_ratio": 0.7851671847226745,
+      "confidence": 0.6544334883667494,
+      "n_races_used": 14,
+      "regulation_notes": [
+        "Post-ADUO: ADUO upgrade 1 deployed at Barcelona (R7), 2 allocated (>4% deficit). Reported as driveability/throttle-response work around the large turbocharger rather than a clearly measured outright power step."
+      ]
+    },
+    {
+      "driver_code": "BEA",
+      "team": "Haas",
+      "pu_name": "Ferrari",
+      "predicted_delta_s": 1.7272719345400862,
+      "delta_range_low": 0.6952815518214375,
+      "delta_range_high": 2.759262317258735,
+      "predicted_straight_gap_kph": 1.411074616383487,
+      "predicted_harvest_ratio": 0.6866410010544687,
+      "confidence": 0.45259394751356286,
+      "n_races_used": 7,
+      "regulation_notes": [
+        "Post-ADUO: ADUO upgrade 1 deployed at Austria (R8), 2 allocated (>4% deficit). ICE/fuel changes were reported as a modest performance step.",
+        "Post-second-ADUO: ADUO upgrade 2 deployed at Monza (R13), including the latest Ferrari PU specification and redesigned turbocharger work."
+      ]
+    },
+    {
+      "driver_code": "OCO",
+      "team": "Haas",
+      "pu_name": "Ferrari",
+      "predicted_delta_s": 1.9120511308363888,
+      "delta_range_low": 1.4821585622418196,
+      "delta_range_high": 2.341943699430958,
+      "predicted_straight_gap_kph": -0.3415389339590759,
+      "predicted_harvest_ratio": 0.7437783039931017,
+      "confidence": 0.5706737641551396,
+      "n_races_used": 8,
+      "regulation_notes": [
+        "Post-ADUO: ADUO upgrade 1 deployed at Austria (R8), 2 allocated (>4% deficit). ICE/fuel changes were reported as a modest performance step.",
+        "Post-second-ADUO: ADUO upgrade 2 deployed at Monza (R13), including the latest Ferrari PU specification and redesigned turbocharger work."
+      ]
+    },
+    {
+      "driver_code": "TSU",
+      "team": "VCARB",
+      "pu_name": "RedBullFord",
+      "predicted_delta_s": 1.9147278133121555,
+      "delta_range_low": 1.7647278133121556,
+      "delta_range_high": 2.0647278133121554,
+      "predicted_straight_gap_kph": -1.2418976045629444,
+      "predicted_harvest_ratio": 0.7634014879333141,
+      "confidence": 0.647121897521153,
+      "n_races_used": 4,
+      "regulation_notes": [
+        "ADUO benchmark: best ICE on grid; chassis performance is a separate signal"
+      ]
+    },
+    {
+      "driver_code": "SAI",
+      "team": "Williams",
+      "pu_name": "Mercedes",
+      "predicted_delta_s": 2.457366843830391,
+      "delta_range_low": 1.6938960811428017,
+      "delta_range_high": 3.2208376065179802,
+      "predicted_straight_gap_kph": -7.648724814834083,
+      "predicted_harvest_ratio": 0.7367979560944069,
+      "confidence": 0.5907396441474739,
+      "n_races_used": 14,
+      "regulation_notes": [
+        "ADUO allocated, not deployed: ADUO upgrade allocated (1, 2\u20134% behind benchmark ICE) but not yet used. Fresh PU components fitted earlier in the season were treated as reliability measures rather than a performance homologation.",
+        "Compression ratio hot-test rule active from Monaco (R6) \u2014 loophole closed; pace advantage narrowed",
+        "\u26a0 INCOMING R15: Major FW48 B-spec package planned for Baku Long-planned major development package intended to address the FW48's performance deficit. Exact declared components should be updated after the Azerbaijan weekend technical submission."
+      ]
+    },
+    {
+      "driver_code": "ALB",
+      "team": "Williams",
+      "pu_name": "Mercedes",
+      "predicted_delta_s": 2.7293233116898863,
+      "delta_range_low": 2.26755161275083,
+      "delta_range_high": 3.1910950106289424,
+      "predicted_straight_gap_kph": -1.74986876791669,
+      "predicted_harvest_ratio": 0.7350166597335231,
+      "confidence": 0.6367348697934738,
+      "n_races_used": 13,
+      "regulation_notes": [
+        "ADUO allocated, not deployed: ADUO upgrade allocated (1, 2\u20134% behind benchmark ICE) but not yet used. Fresh PU components fitted earlier in the season were treated as reliability measures rather than a performance homologation.",
+        "Compression ratio hot-test rule active from Monaco (R6) \u2014 loophole closed; pace advantage narrowed",
+        "\u26a0 INCOMING R15: Major FW48 B-spec package planned for Baku Long-planned major development package intended to address the FW48's performance deficit. Exact declared components should be updated after the Azerbaijan weekend technical submission."
+      ]
+    },
+    {
+      "driver_code": "PER",
+      "team": "Cadillac",
+      "pu_name": "Ferrari",
+      "predicted_delta_s": 3.502976592148955,
+      "delta_range_low": 2.905951586434533,
+      "delta_range_high": 4.100001597863377,
+      "predicted_straight_gap_kph": -6.277004162736238,
+      "predicted_harvest_ratio": 0.7678734903776928,
+      "confidence": 0.6199683152926793,
+      "n_races_used": 14,
+      "regulation_notes": [
+        "Post-ADUO: ADUO upgrade 1 deployed at Austria (R8), 2 allocated (>4% deficit). ICE/fuel changes were reported as a modest performance step.",
+        "Post-second-ADUO: ADUO upgrade 2 deployed at Monza (R13), including the latest Ferrari PU specification and redesigned turbocharger work."
+      ]
+    },
+    {
+      "driver_code": "ALO",
+      "team": "Aston Martin",
+      "pu_name": "Honda",
+      "predicted_delta_s": 3.517145701297713,
+      "delta_range_low": 2.860655609864006,
+      "delta_range_high": 4.17363579273142,
+      "predicted_straight_gap_kph": -4.7991670069225885,
+      "predicted_harvest_ratio": 0.7033560171983901,
+      "confidence": 0.4734998538176721,
+      "n_races_used": 5,
+      "regulation_notes": [
+        "Post-ADUO: ADUO upgrade 1 deployed at Zandvoort (R12), 2 allocated (>4% deficit). Updated RA626H targeted raw ICE power with minor battery changes; effect remains difficult to isolate from chassis/race context."
+      ]
+    },
+    {
+      "driver_code": "STR",
+      "team": "Aston Martin",
+      "pu_name": "Honda",
+      "predicted_delta_s": 3.660742302324788,
+      "delta_range_low": 3.2348817341259717,
+      "delta_range_high": 4.0866028705236035,
+      "predicted_straight_gap_kph": -3.3483413521376333,
+      "predicted_harvest_ratio": 0.6587157293098355,
+      "confidence": 0.5118516505509889,
+      "n_races_used": 4,
+      "regulation_notes": [
+        "Post-ADUO: ADUO upgrade 1 deployed at Zandvoort (R12), 2 allocated (>4% deficit). Updated RA626H targeted raw ICE power with minor battery changes; effect remains difficult to isolate from chassis/race context."
+      ]
+    },
+    {
+      "driver_code": "BOT",
+      "team": "Cadillac",
+      "pu_name": "Ferrari",
+      "predicted_delta_s": 3.8728586034382806,
+      "delta_range_low": 2.7222903306075876,
+      "delta_range_high": 5.0234268762689736,
+      "predicted_straight_gap_kph": -6.629726419812083,
+      "predicted_harvest_ratio": 0.7350577941717031,
+      "confidence": 0.5465366106484661,
+      "n_races_used": 14,
+      "regulation_notes": [
+        "Post-ADUO: ADUO upgrade 1 deployed at Austria (R8), 2 allocated (>4% deficit). ICE/fuel changes were reported as a modest performance step.",
+        "Post-second-ADUO: ADUO upgrade 2 deployed at Monza (R13), including the latest Ferrari PU specification and redesigned turbocharger work."
+      ]
+    }
+  ]
+}

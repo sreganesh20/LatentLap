@@ -27,63 +27,63 @@ DRIVER ROSTER (code — name — team):
   SAI — Carlos Sainz — Williams
 
 CONSTRUCTOR STANDINGS:
-  P1 Mercedes: 468 pts, 9 wins
-  P2 Ferrari: 346 pts, 2 wins
-  P3 McLaren: 287 pts, 2 wins
-  P4 Red Bull: 204 pts, 0 wins
-  P5 RB F1 Team: 75 pts, 0 wins
-  P6 Alpine F1 Team: 62 pts, 0 wins
+  P1 Mercedes: 503 pts, 10 wins
+  P2 Ferrari: 358 pts, 2 wins
+  P3 McLaren: 306 pts, 2 wins
+  P4 Red Bull: 230 pts, 0 wins
+  P5 RB F1 Team: 77 pts, 0 wins
+  P6 Alpine F1 Team: 68 pts, 0 wins
   P7 Haas F1 Team: 21 pts, 0 wins
-  P8 Audi: 16 pts, 0 wins
+  P8 Audi: 17 pts, 0 wins
   P9 Williams: 11 pts, 0 wins
   P10 Aston Martin: 3 pts, 0 wins
   P11 Cadillac F1 Team: 0 pts, 0 wins
 
 DRIVER STANDINGS (top 12):
-  P1 Andrea Kimi Antonelli (Mercedes): 267 pts
-  P2 George Russell (Mercedes): 201 pts
+  P1 Andrea Kimi Antonelli (Mercedes): 292 pts
+  P2 George Russell (Mercedes): 211 pts
   P3 Lewis Hamilton (Ferrari): 191 pts
-  P4 Lando Norris (McLaren): 171 pts
-  P5 Charles Leclerc (Ferrari): 155 pts
-  P6 Max Verstappen (Red Bull): 127 pts
-  P7 Oscar Piastri (McLaren): 116 pts
+  P4 Lando Norris (McLaren): 186 pts
+  P5 Charles Leclerc (Ferrari): 167 pts
+  P6 Max Verstappen (Red Bull): 145 pts
+  P7 Oscar Piastri (McLaren): 120 pts
   P8 Isack Hadjar (Red Bull): 71 pts
-  P9 Liam Lawson (RB F1 Team): 51 pts
+  P9 Liam Lawson (RB F1 Team): 59 pts
   P10 Pierre Gasly (Alpine F1 Team): 41 pts
-  P11 Arvid Lindblad (RB F1 Team): 29 pts
-  P12 Franco Colapinto (Alpine F1 Team): 21 pts
+  P11 Arvid Lindblad (RB F1 Team): 31 pts
+  P12 Franco Colapinto (Alpine F1 Team): 27 pts
 
 GRAND PRIX QUALIFYING PACE (Q only; median % off session-fastest, lower = quicker):
   Mercedes: 0.130%
-  Ferrari: 0.408%
-  McLaren: 0.569%
-  Red Bull: 0.721%
+  Ferrari: 0.397%
+  McLaren: 0.539%
+  Red Bull: 0.671%
   VCARB: 1.751%
-  Audi: 1.794%
+  Audi: 1.782%
   Alpine: 2.033%
-  Haas: 2.555%
-  Williams: 2.837%
-  Cadillac: 4.203%
-  Aston Martin: 4.471%
+  Haas: 2.532%
+  Williams: 2.868%
+  Cadillac: 4.324%
+  Aston Martin: 4.433%
 
 SEASON H2H ACROSS LINEUP CHANGES (Q + SQ; anchor driver vs all teammates faced):
-  Red Bull: VER vs HAD, LAW — H2H 15-2 over 17 sessions / 12 weekends (R2–R13)
-  VCARB: LIN vs LAW, TSU — H2H 9-8 over 17 sessions / 13 weekends (R1–R13)
+  Red Bull: VER vs HAD, LAW — H2H 16-2 over 18 sessions / 13 weekends (R2–R14)
+  VCARB: LIN vs LAW, TSU — H2H 10-8 over 18 sessions / 14 weekends (R1–R14)
 
 TEAMMATE QUALIFYING HISTORY (every same-team pairing; median gap, head-to-head):
-  Alpine: GAS (Pierre Gasly) ahead of COL (Franco Colapinto) by 0.459s, H2H 13-5 over 18 sessions / 13 weekends
+  Alpine: GAS (Pierre Gasly) ahead of COL (Franco Colapinto) by 0.434s, H2H 13-6 over 19 sessions / 14 weekends
   Aston Martin: ALO (Fernando Alonso) ahead of STR (Lance Stroll) by 0.225s, H2H 13-3 over 16 sessions / 12 weekends
-  Audi: BOR (Gabriel Bortoleto) ahead of HUL (Nico Hulkenberg) by 0.026s, H2H 10-8 over 18 sessions / 13 weekends
-  Cadillac: PER (Sergio Perez) ahead of BOT (Valtteri Bottas) by 0.085s, H2H 9-8 over 17 sessions / 13 weekends
-  Ferrari: HAM (Lewis Hamilton) ahead of LEC (Charles Leclerc) by 0.005s, H2H 9-9 over 18 sessions / 13 weekends
+  Audi: BOR (Gabriel Bortoleto) ahead of HUL (Nico Hulkenberg) by 0.025s, H2H 10-9 over 19 sessions / 14 weekends
+  Cadillac: PER (Sergio Perez) ahead of BOT (Valtteri Bottas) by 0.105s, H2H 10-8 over 18 sessions / 14 weekends
+  Ferrari: HAM (Lewis Hamilton) ahead of LEC (Charles Leclerc) by 0.006s, H2H 10-9 over 19 sessions / 14 weekends
   Haas: BEA (Oliver Bearman) ahead of OCO (Esteban Ocon) by 0.262s, H2H 12-6 over 18 sessions / 13 weekends
-  McLaren: NOR (Lando Norris) ahead of PIA (Oscar Piastri) by 0.055s, H2H 13-5 over 18 sessions / 13 weekends
-  Mercedes: ANT (Andrea Kimi Antonelli) ahead of RUS (George Russell) by 0.096s, H2H 9-9 over 18 sessions / 13 weekends
-  Red Bull: VER (Max Verstappen) ahead of LAW (Liam Lawson) by 0.751s, H2H 3-0 over 3 sessions / 2 weekends
+  McLaren: NOR (Lando Norris) ahead of PIA (Oscar Piastri) by 0.058s, H2H 14-5 over 19 sessions / 14 weekends
+  Mercedes: ANT (Andrea Kimi Antonelli) ahead of RUS (George Russell) by 0.222s, H2H 10-9 over 19 sessions / 14 weekends
+  Red Bull: VER (Max Verstappen) ahead of LAW (Liam Lawson) by 0.552s, H2H 4-0 over 4 sessions / 3 weekends
   Red Bull: VER (Max Verstappen) ahead of HAD (Isack Hadjar) by 0.134s, H2H 12-2 over 14 sessions / 10 weekends
-  VCARB: LIN (Arvid Lindblad) ahead of TSU (Yuki Tsunoda) by 0.442s, H2H 3-0 over 3 sessions / 2 weekends
+  VCARB: LIN (Arvid Lindblad) ahead of TSU (Yuki Tsunoda) by 0.742s, H2H 4-0 over 4 sessions / 3 weekends
   VCARB: LAW (Liam Lawson) ahead of LIN (Arvid Lindblad) by 0.012s, H2H 8-6 over 14 sessions / 11 weekends
-  Williams: SAI (Carlos Sainz) ahead of ALB (Alexander Albon) by 0.218s, H2H 12-4 over 16 sessions / 12 weekends
+  Williams: SAI (Carlos Sainz) ahead of ALB (Alexander Albon) by 0.180s, H2H 12-5 over 17 sessions / 13 weekends
 
 POWER UNITS AND ADUO UPGRADE STATE:
   Audi (supplies Audi): ADUO upgrade 1 deployed at round 7
@@ -216,3 +216,10 @@ CONFIRMED UPGRADE TIMELINE:
   R13 Red Bull [reliability]: Rear suspension/wheel-bodywork and exhaust-bracket reliability details
   R13 VCARB [circuit specific]: Rear-wing SLM and tailpipe configuration
   R13 Williams [circuit specific]: Front-wing/floor-board Monza balance configuration
+  R14 Alpine [persistent]: Forward floor-board optimisation
+  R14 Cadillac [persistent]: Rear-wing and diffuser refinement
+  R14 Ferrari [persistent]: Rear-suspension fairing refinement
+  R14 McLaren [persistent]: Rear-wing flow-conditioning furniture
+  R14 Mercedes [persistent]: Front-lip flow refinement
+  R14 Mercedes [circuit specific]: Madring rear-wing load-range configuration
+  R14 Red Bull [reliability]: Rear-wheel bodywork and floor-bib reliability work

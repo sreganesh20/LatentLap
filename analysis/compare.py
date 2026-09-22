@@ -220,8 +220,13 @@ def compare_session(circuit_name: str, pred_type: str, year: int = 2026):
         laps_down = ar.get("laps_down", 0) if ar else 0
         status    = ar["status"]     if ar else ""
 
-        is_dnf = bool(ar) and ("DNF" in str(status)
-                               or (act_gap is None and status not in ("", "Finished")))
+        status_text = str(status).strip().lower()
+
+        is_dnf = bool(ar) and (
+            "retired" in status_text
+            or "dnf" in status_text
+            or "disqualified" in status_text
+        )
         if is_dnf:
             dnfs.append(drv)
 

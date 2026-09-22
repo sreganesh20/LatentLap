@@ -86,5 +86,29 @@
     "headline": "Norris wins Hungary — Aston Martin's 16-part B-spec changes their season",
     "body": "Lando Norris claimed McLaren's first win of 2026 at the Hungaroring, with part 1 of their 2-part development package onboard. The bigger story was Aston Martin's 16-part B-spec overhaul: new nose, complete front wing package, all permitted floor surfaces, rear wing — essentially a new car. The upgrade immediately showed Aston Martin ahead of Cadillac in race pace for the first time all season. Honda also confirmed their ADUO power unit upgrade is imminent — expected at Netherlands or Italy.",
     "tags": ["McLaren", "Norris", "Hungary", "Aston Martin", "B-spec", "Honda", "ADUO"]
+  },
+  {
+    "round": 12,
+    "circuit": "Netherlands",
+    "date": "2026-08-23",
+    "headline": "Norris wins dramatic Zandvoort race as Verstappen crashes out at home",
+    "body": "Lando Norris took his second consecutive Grand Prix victory at Zandvoort after a dramatic race featuring an early red flag following Max Verstappen's heavy crash. Kimi Antonelli briefly led after the restart, but Norris recovered the lead later in the race and won ahead of Antonelli and George Russell. McLaren's post-Hungary form continued while Mercedes placed both cars on the podium.",
+    "tags": ["Norris", "McLaren", "Netherlands", "Verstappen", "Antonelli", "red flag"]
+  },
+  {
+    "round": 13,
+    "circuit": "Italy",
+    "date": "2026-09-06",
+    "headline": "Antonelli wins from P19 at Monza after late charge on Russell",
+    "body": "Kimi Antonelli produced a remarkable recovery from 19th on the grid to win his home Italian Grand Prix. A power-unit penalty had sent him towards the back, but strong early progress and a well-timed stop under a Virtual Safety Car put him onto fresher tyres for the closing stages. Antonelli passed Mercedes team mate George Russell late in the race, with Max Verstappen completing the podium.",
+    "tags": ["Antonelli", "Mercedes", "Italy", "Monza", "Russell", "VSC"]
+  },
+  {
+    "round": 14,
+    "circuit": "Madrid",
+    "date": "2026-09-13",
+    "headline": "Antonelli takes eighth win as Madrid strategy swings Mercedes' way",
+    "body": "Kimi Antonelli won the inaugural Madring Grand Prix ahead of Max Verstappen and pole-sitter Lando Norris. Norris led the opening phase, but a Virtual Safety Car and contrasting pit-stop timing shifted the net lead toward Mercedes, while a slow stop further hurt Norris. Antonelli converted the strategic opportunity into his eighth Grand Prix victory of the season.",
+    "tags": ["Antonelli", "Mercedes", "Madrid", "Verstappen", "Norris", "strategy", "VSC"]
   }
 ]

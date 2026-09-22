@@ -322,5 +322,23 @@
     "session_type": "R",
     "n_fingerprints": 21,
     "path": "2026_R13_R.json"
+  },
+  "2026_R14_Q": {
+    "circuit_name": "Madrid",
+    "circuit_type": "balanced",
+    "race_round": 14,
+    "year": 2026,
+    "session_type": "Q",
+    "n_fingerprints": 20,
+    "path": "2026_R14_Q.json"
+  },
+  "2026_R14_R": {
+    "circuit_name": "Madrid",
+    "circuit_type": "balanced",
+    "race_round": 14,
+    "year": 2026,
+    "session_type": "R",
+    "n_fingerprints": 21,
+    "path": "2026_R14_R.json"
   }
 }

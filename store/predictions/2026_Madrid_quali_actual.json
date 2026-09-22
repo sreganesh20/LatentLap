@@ -1,0 +1,122 @@
+[
+  {
+    "driver": "NOR",
+    "pos": 1,
+    "gap_s": 0.0,
+    "status": ""
+  },
+  {
+    "driver": "ANT",
+    "pos": 2,
+    "gap_s": 0.01099999999999568,
+    "status": ""
+  },
+  {
+    "driver": "VER",
+    "pos": 3,
+    "gap_s": 0.14000000000000057,
+    "status": ""
+  },
+  {
+    "driver": "HAM",
+    "pos": 4,
+    "gap_s": 0.18900000000000716,
+    "status": ""
+  },
+  {
+    "driver": "LEC",
+    "pos": 5,
+    "gap_s": 0.1950000000000074,
+    "status": ""
+  },
+  {
+    "driver": "RUS",
+    "pos": 6,
+    "gap_s": 0.32500000000000284,
+    "status": ""
+  },
+  {
+    "driver": "PIA",
+    "pos": 7,
+    "gap_s": 0.46999999999999886,
+    "status": ""
+  },
+  {
+    "driver": "LAW",
+    "pos": 8,
+    "gap_s": 0.49200000000000443,
+    "status": ""
+  },
+  {
+    "driver": "COL",
+    "pos": 9,
+    "gap_s": 1.0790000000000077,
+    "status": ""
+  },
+  {
+    "driver": "LIN",
+    "pos": 10,
+    "gap_s": 1.2169999999999987,
+    "status": ""
+  },
+  {
+    "driver": "HUL",
+    "pos": 11,
+    "gap_s": 1.399000000000001,
+    "status": ""
+  },
+  {
+    "driver": "BOR",
+    "pos": 12,
+    "gap_s": 1.5640000000000072,
+    "status": ""
+  },
+  {
+    "driver": "OCO",
+    "pos": 13,
+    "gap_s": 1.8430000000000035,
+    "status": ""
+  },
+  {
+    "driver": "GAS",
+    "pos": 14,
+    "gap_s": 1.929000000000002,
+    "status": ""
+  },
+  {
+    "driver": "TSU",
+    "pos": 15,
+    "gap_s": 2.260000000000005,
+    "status": ""
+  },
+  {
+    "driver": "ALB",
+    "pos": 16,
+    "gap_s": 3.483000000000004,
+    "status": ""
+  },
+  {
+    "driver": "SAI",
+    "pos": 17,
+    "gap_s": 3.4879999999999995,
+    "status": ""
+  },
+  {
+    "driver": "ALO",
+    "pos": 18,
+    "gap_s": 3.564000000000007,
+    "status": ""
+  },
+  {
+    "driver": "PER",
+    "pos": 19,
+    "gap_s": 4.088999999999999,
+    "status": ""
+  },
+  {
+    "driver": "BOT",
+    "pos": 20,
+    "gap_s": 6.186999999999998,
+    "status": ""
+  }
+]
