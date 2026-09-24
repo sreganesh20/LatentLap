@@ -19,7 +19,7 @@ Only entries with all of:
     affects_prediction is True
 are consumed by the prediction weighting logic.
 
-The inventory was audited through R13 against official F1/FIA-style weekend
+The inventory was audited through R15 against official F1/FIA-style weekend
 upgrade declarations, with reputable technical reporting used for context and
 significance. Significance is intentionally manual/reviewable rather than LLM-
 generated.
@@ -187,7 +187,18 @@ UPGRADE_HISTORY: list[dict] = [
     {"team":"Cadillac","round":14,"status":"confirmed","category":"persistent","significance":"minor","affects_prediction":True,"headline":"Rear-wing and diffuser refinement","detail":"Updated rear-wing trailing-edge winglet and outboard diffuser-sidewall vane targeting rear load and aerodynamic performance.","source":"F1.com official upgrade rundown — Spanish GP 2026"},
 
     # R15 — Azerbaijan / Baku
-    {"team":"Williams","round":15,"status":"planned","category":"persistent","significance":"major","affects_prediction":False,"headline":"Major FW48 B-spec package planned for Baku","detail":"Long-planned major development package intended to address the FW48's performance deficit. Exact declared components should be updated after the Azerbaijan weekend technical submission.","source":"F1.com — Williams FW48 Baku upgrade preview, 18 Sep 2026"},
+    {"team":"McLaren","round":15,"status":"confirmed","category":"persistent","significance":"major","affects_prediction":True,"headline":"Broad bodywork, floor and rear-aero package","detail":"Revised sidepod inlet, engine cover/coke line, alternative sidepod geometry, rear-suspension fairings, floor edge, diffuser and rear-wing operation aimed at improving flow conditioning and aerodynamic performance.","source":"F1.com official upgrade rundown — Azerbaijan GP 2026"},
+    {"team":"McLaren","round":15,"status":"confirmed","category":"circuit_specific","significance":"minor","affects_prediction":False,"headline":"Baku cooling-louvre configuration","detail":"Cooling-louvre layout and positioning altered specifically for the Baku cooling and aerodynamic requirements.","source":"F1.com official upgrade rundown — Azerbaijan GP 2026"},
+
+    {"team":"Red Bull","round":15,"status":"confirmed","category":"persistent","significance":"medium","affects_prediction":True,"headline":"Floor, sidepod and flow-conditioning development","detail":"Revised floor geometry and sidepod surfaces accompanied by cooling-louvre, mirror and halo changes intended to improve local load and downstream flow stability.","source":"F1.com official upgrade rundown — Azerbaijan GP 2026"},
+
+    {"team":"VCARB","round":15,"status":"confirmed","category":"persistent","significance":"medium","affects_prediction":True,"headline":"Front-wing, brake-duct and suspension package","detail":"New front wing and brake-duct geometry plus front-suspension changes intended to improve downstream flow management and floor performance.","source":"F1.com official upgrade rundown — Azerbaijan GP 2026"},
+
+    {"team":"Audi","round":15,"status":"confirmed","category":"persistent","significance":"major","affects_prediction":True,"headline":"Fourteen-part aerodynamic package","detail":"New front wing and nose with revised front-suspension fairings, floor and bodywork changes, plus rear-wing and rear-suspension development across a 14-part Baku package.","source":"F1.com official upgrade rundown — Azerbaijan GP 2026"},
+
+    {"team":"Williams","round":15,"status":"confirmed","category":"persistent","significance":"major","affects_prediction":True,"headline":"Major FW48 Baku development package","detail":"Updated floor bodywork and tail geometry, reprofiled front brake-duct flow-conditioning surfaces, realigned rear-suspension geometry and revised rear brake-duct treatment forming the long-awaited major FW48 package.","source":"F1.com official upgrade rundown — Azerbaijan GP 2026"},
+
+    {"team":"Cadillac","round":15,"status":"confirmed","category":"persistent","significance":"medium","affects_prediction":True,"headline":"Front-corner and diffuser development","detail":"Revised brake-cooling inlet and exit profiles, front-suspension fairing surfaces and diffuser geometry targeting improved cooling flow quality and local aerodynamic load.","source":"F1.com official upgrade rundown — Azerbaijan GP 2026"},
 ]
 
 

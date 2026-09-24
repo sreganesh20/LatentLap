@@ -184,10 +184,6 @@ ROUND_LINEUP_OVERRIDES = {
         "LAW":{"team":"Red Bull"},
         "TSU":{"team":"VCARB","pu":"RedBullFord","fastf1_code":"TSU","name":"Yuki Tsunoda","number":22},
     },
-        15: {
-        "LAW":{"team":"Red Bull"},
-        "TSU":{"team":"VCARB","pu":"RedBullFord","fastf1_code":"TSU","name":"Yuki Tsunoda","number":22},
-    },
 }
 
 
@@ -233,6 +229,21 @@ GRID_PENALTIES = {
             "source":"Official Italian GP grid",
         },
     },
+    15: {
+        "ALO": {
+            "penalty":"Grid penalty — exact drop pending",
+            "note":"Additional ICE, turbocharger and PU ancillary components taken beyond the permitted season allocation; final grid application pending.",
+            "known_at_prediction_time": True,
+            "source":"F1.com — Azerbaijan GP power-unit penalty reporting",
+        },
+        "STR": {
+            "penalty":"Grid penalty — exact drop pending",
+            "note":"Additional turbocharger, energy store, control electronics and PU ancillary components taken beyond the permitted season allocation; final grid application pending.",
+            "known_at_prediction_time": True,
+            "source":"F1.com — Azerbaijan GP power-unit penalty reporting",
+        },
+    },
+
 }
 
 DRIVER_SUBSTITUTIONS = {
@@ -253,19 +264,6 @@ DRIVER_SUBSTITUTIONS = {
         "unavailable":{"HAD":"Wrist injury — not racing at Madrid"},
         "moved":{"LAW":"Red Bull"},
         "added":[{"code":"TSU","name":"Yuki Tsunoda","team":"VCARB","reason":"Reserve driver continuing in Lawson's Racing Bulls seat"}],
-    },
-        15: {
-        "banner":"Red Bull confirmed the Azerbaijan lineup with Liam Lawson continuing alongside Verstappen at Red Bull and Yuki Tsunoda continuing alongside Lindblad at Racing Bulls.",
-        "unavailable":{"HAD":"Not in the Azerbaijan race lineup"},
-        "moved":{"LAW":"Red Bull"},
-        "added":[
-            {
-                "code":"TSU",
-                "name":"Yuki Tsunoda",
-                "team":"VCARB",
-                "reason":"Continuing in Lawson's Racing Bulls seat"
-            }
-        ],
     },
 }
 
