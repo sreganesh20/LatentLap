@@ -19,7 +19,7 @@ Only entries with all of:
     affects_prediction is True
 are consumed by the prediction weighting logic.
 
-The inventory was audited through R15 against official F1/FIA-style weekend
+The inventory was audited through R16 against official F1/FIA-style weekend
 upgrade declarations, with reputable technical reporting used for context and
 significance. Significance is intentionally manual/reviewable rather than LLM-
 generated.
@@ -199,6 +199,53 @@ UPGRADE_HISTORY: list[dict] = [
     {"team":"Williams","round":15,"status":"confirmed","category":"persistent","significance":"major","affects_prediction":True,"headline":"Major FW48 Baku development package","detail":"Updated floor bodywork and tail geometry, reprofiled front brake-duct flow-conditioning surfaces, realigned rear-suspension geometry and revised rear brake-duct treatment forming the long-awaited major FW48 package.","source":"F1.com official upgrade rundown — Azerbaijan GP 2026"},
 
     {"team":"Cadillac","round":15,"status":"confirmed","category":"persistent","significance":"medium","affects_prediction":True,"headline":"Front-corner and diffuser development","detail":"Revised brake-cooling inlet and exit profiles, front-suspension fairing surfaces and diffuser geometry targeting improved cooling flow quality and local aerodynamic load.","source":"F1.com official upgrade rundown — Azerbaijan GP 2026"},
+
+    # R16 — Bahrain Grand Prix in Malaysia / Sepang
+    # FIA Doc 12: Car Presentation Submissions, published 2026-10-02.
+    # One persistent event per team is used for prediction weighting to avoid
+    # multiplying a multi-component package as several independent upgrade steps.
+
+    {"team":"Mercedes","round":16,"status":"confirmed","category":"persistent","significance":"major","affects_prediction":True,
+     "headline":"Major Sepang floor, bodywork, suspension and rear-corner package",
+     "detail":"Six declared performance component groups: reprofiled floor board; revised floor leading edge; reworked floor corner slots; re-optimised floor body/diffuser roof, sidewall and winglet; reprofiled rear-suspension fairings; and revised rear-corner winglets. The package targets local load, flow conditioning, robustness across the operating envelope and rear-tyre wake control.",
+     "source":"FIA Doc 12 — Car Presentation Submissions, Bahrain GP in Malaysia 2026"},
+
+    {"team":"McLaren","round":16,"status":"confirmed","category":"circuit_specific","significance":"minor","affects_prediction":False,
+     "headline":"High-cooling Sepang engine-cover configuration",
+     "detail":"High-cooling bodywork increases cooling mass flow for Sepang and upcoming hot venues; declared as circuit-specific cooling range rather than a persistent pace step.",
+     "source":"FIA Doc 12 — Car Presentation Submissions, Bahrain GP in Malaysia 2026"},
+
+    {"team":"Red Bull","round":16,"status":"confirmed","category":"persistent","significance":"minor","affects_prediction":True,
+     "headline":"Floor-board local-load development",
+     "detail":"Revised floor-board geometry above the existing floor-foot geometry targets more local load while maintaining flow stability behind the front tyres.",
+     "source":"FIA Doc 12 — Car Presentation Submissions, Bahrain GP in Malaysia 2026"},
+
+    {"team":"Ferrari","round":16,"status":"confirmed","category":"persistent","significance":"minor","affects_prediction":True,
+     "headline":"Diffuser outboard winglet-cascade development",
+     "detail":"A localized diffuser winglet-cascade revision explicitly described as not Sepang-specific, targeting additional downforce across the full operating envelope.",
+     "source":"FIA Doc 12 — Car Presentation Submissions, Bahrain GP in Malaysia 2026"},
+
+    {"team":"VCARB","round":16,"status":"confirmed","category":"circuit_specific","significance":"minor","affects_prediction":False,
+     "headline":"Sepang front-wing balance-range flap",
+     "detail":"A longer-chord front-wing flap increases available front load to meet Sepang's aero-balance requirement; declared circuit-specific.",
+     "source":"FIA Doc 12 — Car Presentation Submissions, Bahrain GP in Malaysia 2026"},
+
+    {"team":"VCARB","round":16,"status":"confirmed","category":"persistent","significance":"minor","affects_prediction":True,
+     "headline":"Rear-wing support efficiency refinement",
+     "detail":"Revised rear-wing auxiliary/support components allow the rear wing to operate more effectively and increase the efficiency of generated load.",
+     "source":"FIA Doc 12 — Car Presentation Submissions, Bahrain GP in Malaysia 2026"},
+
+    {"team":"Haas","round":16,"status":"confirmed","category":"circuit_specific","significance":"minor","affects_prediction":False,
+     "headline":"Rear-impact-structure tuning device",
+     "detail":"Additional rear-impact-structure aero geometry is available to tune the car's characteristics for Sepang; retained as event-specific context rather than a persistent baseline step.",
+     "source":"FIA Doc 12 — Car Presentation Submissions, Bahrain GP in Malaysia 2026"},
+
+    {"team":"Alpine","round":16,"status":"confirmed","category":"circuit_specific","significance":"minor","affects_prediction":False,
+     "headline":"Front-drum brake-cooling exit revision",
+     "detail":"Trimmed front-drum exit increases brake-cooling capacity for high thermal-demand venues; treated as thermal-management configuration rather than a persistent pace step.",
+     "source":"FIA Doc 12 — Car Presentation Submissions, Bahrain GP in Malaysia 2026"},
+
+    # Williams, Aston Martin, Audi and Cadillac: no updates submitted at R16.
 ]
 
 

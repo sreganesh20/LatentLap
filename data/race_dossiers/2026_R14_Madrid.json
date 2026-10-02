@@ -1,0 +1,368 @@
+{
+  "review_status": "approved",
+  "metadata": {
+    "year": 2026,
+    "round": 14,
+    "circuit": "Madrid",
+    "venue": "Madring",
+    "date_range": "2026-09-11 to 2026-09-13",
+    "weekend_type": "standard",
+    "sessions_available": [
+      "Q",
+      "R"
+    ]
+  },
+  "weekend_summary": "The inaugural Madring weekend produced an exceptionally close qualifying fight and a strategy-shaped Grand Prix. Lando Norris took pole in 1:31.824, just 0.011s ahead of Kimi Antonelli, with Max Verstappen third. Norris led the opening phase, but a Virtual Safety Car gave Antonelli a cheap stop while Norris also lost time in a slower pit stop. Antonelli took the net lead and won ahead of Verstappen and Norris. The weekend should therefore be read as a combination of genuine front-running pace and race-execution effects, not as a strategy-neutral finishing-order comparison.",
+  "sessions": {
+    "Q": {
+      "summary": "Norris took pole in 1:31.824, 0.011s ahead of Antonelli, with Verstappen third.",
+      "key_moments": [
+        {
+          "text": "Norris claimed the first Madring pole with a 1:31.824.",
+          "source_refs": [
+            "f1_madrid_quali"
+          ]
+        },
+        {
+          "text": "Antonelli was only 0.011s slower, while Verstappen qualified third.",
+          "source_refs": [
+            "f1_madrid_quali"
+          ]
+        },
+        {
+          "text": "Hamilton and Leclerc qualified fourth and fifth, with Russell sixth and Piastri seventh.",
+          "source_refs": [
+            "f1_madrid_quali"
+          ]
+        }
+      ]
+    },
+    "R": {
+      "summary": "Antonelli won ahead of Verstappen and Norris after the VSC and pit-stop sequence changed the effective race order.",
+      "key_moments": [
+        {
+          "text": "Norris led the opening phase from pole.",
+          "source_refs": [
+            "f1_madrid_race"
+          ]
+        },
+        {
+          "text": "A Virtual Safety Car gave Antonelli a strategically cheap stop and moved him into the effective lead.",
+          "source_refs": [
+            "f1_madrid_race",
+            "f1_madrid_teams"
+          ]
+        },
+        {
+          "text": "Norris lost additional time with a slow pit stop and rejoined behind Antonelli and Verstappen.",
+          "source_refs": [
+            "f1_madrid_race"
+          ]
+        },
+        {
+          "text": "Antonelli won by 4.351s over Verstappen, with Norris third at +5.089s.",
+          "source_refs": [
+            "f1_madrid_results"
+          ]
+        }
+      ]
+    }
+  },
+  "performance_snapshot": {
+    "source": "committed_session_store",
+    "status": "hydrate at query time from committed LatentLap session data"
+  },
+  "driver_insights": {
+    "ANT": {
+      "name": "Andrea Kimi Antonelli",
+      "team": "Mercedes",
+      "summary": "Antonelli paired front-row qualifying pace with a victory, but the decisive track-position swing came through VSC timing rather than an on-track pass for the lead.",
+      "details": [
+        {
+          "text": "His result is a combined pace-and-execution signal rather than a clean strategy-neutral pace test.",
+          "source_refs": [
+            "f1_madrid_race",
+            "f1_madrid_teams"
+          ]
+        }
+      ]
+    },
+    "NOR": {
+      "name": "Lando Norris",
+      "team": "McLaren",
+      "summary": "Norris took pole and led the opening phase, but the VSC timing and pit execution cost him the lead.",
+      "details": [
+        {
+          "text": "P3 understates the competitiveness shown by his pole and early-race track position.",
+          "source_refs": [
+            "f1_madrid_quali",
+            "f1_madrid_race"
+          ]
+        }
+      ]
+    },
+    "VER": {
+      "name": "Max Verstappen",
+      "team": "Red Bull",
+      "summary": "Verstappen qualified third and finished second, remaining close enough to pressure Mercedes and McLaren late in the race.",
+      "details": [
+        {
+          "text": "Red Bull's Madrid declaration was reliability-focused rather than a new persistent performance step.",
+          "source_refs": [
+            "f1_madrid_upgrades"
+          ]
+        }
+      ]
+    }
+  },
+  "team_insights": {
+    "Mercedes": {
+      "summary": "Mercedes combined near-pole one-lap pace with strong race execution and converted the VSC opportunity into victory.",
+      "details": [
+        {
+          "text": "The team introduced a small persistent front-lip refinement alongside circuit-specific rear-wing changes.",
+          "source_refs": [
+            "f1_madrid_upgrades"
+          ]
+        }
+      ]
+    },
+    "McLaren": {
+      "summary": "McLaren had genuine pole-winning pace through Norris and introduced a small persistent rear-wing flow-conditioning refinement.",
+      "details": [
+        {
+          "text": "Norris's final P3 was materially influenced by the VSC and pit-stop sequence.",
+          "source_refs": [
+            "f1_madrid_race",
+            "f1_madrid_upgrades"
+          ]
+        }
+      ]
+    },
+    "Red Bull": {
+      "summary": "Verstappen finished second, while Red Bull's declared Madrid changes were reliability-focused.",
+      "details": [
+        {
+          "text": "The result should not be used to infer a new persistent aero step from the Madrid declaration.",
+          "source_refs": [
+            "f1_madrid_upgrades"
+          ]
+        }
+      ]
+    }
+  },
+  "strategy_and_conditions": [
+    {
+      "text": "The VSC materially changed pit timing and effective track position at the front.",
+      "source_refs": [
+        "f1_madrid_race"
+      ]
+    },
+    {
+      "text": "As a brand-new circuit, Madring offered little directly comparable historical F1 data.",
+      "source_refs": [
+        "f1_madrid_upgrades"
+      ]
+    },
+    {
+      "text": "Bearman started from the pit lane with a new chassis/PU, Stroll started at the back after PU changes, and Sainz carried a three-place penalty for impeding.",
+      "source_refs": [
+        "f1_madrid_grid"
+      ]
+    }
+  ],
+  "performance_interpretation": [
+    {
+      "text": "Norris and Antonelli were separated by only 0.011s in qualifying, indicating a genuinely compressed front over one lap.",
+      "source_refs": [
+        "f1_madrid_quali"
+      ],
+      "teams": [
+        "McLaren",
+        "Mercedes"
+      ],
+      "drivers": [
+        "NOR",
+        "ANT"
+      ]
+    },
+    {
+      "text": "The race finishing order is not a clean pace ranking because the VSC and pit-stop execution materially changed track position.",
+      "source_refs": [
+        "f1_madrid_race"
+      ]
+    }
+  ],
+  "upgrades_and_technical_context": [
+    {
+      "team": "Mercedes",
+      "category": "persistent",
+      "significance": "minor",
+      "text": "Front-lip flow refinement; separate rear-wing changes were circuit-specific.",
+      "reported_intent": "Improve flow attachment through steering conditions.",
+      "reported_effect": null,
+      "source_refs": [
+        "f1_madrid_upgrades"
+      ]
+    },
+    {
+      "team": "Ferrari",
+      "category": "persistent",
+      "significance": "minor",
+      "text": "Rear-suspension fairing profile refinement.",
+      "reported_intent": "Increase local aerodynamic load.",
+      "reported_effect": null,
+      "source_refs": [
+        "f1_madrid_upgrades"
+      ]
+    },
+    {
+      "team": "McLaren",
+      "category": "persistent",
+      "significance": "minor",
+      "text": "Additional rear-wing flow-conditioning furniture.",
+      "reported_intent": "Improve flow onto the rear-wing elements.",
+      "reported_effect": null,
+      "source_refs": [
+        "f1_madrid_upgrades"
+      ]
+    },
+    {
+      "team": "Red Bull",
+      "category": "reliability",
+      "significance": "minor",
+      "text": "Rear-wheel bodywork and floor-bib reliability work.",
+      "reported_intent": "Reliability/load restoration rather than a persistent pace step.",
+      "reported_effect": null,
+      "source_refs": [
+        "f1_madrid_upgrades"
+      ]
+    },
+    {
+      "team": "Alpine",
+      "category": "persistent",
+      "significance": "minor",
+      "text": "Forward floor-board optimisation.",
+      "reported_intent": "Improve local pressure distribution and flow management.",
+      "reported_effect": null,
+      "source_refs": [
+        "f1_madrid_upgrades"
+      ]
+    },
+    {
+      "team": "Cadillac",
+      "category": "persistent",
+      "significance": "minor",
+      "text": "Rear-wing trailing-edge winglet and diffuser-sidewall vane refinement.",
+      "reported_intent": "Increase rear aerodynamic load and stability.",
+      "reported_effect": null,
+      "source_refs": [
+        "f1_madrid_upgrades"
+      ]
+    }
+  ],
+  "prediction_review": {
+    "status": "available",
+    "prediction_references": [
+      "store/predictions/2026_Madrid_quali_prediction.json",
+      "store/predictions/2026_Madrid_race_prediction.json"
+    ],
+    "overall_assessment": "Genuine pre-race Madrid forecasts are preserved. Qualifying comparison was reasonably close at the front, while race interpretation must keep the VSC/pit sequence separate from underlying pace. Numerical review should use the committed comparison artifacts after the lapped-car/DNF classification fix.",
+    "successes": [],
+    "misses": [],
+    "known_exceptions": [
+      {
+        "text": "The Red Bull/Racing Bulls substitution remained active for Madrid: Lawson drove Red Bull, Tsunoda drove Racing Bulls, and Hadjar was unavailable."
+      },
+      {
+        "text": "Final-grid penalties should be annotated as context rather than retroactively rewriting the saved pace forecast."
+      }
+    ]
+  },
+  "knowledge_limits": [
+    {
+      "text": "Actual ERS deployment and battery state are not public; LatentLap's energy-management signals remain inferred."
+    },
+    {
+      "text": "Race representative laps are not directly comparable for ERS or corner-speed interpretation because fuel, tyres, traffic and track state differ."
+    },
+    {
+      "text": "The VSC and pit-stop timing materially affected the race order."
+    },
+    {
+      "text": "The presence of an upgrade does not prove it caused a pace change unless reviewed reporting supports that effect."
+    }
+  ],
+  "entities": {
+    "drivers": [
+      "ANT",
+      "NOR",
+      "VER",
+      "LEC",
+      "RUS",
+      "PIA",
+      "LAW"
+    ],
+    "teams": [
+      "Mercedes",
+      "McLaren",
+      "Red Bull",
+      "Ferrari",
+      "Alpine",
+      "Cadillac"
+    ],
+    "topics": [
+      "qualifying",
+      "race pace",
+      "strategy",
+      "VSC",
+      "upgrades",
+      "Madring",
+      "prediction review"
+    ]
+  },
+  "sources": [
+    {
+      "id": "f1_madrid_quali",
+      "publisher": "Formula 1",
+      "title": "Norris denies Antonelli pole position for Spanish GP in closely-fought Qualifying in Madrid",
+      "url": "https://www.formula1.com/en/latest/article/norris-denies-antonelli-pole-position-for-spanish-gp-in-closely-fought-qualifying-in-madrid.5AqJXaE8s1sLfv8dJVLqty"
+    },
+    {
+      "id": "f1_madrid_race",
+      "publisher": "Formula 1",
+      "title": "Antonelli clinches victory over Verstappen and Norris in Spanish GP",
+      "url": "https://www.formula1.com/en/latest/article/antonelli-clinches-victory-over-verstappen-and-norris-in-spanish-gp.644ZZfPzRPEaUh2JBHcB9"
+    },
+    {
+      "id": "f1_madrid_teams",
+      "publisher": "Formula 1",
+      "title": "What the teams said – Race day in Spain",
+      "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-race-day-in-spain-2026.7IhNkhQqXuGU1ZEg9JBm1C"
+    },
+    {
+      "id": "f1_madrid_grid",
+      "publisher": "Formula 1",
+      "title": "Official 2026 Spanish Grand Prix grid",
+      "url": "https://www.formula1.com/en/latest/article/official-grid-whos-where-in-spain-as-bearman-starts-from-pit-lane.60kOIMQ1SjZXrrvW4qIHV7"
+    },
+    {
+      "id": "f1_madrid_results",
+      "publisher": "Formula 1",
+      "title": "2026 Spanish Grand Prix race result",
+      "url": "https://www.formula1.com/en/results/2026/races/1294/madrid/race-result"
+    },
+    {
+      "id": "f1_madrid_upgrades",
+      "publisher": "Formula 1",
+      "title": "Mercedes target Madring gains as every team's upgrades are revealed",
+      "url": "https://www.formula1.com/en/latest/article/mercedes-target-madring-gains-as-every-teams-upgrades-are-revealed.3LbXlbZXmsVrfsR2np3NpK"
+    },
+    {
+      "id": "latentlap_upgrade_history",
+      "publisher": "LatentLap",
+      "title": "Canonical upgrade history",
+      "url": "data/upgrade_history.py"
+    }
+  ]
+}

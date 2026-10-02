@@ -1,0 +1,475 @@
+{
+  "review_status": "approved",
+  "metadata": {
+    "year": 2026,
+    "round": 15,
+    "circuit": "Azerbaijan",
+    "venue": "Baku City Circuit",
+    "date_range": "2026-09-24 to 2026-09-26",
+    "weekend_type": "standard",
+    "sessions_available": [
+      "Q",
+      "R"
+    ]
+  },
+  "weekend_summary": "George Russell was the benchmark in Baku, taking pole in 1:42.526 by 0.837s over Charles Leclerc and then converting pole into victory. Max Verstappen finished only 0.196s behind after late Safety Car pressure, while Isack Hadjar returned to Red Bull with P4 in qualifying and P3 in the race. The weekend included major development packages from McLaren, Audi and Williams, plus smaller persistent changes from Red Bull, Racing Bulls and Cadillac. A late restart incident caused by Franco Colapinto eliminated Gasly and Norris and generated a five-place grid penalty for Colapinto at the following Bahrain Grand Prix in Malaysia.",
+  "sessions": {
+    "Q": {
+      "summary": "Russell took pole in 1:42.526, 0.837s ahead of Leclerc. Piastri was third by 0.001s, Hadjar fourth and Norris fifth. Antonelli crashed in Q1 and qualified 16th.",
+      "key_moments": [
+        {
+          "text": "Russell took pole by 0.837s over Leclerc.",
+          "source_refs": [
+            "f1_baku_quali"
+          ]
+        },
+        {
+          "text": "Piastri was only 0.001s behind Leclerc in third, with Hadjar fourth on his return.",
+          "source_refs": [
+            "f1_baku_quali"
+          ]
+        },
+        {
+          "text": "Antonelli hit the wall in Q1 and qualified 16th, making the classification incident-driven rather than a clean pace observation.",
+          "source_refs": [
+            "f1_baku_quali"
+          ]
+        }
+      ]
+    },
+    "R": {
+      "summary": "Russell won from Verstappen by 0.196s, with Hadjar third. Safety Cars repeatedly compressed the race and a late restart produced the Colapinto-Gasly-Norris collision.",
+      "key_moments": [
+        {
+          "text": "Russell won in 1:38:02.143, with Verstappen only 0.196s behind.",
+          "source_refs": [
+            "f1_baku_race",
+            "f1_baku_results"
+          ]
+        },
+        {
+          "text": "Hadjar finished third, 10.704s behind Russell, on his return to Red Bull.",
+          "source_refs": [
+            "f1_baku_results"
+          ]
+        },
+        {
+          "text": "Colapinto went too deep at Turn 1 after the Safety Car restart, hit Gasly and triggered contact with Norris.",
+          "source_refs": [
+            "f1_col_penalty"
+          ]
+        },
+        {
+          "text": "Colapinto received a five-place grid penalty for the next race in Malaysia.",
+          "source_refs": [
+            "f1_col_penalty"
+          ]
+        }
+      ]
+    }
+  },
+  "performance_snapshot": {
+    "source": "committed_session_store",
+    "status": "hydrate at query time from committed LatentLap session data"
+  },
+  "driver_insights": {
+    "RUS": {
+      "name": "George Russell",
+      "team": "Mercedes",
+      "summary": "Russell was the benchmark across both major sessions: pole by eight tenths and victory despite late Verstappen pressure.",
+      "details": [
+        {
+          "text": "LatentLap's committed race representative lap also selected Russell as the pace reference.",
+          "source_refs": [
+            "latentlap_session_store",
+            "f1_baku_race"
+          ]
+        }
+      ]
+    },
+    "VER": {
+      "name": "Max Verstappen",
+      "team": "Red Bull",
+      "summary": "Verstappen qualified eighth but recovered to finish within 0.196s of Russell, separating qualifying execution from race competitiveness.",
+      "details": [
+        {
+          "text": "His race was materially stronger than his qualifying classification.",
+          "source_refs": [
+            "f1_baku_quali",
+            "f1_baku_race"
+          ]
+        }
+      ]
+    },
+    "HAD": {
+      "name": "Isack Hadjar",
+      "team": "Red Bull",
+      "summary": "Hadjar returned from injury with P4 in qualifying and P3 in the race, materially outperforming the saved pre-race forecast.",
+      "details": [
+        {
+          "text": "One strong weekend is useful evidence but should not be treated as a stable long-run baseline by itself.",
+          "source_refs": [
+            "f1_baku_quali",
+            "f1_baku_results"
+          ]
+        }
+      ]
+    },
+    "ANT": {
+      "name": "Andrea Kimi Antonelli",
+      "team": "Mercedes",
+      "summary": "Antonelli's qualifying miss was caused by his Q1 crash; he recovered from P16 on the grid to P5 in the race.",
+      "details": [
+        {
+          "text": "The P1-predicted-to-P16-qualified error is primarily an execution/incident miss, not a clean pace miss.",
+          "source_refs": [
+            "f1_baku_quali",
+            "f1_baku_race"
+          ]
+        }
+      ]
+    },
+    "SAI": {
+      "name": "Carlos Sainz",
+      "team": "Williams",
+      "summary": "Sainz qualified ninth in the heavily updated Williams before a five-place yellow-flag penalty dropped him to P14 on the grid; he finished P10.",
+      "details": [
+        {
+          "text": "His one-lap performance materially exceeded LatentLap's saved P17 forecast, though the weekend cannot isolate a causal gain from the new package.",
+          "source_refs": [
+            "f1_baku_grid",
+            "f1_baku_upgrades"
+          ]
+        }
+      ]
+    }
+  },
+  "team_insights": {
+    "Mercedes": {
+      "summary": "Mercedes delivered the strongest peak qualifying result through Russell and won the race; Antonelli's Q1 accident obscured the second car's true one-lap potential.",
+      "details": [
+        {
+          "text": "Mercedes declared no new chassis/aero update in Baku.",
+          "source_refs": [
+            "f1_baku_upgrades"
+          ]
+        }
+      ]
+    },
+    "Red Bull": {
+      "summary": "Red Bull placed both cars on the podium after introducing persistent floor/sidepod and flow-conditioning changes.",
+      "details": [
+        {
+          "text": "The podium does not independently quantify the gain from the package.",
+          "source_refs": [
+            "f1_baku_upgrades",
+            "f1_baku_results"
+          ]
+        }
+      ]
+    },
+    "Williams": {
+      "summary": "Williams introduced its long-awaited major FW48 package. Sainz reached Q3 and finished in the points, while Albon retired.",
+      "details": [
+        {
+          "text": "The weekend was encouraging but not a controlled before/after experiment for the package.",
+          "source_refs": [
+            "f1_baku_upgrades",
+            "f1_baku_race"
+          ]
+        }
+      ]
+    },
+    "Audi": {
+      "summary": "Audi brought a broad 14-part aero package, but both cars exited Q1 and neither scored.",
+      "details": [
+        {
+          "text": "Package presence and competitive result are kept separate; LatentLap does not invent a causal lap-time gain.",
+          "source_refs": [
+            "f1_baku_upgrades",
+            "f1_baku_quali"
+          ]
+        }
+      ]
+    }
+  },
+  "strategy_and_conditions": [
+    {
+      "text": "Two Safety Car periods compressed Russell's advantage and created late-race restart pressure.",
+      "source_refs": [
+        "f1_baku_race",
+        "f1_baku_lowdown"
+      ]
+    },
+    {
+      "text": "The committed FastF1 result status marks seven cars as Retired, including Bottas after 50 of 51 laps.",
+      "source_refs": [
+        "latentlap_session_store"
+      ]
+    },
+    {
+      "text": "Sainz dropped five places for failing to slow sufficiently for yellow flags; Perez received three places for impeding; Alonso and Stroll carried multiple PU penalties.",
+      "source_refs": [
+        "f1_baku_grid"
+      ]
+    }
+  ],
+  "performance_interpretation": [
+    {
+      "text": "Russell's pole and race win are mutually reinforcing evidence of a genuinely strong Baku weekend.",
+      "source_refs": [
+        "f1_baku_quali",
+        "f1_baku_race"
+      ],
+      "teams": [
+        "Mercedes"
+      ],
+      "drivers": [
+        "RUS"
+      ]
+    },
+    {
+      "text": "Antonelli's P16 qualifying classification should not be used as a clean Mercedes pace observation because his session ended in a Q1 crash.",
+      "source_refs": [
+        "f1_baku_quali"
+      ],
+      "teams": [
+        "Mercedes"
+      ],
+      "drivers": [
+        "ANT"
+      ]
+    },
+    {
+      "text": "Williams' improved qualifying coincided with its major package, but the observed result cannot isolate a causal lap-time gain from the upgrade.",
+      "source_refs": [
+        "f1_baku_upgrades",
+        "f1_baku_grid"
+      ],
+      "teams": [
+        "Williams"
+      ]
+    }
+  ],
+  "upgrades_and_technical_context": [
+    {
+      "team": "McLaren",
+      "category": "persistent",
+      "significance": "major",
+      "text": "Broad bodywork, floor, diffuser, rear-suspension and rear-wing development, plus a Baku-specific cooling-louvre configuration.",
+      "reported_intent": "Improve flow conditioning, aero performance and straight-line efficiency.",
+      "reported_effect": null,
+      "source_refs": [
+        "f1_baku_upgrades"
+      ]
+    },
+    {
+      "team": "Red Bull",
+      "category": "persistent",
+      "significance": "medium",
+      "text": "Floor, sidepod and flow-conditioning development.",
+      "reported_intent": "Increase local load while maintaining downstream flow stability.",
+      "reported_effect": null,
+      "source_refs": [
+        "f1_baku_upgrades"
+      ]
+    },
+    {
+      "team": "VCARB",
+      "category": "persistent",
+      "significance": "medium",
+      "text": "Front-wing, brake-duct and front-suspension package.",
+      "reported_intent": "Improve downstream flow management and floor performance.",
+      "reported_effect": null,
+      "source_refs": [
+        "f1_baku_upgrades"
+      ]
+    },
+    {
+      "team": "Audi",
+      "category": "persistent",
+      "significance": "major",
+      "text": "Broad 14-part aerodynamic package spanning front wing/nose, floor/bodywork, suspension and rear aero.",
+      "reported_intent": "Broad aerodynamic performance development.",
+      "reported_effect": null,
+      "source_refs": [
+        "f1_baku_upgrades"
+      ]
+    },
+    {
+      "team": "Williams",
+      "category": "persistent",
+      "significance": "major",
+      "text": "Major FW48 floor, brake-duct and rear-corner development package.",
+      "reported_intent": "Address the car's performance deficit with a broad B-spec step.",
+      "reported_effect": null,
+      "source_refs": [
+        "f1_baku_upgrades"
+      ]
+    },
+    {
+      "team": "Cadillac",
+      "category": "persistent",
+      "significance": "medium",
+      "text": "Brake-cooling, front-suspension fairing and diffuser changes.",
+      "reported_intent": "Increase cooling capacity while preserving flow quality and local aero load.",
+      "reported_effect": null,
+      "source_refs": [
+        "f1_baku_upgrades"
+      ]
+    }
+  ],
+  "prediction_review": {
+    "status": "available",
+    "prediction_references": [
+      "store/predictions/2026_Azerbaijan_quali_prediction.json",
+      "store/predictions/2026_Azerbaijan_race_prediction.json"
+    ],
+    "overall_assessment": "The saved Baku forecast captured a competitive Mercedes/Red Bull/Ferrari/McLaren front group but missed several large classification swings. Qualifying MAE was 3.4 places, while race MAE was 4.6 places (4.1 among the 15 finishers).",
+    "successes": [
+      {
+        "text": "Russell was predicted P3 in qualifying and took pole; he was predicted P3 in race pace and won."
+      },
+      {
+        "text": "Verstappen was predicted P5 for the race and finished P2; Hadjar was predicted P6 and finished P3."
+      },
+      {
+        "text": "Hamilton was predicted and finished P6 in qualifying."
+      }
+    ],
+    "misses": [
+      {
+        "text": "Antonelli was predicted P1 in qualifying but crashed in Q1 and classified P16; this is primarily an execution/incident miss."
+      },
+      {
+        "text": "Hadjar qualified P4 versus a P10 prediction, materially outperforming the forecast."
+      },
+      {
+        "text": "Sainz qualified P9 versus a P17 prediction in the upgraded Williams; the model under-read the weekend's one-lap performance."
+      },
+      {
+        "text": "Retirements and Safety Car effects inflated position error for several race forecasts."
+      }
+    ],
+    "known_exceptions": [
+      {
+        "text": "LatentLap predicts pace rather than final grid after penalties; Baku grid penalties are context and should not rewrite the saved forecast."
+      },
+      {
+        "text": "Colapinto's five-place Malaysia penalty was created by the Baku collision and belongs to R16 context."
+      }
+    ],
+    "metrics": {
+      "qualifying_mae_places": 3.4,
+      "qualifying_mean_abs_gap_error_s": 1.031,
+      "qualifying_inside_range": "8/22 (36%)",
+      "race_mae_places": 4.6,
+      "race_mae_finishers_only_places": 4.1,
+      "race_finishers": 15,
+      "race_fastf1_retired_status_count": 7
+    }
+  },
+  "knowledge_limits": [
+    {
+      "text": "Actual ERS deployment and battery state are not public; LatentLap's ERS quantities remain inferred."
+    },
+    {
+      "text": "Race representative laps are not directly comparable for ERS/corner-speed interpretation because fuel, tyres, traffic and track state differ."
+    },
+    {
+      "text": "The presence of an upgrade does not prove it caused an observed performance change."
+    },
+    {
+      "text": "Antonelli's qualifying classification was incident-driven."
+    },
+    {
+      "text": "The committed FastF1 feed marks seven cars Retired; Formula 1's narrative race report described six retirements, likely reflecting classification treatment of Bottas after completing 50/51 laps."
+    }
+  ],
+  "entities": {
+    "drivers": [
+      "RUS",
+      "VER",
+      "HAD",
+      "ANT",
+      "SAI",
+      "COL",
+      "GAS",
+      "NOR"
+    ],
+    "teams": [
+      "Mercedes",
+      "Red Bull",
+      "Williams",
+      "McLaren",
+      "Audi",
+      "VCARB",
+      "Cadillac"
+    ],
+    "topics": [
+      "qualifying",
+      "race pace",
+      "upgrades",
+      "Safety Car",
+      "grid penalties",
+      "prediction review",
+      "Sepang penalty"
+    ]
+  },
+  "sources": [
+    {
+      "id": "f1_baku_quali",
+      "publisher": "Formula 1",
+      "title": "Russell charges to pole as Antonelli suffers shock exit in Azerbaijan qualifying",
+      "url": "https://www.formula1.com/en/latest/article/russell-charges-to-pole-position-as-antonelli-suffers-shock-exit-in-qualifying-for-azerbaijan-gp.6vFe7216mR8JZuWE4QIB4w"
+    },
+    {
+      "id": "f1_baku_race",
+      "publisher": "Formula 1",
+      "title": "Russell narrowly holds off Verstappen to take Azerbaijan victory",
+      "url": "https://www.formula1.com/en/latest/article/russell-narrowly-holds-off-verstappen-to-take-victory-over-the-line-in-chaotic-azerbaijan-gp.5J4lgNh82JDL2GM302irF0"
+    },
+    {
+      "id": "f1_baku_results",
+      "publisher": "Formula 1",
+      "title": "2026 Azerbaijan Grand Prix race result",
+      "url": "https://www.formula1.com/en/racing/2026/azerbaijan"
+    },
+    {
+      "id": "f1_baku_lowdown",
+      "publisher": "Formula 1",
+      "title": "Azerbaijan Lowdown – key moments from Russell's victory",
+      "url": "https://www.formula1.com/en/latest/article/azerbaijan-lowdown-all-the-key-moments-as-russell-takes-victory-and-baku-puts-on-another-show.7l4pAjByompPX9hC6YkB8F"
+    },
+    {
+      "id": "f1_baku_grid",
+      "publisher": "Formula 1",
+      "title": "Official 2026 Azerbaijan Grand Prix grid",
+      "url": "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-in-baku-as-sainz-and-perez-penalised.dcHAVjwaraHEl8LqRwtcd"
+    },
+    {
+      "id": "f1_col_penalty",
+      "publisher": "Formula 1",
+      "title": "Colapinto hit with five-place grid penalty for Bahrain GP in Malaysia",
+      "url": "https://www.formula1.com/en/latest/article/colapinto-hit-with-five-place-grid-penalty-for-bahrain-gp-in-malaysia-after-baku-collision.3gWVfzDMMr5hReiwTt1fPD"
+    },
+    {
+      "id": "f1_baku_upgrades",
+      "publisher": "Formula 1",
+      "title": "McLaren and Williams eye Baku boost as every team's upgrades are revealed",
+      "url": "https://www.formula1.com/en/latest/article/mclaren-and-williams-eye-baku-boost-as-every-teams-upgrades-are-revealed.6jn3A8jrkObKhTxR0djUGr"
+    },
+    {
+      "id": "latentlap_session_store",
+      "publisher": "LatentLap",
+      "title": "Committed Azerbaijan Q/R session store",
+      "url": "store/2026_R15_Q.json + store/2026_R15_R.json"
+    },
+    {
+      "id": "latentlap_upgrade_history",
+      "publisher": "LatentLap",
+      "title": "Canonical upgrade history",
+      "url": "data/upgrade_history.py"
+    }
+  ]
+}
