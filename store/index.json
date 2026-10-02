@@ -340,5 +340,23 @@
     "session_type": "R",
     "n_fingerprints": 21,
     "path": "2026_R14_R.json"
+  },
+  "2026_R15_Q": {
+    "circuit_name": "Azerbaijan",
+    "circuit_type": "power",
+    "race_round": 15,
+    "year": 2026,
+    "session_type": "Q",
+    "n_fingerprints": 22,
+    "path": "2026_R15_Q.json"
+  },
+  "2026_R15_R": {
+    "circuit_name": "Azerbaijan",
+    "circuit_type": "power",
+    "race_round": 15,
+    "year": 2026,
+    "session_type": "R",
+    "n_fingerprints": 22,
+    "path": "2026_R15_R.json"
   }
 }

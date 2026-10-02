@@ -19,71 +19,71 @@ DRIVER ROSTER (code — name — team):
   ANT — Andrea Kimi Antonelli — Mercedes
   RUS — George Russell — Mercedes
   HAD — Isack Hadjar — Red Bull
-  LAW — Liam Lawson — Red Bull
   VER — Max Verstappen — Red Bull
+  LAW — Liam Lawson — VCARB
   LIN — Arvid Lindblad — VCARB
   TSU — Yuki Tsunoda — VCARB
   ALB — Alexander Albon — Williams
   SAI — Carlos Sainz — Williams
 
 CONSTRUCTOR STANDINGS:
-  P1 Mercedes: 503 pts, 10 wins
-  P2 Ferrari: 358 pts, 2 wins
+  P1 Mercedes: 538 pts, 11 wins
+  P2 Ferrari: 378 pts, 2 wins
   P3 McLaren: 306 pts, 2 wins
-  P4 Red Bull: 230 pts, 0 wins
-  P5 RB F1 Team: 77 pts, 0 wins
+  P4 Red Bull: 263 pts, 0 wins
+  P5 RB F1 Team: 83 pts, 0 wins
   P6 Alpine F1 Team: 68 pts, 0 wins
-  P7 Haas F1 Team: 21 pts, 0 wins
+  P7 Haas F1 Team: 27 pts, 0 wins
   P8 Audi: 17 pts, 0 wins
-  P9 Williams: 11 pts, 0 wins
+  P9 Williams: 12 pts, 0 wins
   P10 Aston Martin: 3 pts, 0 wins
   P11 Cadillac F1 Team: 0 pts, 0 wins
 
 DRIVER STANDINGS (top 12):
-  P1 Andrea Kimi Antonelli (Mercedes): 292 pts
-  P2 George Russell (Mercedes): 211 pts
-  P3 Lewis Hamilton (Ferrari): 191 pts
+  P1 Andrea Kimi Antonelli (Mercedes): 302 pts
+  P2 George Russell (Mercedes): 236 pts
+  P3 Lewis Hamilton (Ferrari): 199 pts
   P4 Lando Norris (McLaren): 186 pts
-  P5 Charles Leclerc (Ferrari): 167 pts
-  P6 Max Verstappen (Red Bull): 145 pts
+  P5 Charles Leclerc (Ferrari): 179 pts
+  P6 Max Verstappen (Red Bull): 163 pts
   P7 Oscar Piastri (McLaren): 120 pts
-  P8 Isack Hadjar (Red Bull): 71 pts
+  P8 Isack Hadjar (Red Bull): 86 pts
   P9 Liam Lawson (RB F1 Team): 59 pts
   P10 Pierre Gasly (Alpine F1 Team): 41 pts
-  P11 Arvid Lindblad (RB F1 Team): 31 pts
+  P11 Arvid Lindblad (RB F1 Team): 37 pts
   P12 Franco Colapinto (Alpine F1 Team): 27 pts
 
 GRAND PRIX QUALIFYING PACE (Q only; median % off session-fastest, lower = quicker):
   Mercedes: 0.130%
-  Ferrari: 0.397%
-  McLaren: 0.539%
-  Red Bull: 0.671%
-  VCARB: 1.751%
-  Audi: 1.782%
+  Ferrari: 0.408%
+  McLaren: 0.569%
+  Red Bull: 0.721%
+  Audi: 1.794%
+  VCARB: 1.832%
   Alpine: 2.033%
-  Haas: 2.532%
-  Williams: 2.868%
+  Haas: 2.513%
+  Williams: 2.837%
   Cadillac: 4.324%
   Aston Martin: 4.433%
 
 SEASON H2H ACROSS LINEUP CHANGES (Q + SQ; anchor driver vs all teammates faced):
-  Red Bull: VER vs HAD, LAW — H2H 16-2 over 18 sessions / 13 weekends (R2–R14)
-  VCARB: LIN vs LAW, TSU — H2H 10-8 over 18 sessions / 14 weekends (R1–R14)
+  Red Bull: VER vs HAD, LAW — H2H 16-3 over 19 sessions / 14 weekends (R2–R15)
+  VCARB: LIN vs LAW, TSU — H2H 10-9 over 19 sessions / 15 weekends (R1–R15)
 
 TEAMMATE QUALIFYING HISTORY (every same-team pairing; median gap, head-to-head):
-  Alpine: GAS (Pierre Gasly) ahead of COL (Franco Colapinto) by 0.434s, H2H 13-6 over 19 sessions / 14 weekends
-  Aston Martin: ALO (Fernando Alonso) ahead of STR (Lance Stroll) by 0.225s, H2H 13-3 over 16 sessions / 12 weekends
-  Audi: BOR (Gabriel Bortoleto) ahead of HUL (Nico Hulkenberg) by 0.025s, H2H 10-9 over 19 sessions / 14 weekends
-  Cadillac: PER (Sergio Perez) ahead of BOT (Valtteri Bottas) by 0.105s, H2H 10-8 over 18 sessions / 14 weekends
-  Ferrari: HAM (Lewis Hamilton) ahead of LEC (Charles Leclerc) by 0.006s, H2H 10-9 over 19 sessions / 14 weekends
-  Haas: BEA (Oliver Bearman) ahead of OCO (Esteban Ocon) by 0.262s, H2H 12-6 over 18 sessions / 13 weekends
-  McLaren: NOR (Lando Norris) ahead of PIA (Oscar Piastri) by 0.058s, H2H 14-5 over 19 sessions / 14 weekends
-  Mercedes: ANT (Andrea Kimi Antonelli) ahead of RUS (George Russell) by 0.222s, H2H 10-9 over 19 sessions / 14 weekends
+  Alpine: GAS (Pierre Gasly) ahead of COL (Franco Colapinto) by 0.459s, H2H 14-6 over 20 sessions / 15 weekends
+  Aston Martin: ALO (Fernando Alonso) ahead of STR (Lance Stroll) by 0.274s, H2H 14-3 over 17 sessions / 13 weekends
+  Audi: BOR (Gabriel Bortoleto) ahead of HUL (Nico Hulkenberg) by 0.026s, H2H 11-9 over 20 sessions / 15 weekends
+  Cadillac: PER (Sergio Perez) ahead of BOT (Valtteri Bottas) by 0.124s, H2H 11-8 over 19 sessions / 15 weekends
+  Ferrari: HAM (Lewis Hamilton) ahead of LEC (Charles Leclerc) by 0.002s, H2H 10-10 over 20 sessions / 15 weekends
+  Haas: BEA (Oliver Bearman) ahead of OCO (Esteban Ocon) by 0.241s, H2H 13-6 over 19 sessions / 14 weekends
+  McLaren: NOR (Lando Norris) ahead of PIA (Oscar Piastri) by 0.055s, H2H 14-6 over 20 sessions / 15 weekends
+  Mercedes: ANT (Andrea Kimi Antonelli) ahead of RUS (George Russell) by 0.096s, H2H 10-10 over 20 sessions / 15 weekends
+  Red Bull: VER (Max Verstappen) ahead of HAD (Isack Hadjar) by 0.131s, H2H 12-3 over 15 sessions / 11 weekends
   Red Bull: VER (Max Verstappen) ahead of LAW (Liam Lawson) by 0.552s, H2H 4-0 over 4 sessions / 3 weekends
-  Red Bull: VER (Max Verstappen) ahead of HAD (Isack Hadjar) by 0.134s, H2H 12-2 over 14 sessions / 10 weekends
+  VCARB: LAW (Liam Lawson) ahead of LIN (Arvid Lindblad) by 0.019s, H2H 9-6 over 15 sessions / 12 weekends
   VCARB: LIN (Arvid Lindblad) ahead of TSU (Yuki Tsunoda) by 0.742s, H2H 4-0 over 4 sessions / 3 weekends
-  VCARB: LAW (Liam Lawson) ahead of LIN (Arvid Lindblad) by 0.012s, H2H 8-6 over 14 sessions / 11 weekends
-  Williams: SAI (Carlos Sainz) ahead of ALB (Alexander Albon) by 0.180s, H2H 12-5 over 17 sessions / 13 weekends
+  Williams: SAI (Carlos Sainz) ahead of ALB (Alexander Albon) by 0.218s, H2H 13-5 over 18 sessions / 14 weekends
 
 POWER UNITS AND ADUO UPGRADE STATE:
   Audi (supplies Audi): ADUO upgrade 1 deployed at round 7
@@ -223,3 +223,10 @@ CONFIRMED UPGRADE TIMELINE:
   R14 Mercedes [persistent]: Front-lip flow refinement
   R14 Mercedes [circuit specific]: Madring rear-wing load-range configuration
   R14 Red Bull [reliability]: Rear-wheel bodywork and floor-bib reliability work
+  R15 Audi [persistent]: Fourteen-part aerodynamic package
+  R15 Cadillac [persistent]: Front-corner and diffuser development
+  R15 McLaren [circuit specific]: Baku cooling-louvre configuration
+  R15 McLaren [persistent]: Broad bodywork, floor and rear-aero package
+  R15 Red Bull [persistent]: Floor, sidepod and flow-conditioning development
+  R15 VCARB [persistent]: Front-wing, brake-duct and suspension package
+  R15 Williams [persistent]: Major FW48 Baku development package
