@@ -252,7 +252,7 @@ UPGRADE_HISTORY: list[dict] = [
     # R17 — Singapore
     # FIA Doc 9: Car Presentation Submissions, published 2026-10-09.
 
-    {"team":"Mercedes","round":17,"status":"confirmed","category":"persistent","significance":"minor","affects_prediction":True,
+    {"team":"Mercedes","round":17,"status":"confirmed","category":"persistent","significance":"minor","affects_prediction":False,
      "headline":"Revised front-wing package for Singapore",
      "detail":"Revised chord distribution across the front-wing elements together with updated endplate, footplate and diveplane geometry. Declared performance intent was improved operating-envelope performance and front-tyre wake control. Antonelli ran the new package while Russell reverted to the older Baku-spec car for comparison.",
      "source":"FIA Doc 9 — Car Presentation Submissions, Singapore GP 2026 / F1.com",
@@ -275,6 +275,50 @@ UPGRADE_HISTORY: list[dict] = [
 
     # Ferrari, Williams, VCARB, Aston Martin, Haas, Audi, Alpine and Cadillac:
     # no new components submitted for R17.
+
+    # R18 — United States Grand Prix / Austin (FIA Doc 11, 2026-10-23)
+    # Declared packages are not evidence of achieved lap-time gain.
+    {"team":"McLaren","round":18,"status":"confirmed","category":"persistent","significance":"medium","affects_prediction":True,
+     "headline":"Front/rear-corner and diffuser development",
+     "detail":"Revised front-corner furniture and suspension fairing flow, rear-corner furniture, and diffuser geometry; claimed improved local load and flow conditioning across speed range.",
+     "source":"FIA USA Doc 11 Car Presentation Submissions (2026-10-23); https://app.tracinginsights.com/fia-docs/2026/united-states-grand-prix/car-presentation-submissions"},
+    {"team":"Ferrari","round":18,"status":"confirmed","category":"persistent","significance":"major","affects_prediction":True,
+     "headline":"Major floor, sidepod/coke and diffuser package",
+     "detail":"Floor body and boards, floor leading edge, sidepod inlet/undercut and coke line, diffuser expansion geometry and furniture; declared goal is improved load and stable downstream flow.",
+     "source":"FIA USA Doc 11 Car Presentation Submissions (2026-10-23); https://app.tracinginsights.com/fia-docs/2026/united-states-grand-prix/car-presentation-submissions"},
+    {"team":"VCARB","round":18,"status":"confirmed","category":"persistent","significance":"major","affects_prediction":True,
+     "headline":"Front/rear wing, floor and engine-cover package",
+     "detail":"New front-wing endplate, rear-wing flap elements, multi-area floor body/board/edge and reprofiled engine-cover shoulder/undercut; declared efficient downforce and flow gains.",
+     "source":"FIA USA Doc 11 Car Presentation Submissions (2026-10-23); https://app.tracinginsights.com/fia-docs/2026/united-states-grand-prix/car-presentation-submissions"},
+    {"team":"Audi","round":18,"status":"confirmed","category":"persistent","significance":"medium","affects_prediction":True,
+     "headline":"Front-corner, floor-board and mirror-stay development",
+     "detail":"New front brake duct with associated flow-conditioning and cooling characteristics, revised floor board and mirror-stay geometry.",
+     "source":"FIA USA Doc 11 Car Presentation Submissions (2026-10-23); https://app.tracinginsights.com/fia-docs/2026/united-states-grand-prix/car-presentation-submissions"},
+    {"team":"Alpine","round":18,"status":"confirmed","category":"persistent","significance":"medium","affects_prediction":True,
+     "headline":"Rear floor-corner and rear-wing flap package",
+     "detail":"Redesigned rear floor corner to improve rear-corner interaction and local load plus reprofiled second/third rear-wing flap elements.",
+     "source":"FIA USA Doc 11 Car Presentation Submissions (2026-10-23); https://app.tracinginsights.com/fia-docs/2026/united-states-grand-prix/car-presentation-submissions"},
+    {"team":"Cadillac","round":18,"status":"confirmed","category":"persistent","significance":"minor","affects_prediction":True,
+     "headline":"Forward floor-fence geometry revision",
+     "detail":"Revised floor fences aim to stabilize downstream flow and reduce sensitivity to ride-attitude changes; no isolated gain established.",
+     "source":"FIA USA Doc 11 Car Presentation Submissions (2026-10-23); https://app.tracinginsights.com/fia-docs/2026/united-states-grand-prix/car-presentation-submissions"},
+    {"team":"Cadillac","round":18,"status":"confirmed","category":"circuit_specific","significance":"minor","affects_prediction":False,
+     "headline":"High-cooling sidepod louvre option",
+     "detail":"Additional cooling range from sidepod top-deck louvres; not treated as a durable pace step.",
+     "source":"FIA USA Doc 11 Car Presentation Submissions (2026-10-23)"},
+    {"team":"Red Bull","round":18,"status":"confirmed","category":"circuit_specific","significance":"minor","affects_prediction":False,
+     "headline":"Front-wing footplate tyre-temperature vane for evaluation",
+     "detail":"Optional vane on recently introduced front-wing footplate adds local load and tyre-temperature measurement; evaluation only, persistent race adoption not established.",
+     "source":"FIA USA Doc 11 Car Presentation Submissions (2026-10-23)"},
+    {"team":"Red Bull","round":18,"status":"confirmed","category":"reliability","significance":"minor","affects_prediction":False,
+     "headline":"Front-corner gaiter reliability revision",
+     "detail":"Reprofiled elastomeric gaiter to reduce tearing strain at steering lock; no assumed performance gain.",
+     "source":"FIA USA Doc 11 Car Presentation Submissions (2026-10-23)"},
+    {"team":"Mercedes","round":18,"status":"confirmed","category":"circuit_specific","significance":"minor","affects_prediction":False,
+     "headline":"Both drivers return to latest Sepang-spec package",
+     "detail":"Mercedes declared no NEW Austin components. Russell and Antonelli were confirmed to run the current upgraded car after split-spec Singapore; existing R16 persistent event already carries this weight. R17 front-wing was a Singapore practice trial, not a Singapore race upgrade; no extra weight assigned here.",
+     "source":"Mercedes USGP preview / Sky Sports 2026-10-21; https://www.skysports.com/f1/news/13601825/mercedes-confirm-kimi-antonelli-george-russell-to-both-run-latest-car-upgrades-at-united-states-gp"},
+    # Williams, Aston Martin, Haas: no new components declared in R18.
 ]
 
 

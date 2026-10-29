@@ -1,0 +1,134 @@
+[
+  {
+    "driver": "ANT",
+    "pos": 1,
+    "gap_s": 0.0,
+    "status": ""
+  },
+  {
+    "driver": "VER",
+    "pos": 2,
+    "gap_s": 0.17900000000000205,
+    "status": ""
+  },
+  {
+    "driver": "HAD",
+    "pos": 3,
+    "gap_s": 0.2150000000000034,
+    "status": ""
+  },
+  {
+    "driver": "LEC",
+    "pos": 4,
+    "gap_s": 0.1629999999999967,
+    "status": ""
+  },
+  {
+    "driver": "HAM",
+    "pos": 5,
+    "gap_s": 0.27600000000001046,
+    "status": ""
+  },
+  {
+    "driver": "RUS",
+    "pos": 6,
+    "gap_s": 0.27000000000001023,
+    "status": ""
+  },
+  {
+    "driver": "PIA",
+    "pos": 7,
+    "gap_s": 0.7680000000000007,
+    "status": ""
+  },
+  {
+    "driver": "NOR",
+    "pos": 8,
+    "gap_s": 0.5040000000000049,
+    "status": ""
+  },
+  {
+    "driver": "LIN",
+    "pos": 9,
+    "gap_s": 0.9150000000000063,
+    "status": ""
+  },
+  {
+    "driver": "LAW",
+    "pos": 10,
+    "gap_s": 1.0230000000000103,
+    "status": ""
+  },
+  {
+    "driver": "GAS",
+    "pos": 11,
+    "gap_s": 1.0450000000000017,
+    "status": ""
+  },
+  {
+    "driver": "HUL",
+    "pos": 12,
+    "gap_s": 1.1230000000000047,
+    "status": ""
+  },
+  {
+    "driver": "BOR",
+    "pos": 13,
+    "gap_s": 1.5970000000000084,
+    "status": ""
+  },
+  {
+    "driver": "COL",
+    "pos": 14,
+    "gap_s": 1.6869999999999976,
+    "status": ""
+  },
+  {
+    "driver": "ALO",
+    "pos": 15,
+    "gap_s": 1.7830000000000013,
+    "status": ""
+  },
+  {
+    "driver": "BEA",
+    "pos": 16,
+    "gap_s": 1.9960000000000093,
+    "status": ""
+  },
+  {
+    "driver": "OCO",
+    "pos": 17,
+    "gap_s": 2.4960000000000093,
+    "status": ""
+  },
+  {
+    "driver": "STR",
+    "pos": 18,
+    "gap_s": 2.64200000000001,
+    "status": ""
+  },
+  {
+    "driver": "SAI",
+    "pos": 19,
+    "gap_s": 2.7349999999999994,
+    "status": ""
+  },
+  {
+    "driver": "ALB",
+    "pos": 20,
+    "gap_s": 2.932000000000002,
+    "status": ""
+  },
+  {
+    "driver": "PER",
+    "pos": 21,
+    "gap_s": 3.3980000000000103,
+    "status": ""
+  },
+  {
+    "driver": "BOT",
+    "pos": 22,
+    "gap_s": 3.4879999999999995,
+    "status": ""
+  }
+]

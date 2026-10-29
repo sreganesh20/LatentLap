@@ -255,5 +255,23 @@
       "Mercedes",
       "upgrades"
     ]
+  },
+  {
+    "round": 18,
+    "circuit": "USA",
+    "date": "2026-10-25",
+    "headline": "Antonelli converts COTA pole into one-stop victory as Ferrari charges",
+    "body": "Kimi Antonelli converted his 1:34.035 Austin pole into a controlled 56-lap victory, 13.078s ahead of Charles Leclerc and 17.485s clear of Max Verstappen. Mercedes made a one-stop medium-to-hard strategy work while Ferrari used a two-stop approach; Leclerc passed Norris and Verstappen late for P2, and Hamilton climbed to P4. Russell served a five-second race penalty, and Bottas, Colapinto and Bearman retired. Ferrari and six other teams declared upgrades. LatentLap's retrospectively generated race forecast identified all ten points finishers and produced 1.8-place classification MAE (1.2 among 19 finishers); this is a backtest, not a live pre-race forecast.",
+    "tags": [
+      "USA",
+      "Austin",
+      "Antonelli",
+      "Mercedes",
+      "Ferrari",
+      "Leclerc",
+      "strategy",
+      "upgrades",
+      "backtest"
+    ]
   }
 ]

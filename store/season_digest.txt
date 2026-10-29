@@ -55,35 +55,35 @@ DRIVER STANDINGS (top 12):
 
 GRAND PRIX QUALIFYING PACE (Q only; median % off session-fastest, lower = quicker):
   Mercedes: 0.197%
-  Ferrari: 0.397%
+  Ferrari: 0.395%
   McLaren: 0.569%
-  Red Bull: 0.655%
-  Audi: 1.794%
-  VCARB: 1.832%
-  Alpine: 2.033%
+  Red Bull: 0.593%
+  VCARB: 1.751%
+  Audi: 1.782%
+  Alpine: 1.985%
   Haas: 2.513%
-  Williams: 2.837%
-  Cadillac: 4.203%
-  Aston Martin: 4.313%
+  Williams: 2.868%
+  Cadillac: 4.113%
+  Aston Martin: 4.236%
 
 SEASON H2H ACROSS LINEUP CHANGES (Q + SQ; anchor driver vs all teammates faced):
-  Red Bull: VER vs HAD, LAW — H2H 18-3 over 21 sessions / 16 weekends (R2–R17)
-  VCARB: LIN vs LAW, TSU — H2H 10-12 over 22 sessions / 17 weekends (R1–R17)
+  Red Bull: VER vs HAD, LAW — H2H 19-3 over 22 sessions / 17 weekends (R2–R18)
+  VCARB: LIN vs LAW, TSU — H2H 11-12 over 23 sessions / 18 weekends (R1–R18)
 
 TEAMMATE QUALIFYING HISTORY (every same-team pairing; median gap, head-to-head):
-  Alpine: GAS (Pierre Gasly) ahead of COL (Franco Colapinto) by 0.484s, H2H 17-6 over 23 sessions / 17 weekends
-  Aston Martin: ALO (Fernando Alonso) ahead of STR (Lance Stroll) by 0.384s, H2H 17-3 over 20 sessions / 15 weekends
-  Audi: BOR (Gabriel Bortoleto) ahead of HUL (Nico Hulkenberg) by 0.025s, H2H 12-11 over 23 sessions / 17 weekends
-  Cadillac: PER (Sergio Perez) ahead of BOT (Valtteri Bottas) by 0.105s, H2H 12-10 over 22 sessions / 17 weekends
-  Ferrari: LEC (Charles Leclerc) ahead of HAM (Lewis Hamilton) by 0.002s, H2H 12-11 over 23 sessions / 17 weekends
-  Haas: BEA (Oliver Bearman) ahead of OCO (Esteban Ocon) by 0.273s, H2H 16-6 over 22 sessions / 16 weekends
-  McLaren: NOR (Lando Norris) ahead of PIA (Oscar Piastri) by 0.052s, H2H 16-7 over 23 sessions / 17 weekends
-  Mercedes: ANT (Andrea Kimi Antonelli) ahead of RUS (George Russell) by 0.185s, H2H 12-11 over 23 sessions / 17 weekends
-  Red Bull: VER (Max Verstappen) ahead of HAD (Isack Hadjar) by 0.138s, H2H 14-3 over 17 sessions / 13 weekends
+  Alpine: GAS (Pierre Gasly) ahead of COL (Franco Colapinto) by 0.492s, H2H 18-6 over 24 sessions / 18 weekends
+  Aston Martin: ALO (Fernando Alonso) ahead of STR (Lance Stroll) by 0.421s, H2H 18-3 over 21 sessions / 16 weekends
+  Audi: HUL (Nico Hulkenberg) ahead of BOR (Gabriel Bortoleto) by 0.003s, H2H 12-12 over 24 sessions / 18 weekends
+  Cadillac: PER (Sergio Perez) ahead of BOT (Valtteri Bottas) by 0.090s, H2H 13-10 over 23 sessions / 18 weekends
+  Ferrari: LEC (Charles Leclerc) ahead of HAM (Lewis Hamilton) by 0.004s, H2H 13-11 over 24 sessions / 18 weekends
+  Haas: BEA (Oliver Bearman) ahead of OCO (Esteban Ocon) by 0.294s, H2H 17-6 over 23 sessions / 17 weekends
+  McLaren: NOR (Lando Norris) ahead of PIA (Oscar Piastri) by 0.055s, H2H 17-7 over 24 sessions / 18 weekends
+  Mercedes: ANT (Andrea Kimi Antonelli) ahead of RUS (George Russell) by 0.204s, H2H 13-11 over 24 sessions / 18 weekends
+  Red Bull: VER (Max Verstappen) ahead of HAD (Isack Hadjar) by 0.134s, H2H 15-3 over 18 sessions / 14 weekends
   Red Bull: VER (Max Verstappen) ahead of LAW (Liam Lawson) by 0.552s, H2H 4-0 over 4 sessions / 3 weekends
-  VCARB: LAW (Liam Lawson) ahead of LIN (Arvid Lindblad) by 0.116s, H2H 12-6 over 18 sessions / 14 weekends
+  VCARB: LAW (Liam Lawson) ahead of LIN (Arvid Lindblad) by 0.052s, H2H 12-7 over 19 sessions / 15 weekends
   VCARB: LIN (Arvid Lindblad) ahead of TSU (Yuki Tsunoda) by 0.742s, H2H 4-0 over 4 sessions / 3 weekends
-  Williams: SAI (Carlos Sainz) ahead of ALB (Alexander Albon) by 0.257s, H2H 15-6 over 21 sessions / 16 weekends
+  Williams: SAI (Carlos Sainz) ahead of ALB (Alexander Albon) by 0.227s, H2H 16-6 over 22 sessions / 17 weekends
 
 POWER UNITS AND ADUO UPGRADE STATE:
   Audi (supplies Audi): ADUO upgrade 1 deployed at round 7
@@ -242,3 +242,13 @@ CONFIRMED UPGRADE TIMELINE:
   R17 Mercedes [persistent]: Revised front-wing package for Singapore
   R17 Red Bull [persistent]: Front-wing endplate and flap development
   R17 Red Bull [circuit specific]: Singapore rear-wheel cooling outlet
+  R18 Alpine [persistent]: Rear floor-corner and rear-wing flap package
+  R18 Audi [persistent]: Front-corner, floor-board and mirror-stay development
+  R18 Cadillac [persistent]: Forward floor-fence geometry revision
+  R18 Cadillac [circuit specific]: High-cooling sidepod louvre option
+  R18 Ferrari [persistent]: Major floor, sidepod/coke and diffuser package
+  R18 McLaren [persistent]: Front/rear-corner and diffuser development
+  R18 Mercedes [circuit specific]: Both drivers return to latest Sepang-spec package
+  R18 Red Bull [reliability]: Front-corner gaiter reliability revision
+  R18 Red Bull [circuit specific]: Front-wing footplate tyre-temperature vane for evaluation
+  R18 VCARB [persistent]: Front/rear wing, floor and engine-cover package

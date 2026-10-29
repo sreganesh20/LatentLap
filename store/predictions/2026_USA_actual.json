@@ -1,0 +1,156 @@
+[
+  {
+    "driver": "ANT",
+    "pos": 1,
+    "gap_s": 0.0,
+    "laps_down": 0,
+    "status": "Finished"
+  },
+  {
+    "driver": "LEC",
+    "pos": 2,
+    "gap_s": 13.078,
+    "laps_down": 0,
+    "status": "Finished"
+  },
+  {
+    "driver": "VER",
+    "pos": 3,
+    "gap_s": 17.485,
+    "laps_down": 0,
+    "status": "Finished"
+  },
+  {
+    "driver": "HAM",
+    "pos": 4,
+    "gap_s": 18.515,
+    "laps_down": 0,
+    "status": "Finished"
+  },
+  {
+    "driver": "NOR",
+    "pos": 5,
+    "gap_s": 30.521,
+    "laps_down": 0,
+    "status": "Finished"
+  },
+  {
+    "driver": "HAD",
+    "pos": 6,
+    "gap_s": 34.373,
+    "laps_down": 0,
+    "status": "Finished"
+  },
+  {
+    "driver": "PIA",
+    "pos": 7,
+    "gap_s": 52.674,
+    "laps_down": 0,
+    "status": "Finished"
+  },
+  {
+    "driver": "RUS",
+    "pos": 8,
+    "gap_s": 54.303,
+    "laps_down": 0,
+    "status": "Finished"
+  },
+  {
+    "driver": "LAW",
+    "pos": 9,
+    "gap_s": 79.183,
+    "laps_down": 0,
+    "status": "Finished"
+  },
+  {
+    "driver": "GAS",
+    "pos": 10,
+    "gap_s": 87.516,
+    "laps_down": 0,
+    "status": "Finished"
+  },
+  {
+    "driver": "HUL",
+    "pos": 11,
+    "gap_s": 94.945,
+    "laps_down": 0,
+    "status": "Finished"
+  },
+  {
+    "driver": "LIN",
+    "pos": 12,
+    "gap_s": null,
+    "laps_down": 1,
+    "status": "Lapped"
+  },
+  {
+    "driver": "BOR",
+    "pos": 13,
+    "gap_s": null,
+    "laps_down": 1,
+    "status": "Lapped"
+  },
+  {
+    "driver": "OCO",
+    "pos": 14,
+    "gap_s": null,
+    "laps_down": 1,
+    "status": "Lapped"
+  },
+  {
+    "driver": "STR",
+    "pos": 15,
+    "gap_s": null,
+    "laps_down": 1,
+    "status": "Lapped"
+  },
+  {
+    "driver": "ALO",
+    "pos": 16,
+    "gap_s": null,
+    "laps_down": 1,
+    "status": "Lapped"
+  },
+  {
+    "driver": "ALB",
+    "pos": 17,
+    "gap_s": null,
+    "laps_down": 1,
+    "status": "Lapped"
+  },
+  {
+    "driver": "SAI",
+    "pos": 18,
+    "gap_s": null,
+    "laps_down": 1,
+    "status": "Lapped"
+  },
+  {
+    "driver": "PER",
+    "pos": 19,
+    "gap_s": null,
+    "laps_down": 1,
+    "status": "Lapped"
+  },
+  {
+    "driver": "BOT",
+    "pos": 20,
+    "gap_s": null,
+    "laps_down": 8,
+    "status": "Retired"
+  },
+  {
+    "driver": "COL",
+    "pos": 21,
+    "gap_s": null,
+    "laps_down": 21,
+    "status": "Retired"
+  },
+  {
+    "driver": "BEA",
+    "pos": 22,
+    "gap_s": null,
+    "laps_down": 32,
+    "status": "Retired"
+  }
+]

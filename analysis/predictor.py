@@ -237,6 +237,7 @@ def _predict_for_sessions(
     target_lineup = lineup_for_round(target_round)
 
     historical = load_all_fingerprints(year, sessions=sessions, prediction_eligible_only=True)
+    historical = [rf for rf in historical if rf.race_round < target_round]
     if not historical:
         return None
 

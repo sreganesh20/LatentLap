@@ -1,0 +1,550 @@
+{
+  "review_status": "approved",
+  "metadata": {
+    "year": 2026,
+    "round": 18,
+    "circuit": "USA",
+    "venue": "Circuit of The Americas, Austin",
+    "date_range": "2026-10-23 to 2026-10-25",
+    "weekend_type": "standard",
+    "sessions_available": [
+      "Q",
+      "R"
+    ]
+  },
+  "weekend_summary": "Andrea Kimi Antonelli took pole (1:34.035) and converted it to a commanding 56-lap US Grand Prix victory, 13.078s ahead of Charles Leclerc, with Max Verstappen third. Mercedes executed a one-stop medium-to-hard strategy; Ferrari and several rivals used two stops. The final order was affected by a Russell time penalty, grid penalties and three retirements. LatentLap's retrospectively generated race forecast ranked the entire points-paying top 10 correctly and had 1.8-place overall classification MAE. This is retrospective diagnostic agreement, not a real-time pre-race forecast.",
+  "sessions": {
+    "Q": {
+      "summary": "Antonelli secured pole in 1:34.035, Verstappen P2 (+0.179s), Hadjar P3, Leclerc P4 and Hamilton P5. Russell was P6; Norris' fastest Q3 lap was deleted for track limits.",
+      "key_moments": [
+        {
+          "text": "Antonelli set a 1:34.035 pole lap, 0.179s clear of Verstappen.",
+          "source_refs": [
+            "f1_austin_quali"
+          ]
+        },
+        {
+          "text": "Hadjar qualified third; Russell sixth, and Norris had a lap deleted for track limits.",
+          "source_refs": [
+            "f1_austin_quali"
+          ]
+        }
+      ]
+    },
+    "R": {
+      "summary": "Antonelli won by 13.078s on a one-stop strategy. Leclerc charged to P2 after a late stop, passing Verstappen; Hamilton finished fourth and Norris fifth. Bottas, Colapinto and Bearman retired.",
+      "key_moments": [
+        {
+          "text": "Antonelli completed 56 laps and led Leclerc by 13.078s at the finish.",
+          "source_refs": [
+            "fia_austin_race"
+          ]
+        },
+        {
+          "text": "Leclerc passed Norris and Verstappen late to take second, while Hamilton took fourth.",
+          "source_refs": [
+            "f1_austin_race"
+          ]
+        },
+        {
+          "text": "Bottas' late stop on track triggered a Virtual Safety Car.",
+          "source_refs": [
+            "f1_austin_race"
+          ]
+        },
+        {
+          "text": "Russell served a five-second penalty for leaving the track and gaining an advantage.",
+          "source_refs": [
+            "f1_austin_race"
+          ]
+        }
+      ]
+    }
+  },
+  "performance_snapshot": {
+    "source": "committed_session_store",
+    "status": "hydrate at query time from committed LatentLap session data"
+  },
+  "driver_insights": {
+    "ANT": {
+      "name": "Andrea Kimi Antonelli",
+      "team": "Mercedes",
+      "summary": "Pole, dominant one-stop win and an exact P1 retrospective pace forecast.",
+      "details": [
+        {
+          "text": "Race result supports a strong Austin performance; the theoretical ERS model does not reveal actual battery state.",
+          "source_refs": [
+            "fia_austin_race",
+            "latentlap_prediction_files"
+          ]
+        }
+      ]
+    },
+    "LEC": {
+      "name": "Charles Leclerc",
+      "team": "Ferrari",
+      "summary": "Qualified fourth and advanced to second after a strong two-stop race and late overtakes.",
+      "details": [
+        {
+          "text": "A new floor/bodywork package was declared, but the race cannot isolate its causal lap-time gain.",
+          "source_refs": [
+            "f1_austin_race",
+            "fia_austin_upgrades"
+          ]
+        }
+      ]
+    },
+    "VER": {
+      "name": "Max Verstappen",
+      "team": "Red Bull",
+      "summary": "Started second and finished third; experienced drivability and engine-braking concerns.",
+      "details": [
+        {
+          "text": "P3 matched the retrospective race forecast, but race execution and technical issues affected the order.",
+          "source_refs": [
+            "f1_austin_race",
+            "latentlap_prediction_files"
+          ]
+        }
+      ]
+    },
+    "RUS": {
+      "name": "George Russell",
+      "team": "Mercedes",
+      "summary": "Finished eighth after a five-second penalty, despite the same overall upgraded-car configuration as Antonelli.",
+      "details": [
+        {
+          "text": "Russell's P8 classification is not a clean measurement of Mercedes peak pace.",
+          "source_refs": [
+            "f1_austin_race"
+          ]
+        }
+      ]
+    },
+    "NOR": {
+      "name": "Lando Norris",
+      "team": "McLaren",
+      "summary": "A late strategic gamble and worn tyres cost Norris positions; finished fifth.",
+      "details": [
+        {
+          "text": "He was passed late by Verstappen, Leclerc and Hamilton; finish position combines race management and pace.",
+          "source_refs": [
+            "f1_austin_race"
+          ]
+        }
+      ]
+    }
+  },
+  "team_insights": {
+    "Mercedes": {
+      "summary": "Antonelli won on a successful one-stop; Russell finished eighth after an incident penalty.",
+      "details": [
+        {
+          "text": "The race does not support applying Antonelli's whole performance improvement as a causal upgrade gain.",
+          "source_refs": [
+            "fia_austin_race"
+          ]
+        }
+      ]
+    },
+    "Ferrari": {
+      "summary": "Leclerc finished second and Hamilton fourth after two-stop races, coinciding with a declared broad aero package.",
+      "details": [
+        {
+          "text": "Upgrade presence and result correlation are not enough to estimate causal upgrade benefit.",
+          "source_refs": [
+            "fia_austin_upgrades",
+            "f1_austin_race"
+          ]
+        }
+      ]
+    },
+    "Red Bull": {
+      "summary": "Verstappen finished third, Hadjar sixth, with race drivability/mapping issues.",
+      "details": [
+        {
+          "text": "The declared Red Bull front-wing vane was evaluation-focused; avoid assuming a known performance step.",
+          "source_refs": [
+            "racer_austin_upgrades",
+            "f1_austin_race"
+          ]
+        }
+      ]
+    },
+    "McLaren": {
+      "summary": "Norris P5 and Piastri P7; late tyre management shaped finishing order.",
+      "details": [
+        {
+          "text": "New front/rear corner and diffuser changes were declared; no isolated gain is established.",
+          "source_refs": [
+            "racer_austin_upgrades"
+          ]
+        }
+      ]
+    }
+  },
+  "strategy_and_conditions": [
+    {
+      "text": "The Grand Prix was run in dry conditions; the R18 race representative pace can be part of normal dry-race history if the local pipeline quality checks passed.",
+      "source_refs": [
+        "fia_austin_race",
+        "latentlap_session_store"
+      ]
+    },
+    {
+      "text": "Antonelli completed a one-stop medium-to-hard race; Leclerc and several rivals used two stops.",
+      "source_refs": [
+        "f1_austin_race"
+      ]
+    },
+    {
+      "text": "Two Virtual Safety Car periods occurred, including a late one triggered by Bottas' retirement.",
+      "source_refs": [
+        "fia_austin_race"
+      ]
+    },
+    {
+      "text": "The official starting grid included penalties for Lindblad, Colapinto, Bortoleto and a pit-lane start for Stroll.",
+      "source_refs": [
+        "f1_austin_grid"
+      ]
+    },
+    {
+      "text": "Russell's five-second time penalty was imposed during the race rather than before it; do not treat it as a grid penalty.",
+      "source_refs": [
+        "f1_austin_race"
+      ]
+    }
+  ],
+  "performance_interpretation": [
+    {
+      "text": "Antonelli's qualifying pole and race win are independent evidence of strong competitive performance at COTA, but cannot identify true ERS usage.",
+      "source_refs": [
+        "f1_austin_quali",
+        "fia_austin_race"
+      ],
+      "drivers": [
+        "ANT"
+      ],
+      "teams": [
+        "Mercedes"
+      ]
+    },
+    {
+      "text": "The retrospective forecast matched all ten points finishers as a set. Preserve it as a backtest result, not contemporaneous pre-race model validation.",
+      "source_refs": [
+        "latentlap_prediction_files"
+      ],
+      "drivers": [],
+      "teams": []
+    },
+    {
+      "text": "Rain-excluded Malaysia R/Singapore S sessions were not supposed to contribute to this dry-race forecast; inspect local prediction history for leakage if auditing reproducibility.",
+      "source_refs": [
+        "latentlap_session_store"
+      ],
+      "drivers": [],
+      "teams": []
+    }
+  ],
+  "upgrades_and_technical_context": [
+    {
+      "team": "McLaren",
+      "category": "persistent",
+      "significance": "medium",
+      "text": "Front/rear-corner and diffuser development: Revised front-corner furniture and suspension fairing flow, rear-corner furniture, and diffuser geometry; claimed improved local load and flow conditioning across speed range.",
+      "reported_intent": "Revised front-corner furniture and suspension fairing flow, rear-corner furniture, and diffuser geometry; claimed improved local load and flow conditioning across speed range.",
+      "reported_effect": null,
+      "source_refs": [
+        "fia_austin_upgrades",
+        "racer_austin_upgrades"
+      ]
+    },
+    {
+      "team": "Ferrari",
+      "category": "persistent",
+      "significance": "major",
+      "text": "Major floor, sidepod/coke and diffuser package: Floor body and boards, floor leading edge, sidepod inlet/undercut and coke line, diffuser expansion geometry and furniture; declared goal is improved load and stable downstream flow.",
+      "reported_intent": "Floor body and boards, floor leading edge, sidepod inlet/undercut and coke line, diffuser expansion geometry and furniture; declared goal is improved load and stable downstream flow.",
+      "reported_effect": null,
+      "source_refs": [
+        "fia_austin_upgrades",
+        "racer_austin_upgrades"
+      ]
+    },
+    {
+      "team": "VCARB",
+      "category": "persistent",
+      "significance": "major",
+      "text": "Front/rear wing, floor and engine-cover package: New front-wing endplate, rear-wing flap elements, multi-area floor body/board/edge and reprofiled engine-cover shoulder/undercut; declared efficient downforce and flow gains.",
+      "reported_intent": "New front-wing endplate, rear-wing flap elements, multi-area floor body/board/edge and reprofiled engine-cover shoulder/undercut; declared efficient downforce and flow gains.",
+      "reported_effect": null,
+      "source_refs": [
+        "fia_austin_upgrades",
+        "racer_austin_upgrades"
+      ]
+    },
+    {
+      "team": "Audi",
+      "category": "persistent",
+      "significance": "medium",
+      "text": "Front-corner, floor-board and mirror-stay development: New front brake duct with associated flow-conditioning and cooling characteristics, revised floor board and mirror-stay geometry.",
+      "reported_intent": "New front brake duct with associated flow-conditioning and cooling characteristics, revised floor board and mirror-stay geometry.",
+      "reported_effect": null,
+      "source_refs": [
+        "fia_austin_upgrades",
+        "racer_austin_upgrades"
+      ]
+    },
+    {
+      "team": "Alpine",
+      "category": "persistent",
+      "significance": "medium",
+      "text": "Rear floor-corner and rear-wing flap package: Redesigned rear floor corner to improve rear-corner interaction and local load plus reprofiled second/third rear-wing flap elements.",
+      "reported_intent": "Redesigned rear floor corner to improve rear-corner interaction and local load plus reprofiled second/third rear-wing flap elements.",
+      "reported_effect": null,
+      "source_refs": [
+        "fia_austin_upgrades",
+        "racer_austin_upgrades"
+      ]
+    },
+    {
+      "team": "Cadillac",
+      "category": "persistent",
+      "significance": "minor",
+      "text": "Forward floor-fence geometry revision: Revised floor fences aim to stabilize downstream flow and reduce sensitivity to ride-attitude changes; no isolated gain established.",
+      "reported_intent": "Revised floor fences aim to stabilize downstream flow and reduce sensitivity to ride-attitude changes; no isolated gain established.",
+      "reported_effect": null,
+      "source_refs": [
+        "fia_austin_upgrades",
+        "racer_austin_upgrades"
+      ]
+    },
+    {
+      "team": "Cadillac",
+      "category": "circuit_specific",
+      "significance": "minor",
+      "text": "High-cooling sidepod louvre option: Additional cooling range from sidepod top-deck louvres; not treated as a durable pace step.",
+      "reported_intent": "Additional cooling range from sidepod top-deck louvres; not treated as a durable pace step.",
+      "reported_effect": null,
+      "source_refs": [
+        "fia_austin_upgrades",
+        "racer_austin_upgrades"
+      ]
+    },
+    {
+      "team": "Red Bull",
+      "category": "circuit_specific",
+      "significance": "minor",
+      "text": "Front-wing footplate tyre-temperature vane for evaluation: Optional vane on recently introduced front-wing footplate adds local load and tyre-temperature measurement; evaluation only, persistent race adoption not established.",
+      "reported_intent": "Optional vane on recently introduced front-wing footplate adds local load and tyre-temperature measurement; evaluation only, persistent race adoption not established.",
+      "reported_effect": null,
+      "source_refs": [
+        "fia_austin_upgrades",
+        "racer_austin_upgrades"
+      ]
+    },
+    {
+      "team": "Red Bull",
+      "category": "reliability",
+      "significance": "minor",
+      "text": "Front-corner gaiter reliability revision: Reprofiled elastomeric gaiter to reduce tearing strain at steering lock; no assumed performance gain.",
+      "reported_intent": "Reprofiled elastomeric gaiter to reduce tearing strain at steering lock; no assumed performance gain.",
+      "reported_effect": null,
+      "source_refs": [
+        "fia_austin_upgrades",
+        "racer_austin_upgrades"
+      ]
+    },
+    {
+      "team": "Mercedes",
+      "category": "circuit_specific",
+      "significance": "minor",
+      "text": "Both drivers return to latest Sepang-spec package: Mercedes declared no NEW Austin components. Russell and Antonelli were confirmed to run the current upgraded car after split-spec Singapore; existing R16 persistent event already carries this weight. R17 front-wing was a Singapore practice trial, not a Singapore race upgrade; no extra weight assigned here.",
+      "reported_intent": "Mercedes declared no NEW Austin components. Russell and Antonelli were confirmed to run the current upgraded car after split-spec Singapore; existing R16 persistent event already carries this weight. R17 front-wing was a Singapore practice trial, not a Singapore race upgrade; no extra weight assigned here.",
+      "reported_effect": null,
+      "source_refs": [
+        "fia_austin_upgrades",
+        "racer_austin_upgrades"
+      ]
+    }
+  ],
+  "prediction_review": {
+    "status": "available",
+    "prediction_references": [
+      "store/predictions/2026_USA_quali_prediction.json",
+      "store/predictions/2026_USA_race_prediction.json"
+    ],
+    "overall_assessment": "Retrospective race ranking matched all ten points finishers as a set and recorded 1.8-place classification MAE (1.2 excluding three retirements). Qualifying position MAE was 2.0. These are post-event diagnostics, not a live-timestamped pre-race prediction.",
+    "successes": [
+      {
+        "text": "Antonelli predicted P1 for the Grand Prix and won, converting pole to victory with a one-stop strategy.",
+        "source_refs": [
+          "latentlap_prediction_files",
+          "f1_austin_race"
+        ]
+      },
+      {
+        "text": "Leclerc and Verstappen finished P2 and P3 exactly as the saved race forecast ranked them.",
+        "source_refs": [
+          "latentlap_prediction_files",
+          "fia_austin_race"
+        ]
+      },
+      {
+        "text": "All ten points finishers were identified by the race forecast: True; 8 of 22 classified places matched exactly.",
+        "source_refs": [
+          "latentlap_prediction_files"
+        ]
+      }
+    ],
+    "misses": [
+      {
+        "text": "Colapinto's retirement increased his position error to +9 places; a retirement is not a clean pace observation.",
+        "source_refs": [
+          "f1_austin_race",
+          "latentlap_prediction_files"
+        ]
+      },
+      {
+        "text": "Bearman and Bottas also retired; all three retirements distort race position errors.",
+        "source_refs": [
+          "fia_austin_race",
+          "latentlap_prediction_files"
+        ]
+      },
+      {
+        "text": "Russell received a five-second race penalty for leaving the track and gaining an advantage, separate from pre-race grid penalties.",
+        "source_refs": [
+          "f1_austin_race"
+        ]
+      }
+    ],
+    "known_exceptions": [
+      {
+        "text": "The saved R18 forecasts were generated retrospectively after the weekend, but before local R18 results ingestion; do not label them a live pre-race prediction.",
+        "source_refs": []
+      },
+      {
+        "text": "The comparison uses classified finishing order, not a measured steady-state dry pace reference or true ERS power trace.",
+        "source_refs": []
+      },
+      {
+        "text": "Grid and race penalties explain classification differences but do not reorder modelled pace outputs.",
+        "source_refs": []
+      }
+    ],
+    "metrics": {
+      "qualifying_mae_places": 2,
+      "qualifying_mean_abs_gap_error_s": 0.2965,
+      "qualifying_inside_range": "18/22",
+      "race_mae_places": 1.8,
+      "race_mae_finishers_only_places": 1.2,
+      "race_finishers": 19,
+      "race_fastf1_retired_status_count": 3,
+      "race_top_ten_membership_correct": true,
+      "race_exact_positions": 8
+    }
+  },
+  "knowledge_limits": [
+    {
+      "text": "Formula 1 actual ERS harvest and battery state are not public; LatentLap ERS values are inferred/theoretical.",
+      "source_refs": []
+    },
+    {
+      "text": "Single-session pace differences confound fuel, tyre age, traffic, strategy and track state.",
+      "source_refs": []
+    },
+    {
+      "text": "Declared upgrades do not prove their isolated effectiveness.",
+      "source_refs": []
+    },
+    {
+      "text": "R18 forecast is retrospective; do not use its classification MAE to claim prospective out-of-sample performance.",
+      "source_refs": []
+    }
+  ],
+  "entities": {
+    "drivers": [
+      "ANT",
+      "LEC",
+      "VER",
+      "RUS",
+      "NOR",
+      "COL",
+      "BEA",
+      "BOT"
+    ],
+    "teams": [
+      "Mercedes",
+      "Ferrari",
+      "Red Bull",
+      "McLaren",
+      "VCARB",
+      "Audi",
+      "Alpine",
+      "Cadillac"
+    ],
+    "topics": [
+      "Austin",
+      "qualifying",
+      "race",
+      "one-stop",
+      "two-stop",
+      "grid penalties",
+      "upgrades",
+      "prediction review",
+      "retrospective forecast"
+    ]
+  },
+  "sources": [
+    {
+      "id": "f1_austin_quali",
+      "publisher": "Formula 1",
+      "title": "Antonelli seizes pole at the United States Grand Prix",
+      "url": "https://www.formula1.com/en/latest/article/antonelli-seizes-pole-position-ahead-of-verstappen-in-qualifying-at-the-united-states-gp.4xdH4w09GhNDOJdknowRAk"
+    },
+    {
+      "id": "f1_austin_race",
+      "publisher": "Formula 1",
+      "title": "Antonelli surges to dominant victory ahead of Leclerc and Verstappen",
+      "url": "https://www.formula1.com/en/latest/article/antonelli-surges-to-dominant-victory-in-united-states-grand-prix-ahead-of-leclerc-and-verstappen.6kmBQv9FNTW7LzkDj8S34j"
+    },
+    {
+      "id": "fia_austin_race",
+      "publisher": "FIA",
+      "title": "Antonelli takes controlled COTA win",
+      "url": "https://api.fia.com/news/f1-antonelli-takes-controlled-cota-win-ahead-leclerc-and-verstappen-close-f1-drivers-title"
+    },
+    {
+      "id": "f1_austin_grid",
+      "publisher": "Formula 1",
+      "title": "Official 2026 United States Grand Prix grid",
+      "url": "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-for-the-2026-united-states-grand-prix.3eD3xBDo1wI0V0VIWo2wMY"
+    },
+    {
+      "id": "fia_austin_upgrades",
+      "publisher": "FIA",
+      "title": "United States Grand Prix 2026 FIA car presentation submissions, Doc 11",
+      "url": "https://www.fia.com/documents/championships/fia-formula-one-world-championship-14/season/season-2026-2072/event/United%20States%20Grand%20Prix"
+    },
+    {
+      "id": "racer_austin_upgrades",
+      "publisher": "RACER",
+      "title": "Technical updates: 2026 U.S. Grand Prix",
+      "url": "https://racer.com/2026/10/23/technical-updates-2026-u-s-grand-prix"
+    },
+    {
+      "id": "latentlap_session_store",
+      "publisher": "LatentLap",
+      "title": "Committed Austin R18 Q/R session store",
+      "url": "store/2026_R18_Q.json + store/2026_R18_R.json"
+    },
+    {
+      "id": "latentlap_prediction_files",
+      "publisher": "LatentLap",
+      "title": "Saved Austin Q/R prediction and classification artifacts",
+      "url": "store/predictions/2026_USA_quali_prediction.json + store/predictions/2026_USA_race_prediction.json"
+    }
+  ]
+}

@@ -430,5 +430,29 @@
     "prediction_eligible": false,
     "pace_context": "wet",
     "prediction_exclusion_reason": "Singapore Sprint was wet; intermediate-tyre pace is not comparable to a normal dry race."
+  },
+  "2026_R18_Q": {
+    "circuit_name": "USA",
+    "circuit_type": "balanced",
+    "race_round": 18,
+    "year": 2026,
+    "session_type": "Q",
+    "n_fingerprints": 22,
+    "path": "2026_R18_Q.json",
+    "prediction_eligible": true,
+    "pace_context": "unflagged",
+    "prediction_exclusion_reason": ""
+  },
+  "2026_R18_R": {
+    "circuit_name": "USA",
+    "circuit_type": "balanced",
+    "race_round": 18,
+    "year": 2026,
+    "session_type": "R",
+    "n_fingerprints": 22,
+    "path": "2026_R18_R.json",
+    "prediction_eligible": true,
+    "pace_context": "dry",
+    "prediction_exclusion_reason": ""
   }
 }

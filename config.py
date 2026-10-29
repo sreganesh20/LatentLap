@@ -238,6 +238,12 @@ GRID_PENALTIES = {
     16: {
         "COL": {"penalty":"Five-place grid penalty","note":"Carried into the Bahrain Grand Prix in Malaysia after causing the Baku Turn 1 collision with Gasly and Norris on the Safety Car restart.","known_at_prediction_time":True,"source":"F1.com / FIA stewards — Azerbaijan GP 2026"},
     },
+    18: {
+        "LIN": {"penalty":"Five-place grid penalty","note":"Sixth ICE of 2026, exceeding allocation; qualified P9, final grid P14.","known_at_prediction_time":False,"source":"F1.com USA GP 2026 PU penalties / FIA final grid, Oct 23-25"},
+        "COL": {"penalty":"Ten-place grid penalty","note":"Fourth control electronics element beyond allocation; final grid P20.","known_at_prediction_time":False,"source":"F1.com USA GP 2026 PU penalties / FIA final grid, Oct 23-25"},
+        "BOR": {"penalty":"80-place grid penalty (back-of-grid)","note":"Multiple additional PU components (initial 20-place drop plus 60 more); final grid P21.","known_at_prediction_time":False,"source":"F1.com USA GP 2026 PU penalties / FIA Doc 44 and final grid, Oct 23-25"},
+        "STR": {"penalty":"Pit-lane start","note":"Parc-ferme setup and PU changes after qualifying; final starting grid lists pit lane.","known_at_prediction_time":False,"source":"F1.com official USA GP 2026 grid / FIA Doc 50, Oct 25"},
+    },
 }
 
 DRIVER_SUBSTITUTIONS = {

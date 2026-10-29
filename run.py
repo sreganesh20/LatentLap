@@ -22,10 +22,17 @@ import os
 sys.path.insert(0, os.path.dirname(__file__))
 
 
+def _canonical_circuit_name(value: str) -> str:
+    from config import CIRCUITS
+    key = value.strip().casefold().replace(" ", "")
+    return next((name for name in CIRCUITS if name.casefold().replace(" ", "") == key), value.strip().title())
+
+
+
 def cmd_pipeline(args):
     from pipeline.race_pipeline import run_race_pipeline, run_all_known_races
     if args:
-        circuit = args[0].title()
+        circuit = _canonical_circuit_name(args[0])
         run_race_pipeline(circuit, force_synthetic=False, verbose=True)
     else:
         run_all_known_races(force_synthetic=False, verbose=True)
@@ -34,7 +41,7 @@ def cmd_pipeline(args):
 def cmd_race(args):
     from pipeline.race_pipeline import run_race_session
     if args:
-        circuit = args[0].title()
+        circuit = _canonical_circuit_name(args[0])
         print(f"\nLoading race session for {circuit}...")
         run_race_session(circuit, verbose=True)
     else:
@@ -52,7 +59,7 @@ def cmd_predict(args):
                                     print_prediction)
     from analysis.prediction_store import save_prediction
     from config import CIRCUITS
-    circuit = args[0].title() if args else "Netherlands"
+    circuit = _canonical_circuit_name(args[0]) if args else "Netherlands"
     print(f"\nGenerating predictions for {circuit}...\n")
 
     cfg         = CIRCUITS.get(circuit, {})
@@ -101,7 +108,7 @@ def cmd_extract_telemetry(args):
                          EXTRACT_DIR, EXTRACT_RESOLUTION_M)
     from config import CIRCUITS
 
-    only = args[0].title() if args else None
+    only = _canonical_circuit_name(args[0]) if args else None
     round_to_circuit = {cfg["round"]: name for name, cfg in CIRCUITS.items()}
 
     # Session list comes from the store: if it was fingerprinted, the cache has it.
@@ -178,7 +185,7 @@ def cmd_store(args):
 
 def cmd_compare(args):
     from analysis.compare import compare
-    circuit = args[0].title() if args else None
+    circuit = _canonical_circuit_name(args[0]) if args else None
     if not circuit:
         print("Usage: python run.py compare <circuit>")
         return

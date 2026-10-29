@@ -304,7 +304,7 @@ def compare_session(circuit_name: str, pred_type: str, year: int = 2026):
 
 def compare(circuit_name: str, year: int = 2026):
     """Compare every stored prediction for a weekend against its own session."""
-    circuit_name = circuit_name.title()
+    circuit_name = next((name for name in CIRCUITS if name.lower() == circuit_name.lower()), circuit_name.title())
     ran = []
     for pred_type in ("sprint_quali", "sprint_race", "quali", "race"):
         if compare_session(circuit_name, pred_type, year):

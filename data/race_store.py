@@ -20,6 +20,11 @@ STORE_DIR = os.path.join(os.path.dirname(__file__), "..", "store")
 # Store/compare every session normally; only the predictive history loader filters.
 # Key: (year, round, session). Review any additional wet races before forecasting.
 SESSION_PACE_POLICY = {
+    (2026, 18, "R"): {
+        "prediction_eligible": True,
+        "pace_context": "dry",
+        "prediction_exclusion_reason": "",
+    },
     (2026, 16, "R"): {
         "prediction_eligible": False,
         "pace_context": "wet_or_mixed",
