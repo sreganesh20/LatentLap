@@ -358,5 +358,77 @@
     "session_type": "R",
     "n_fingerprints": 22,
     "path": "2026_R15_R.json"
+  },
+  "2026_R16_Q": {
+    "circuit_name": "Malaysia",
+    "circuit_type": "balanced",
+    "race_round": 16,
+    "year": 2026,
+    "session_type": "Q",
+    "n_fingerprints": 22,
+    "path": "2026_R16_Q.json",
+    "prediction_eligible": true,
+    "pace_context": "unflagged",
+    "prediction_exclusion_reason": ""
+  },
+  "2026_R16_R": {
+    "circuit_name": "Malaysia",
+    "circuit_type": "balanced",
+    "race_round": 16,
+    "year": 2026,
+    "session_type": "R",
+    "n_fingerprints": 21,
+    "path": "2026_R16_R.json",
+    "prediction_eligible": false,
+    "pace_context": "wet_or_mixed",
+    "prediction_exclusion_reason": "Malaysia Grand Prix contained wet running; representative race pace is not comparable to a normal dry race."
+  },
+  "2026_R17_Q": {
+    "circuit_name": "Singapore",
+    "circuit_type": "technical",
+    "race_round": 17,
+    "year": 2026,
+    "session_type": "Q",
+    "n_fingerprints": 21,
+    "path": "2026_R17_Q.json",
+    "prediction_eligible": true,
+    "pace_context": "unflagged",
+    "prediction_exclusion_reason": ""
+  },
+  "2026_R17_SQ": {
+    "circuit_name": "Singapore",
+    "circuit_type": "technical",
+    "race_round": 17,
+    "year": 2026,
+    "session_type": "SQ",
+    "n_fingerprints": 22,
+    "path": "2026_R17_SQ.json",
+    "prediction_eligible": true,
+    "pace_context": "unflagged",
+    "prediction_exclusion_reason": ""
+  },
+  "2026_R17_R": {
+    "circuit_name": "Singapore",
+    "circuit_type": "technical",
+    "race_round": 17,
+    "year": 2026,
+    "session_type": "R",
+    "n_fingerprints": 22,
+    "path": "2026_R17_R.json",
+    "prediction_eligible": true,
+    "pace_context": "dry",
+    "prediction_exclusion_reason": ""
+  },
+  "2026_R17_S": {
+    "circuit_name": "Singapore",
+    "circuit_type": "technical",
+    "race_round": 17,
+    "year": 2026,
+    "session_type": "S",
+    "n_fingerprints": 15,
+    "path": "2026_R17_S.json",
+    "prediction_eligible": false,
+    "pace_context": "wet",
+    "prediction_exclusion_reason": "Singapore Sprint was wet; intermediate-tyre pace is not comparable to a normal dry race."
   }
 }

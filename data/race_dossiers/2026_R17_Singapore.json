@@ -1,0 +1,669 @@
+{
+  "review_status": "approved",
+  "metadata": {
+    "year": 2026,
+    "round": 17,
+    "circuit": "Singapore",
+    "venue": "Marina Bay Street Circuit",
+    "date_range": "2026-10-09 to 2026-10-11",
+    "weekend_type": "sprint",
+    "sessions_available": [
+      "SQ",
+      "S",
+      "Q",
+      "R"
+    ]
+  },
+  "weekend_summary": "Max Verstappen dominated the Singapore weekend in very different conditions: SQ pole (1:31.156), victory in a rain-hit Sprint, Grand Prix pole (1:31.373) and dry Grand Prix victory ahead of Charles Leclerc and Kimi Antonelli. The Sprint began on intermediates after a rain delay, with Russell crashing early and a late Norris/Piastri collision. The dry Grand Prix offers the usable race-pace signal. Mercedes compared specifications: Russell reverted to Baku-spec while Antonelli kept much of the Sepang package; the new front-wing experiment needs rollout-specific caution.",
+  "sessions": {
+    "SQ": {
+      "summary": "Verstappen pole in 1:31.156 over Russell (+0.120s), Leclerc P3, Piastri P4, Norris P5.",
+      "key_moments": [
+        {
+          "text": "Verstappen took Sprint pole by 0.120s over Russell.",
+          "source_refs": [
+            "f1_sg_sq"
+          ]
+        },
+        {
+          "text": "Russell was running the older Baku-spec Mercedes; Antonelli was seventh.",
+          "source_refs": [
+            "f1_sg_merspec"
+          ]
+        }
+      ]
+    },
+    "S": {
+      "summary": "In wet/drying conditions on intermediate tyres, Verstappen won ahead of Hamilton and Leclerc.",
+      "key_moments": [
+        {
+          "text": "Start was rain delayed and all drivers began on intermediates.",
+          "source_refs": [
+            "f1_sg_sprint"
+          ]
+        },
+        {
+          "text": "Russell passed Verstappen initially, then crashed on the opening lap.",
+          "source_refs": [
+            "f1_sg_sprint"
+          ]
+        },
+        {
+          "text": "Norris and Piastri collided late while battling in drying conditions; Hamilton finished second, Leclerc third.",
+          "source_refs": [
+            "f1_sg_sprint"
+          ]
+        }
+      ]
+    },
+    "Q": {
+      "summary": "Verstappen secured GP pole in 1:31.373, Leclerc second just 0.054s back, Hamilton third, Antonelli fourth and Norris fifth.",
+      "key_moments": [
+        {
+          "text": "Verstappen took pole by 0.054s over Leclerc.",
+          "source_refs": [
+            "f1_sg_quali"
+          ]
+        },
+        {
+          "text": "Hadjar could not set a representative time owing to reliability issues.",
+          "source_refs": [
+            "f1_sg_quali"
+          ]
+        },
+        {
+          "text": "Russell qualified sixth before serving a power-unit grid penalty.",
+          "source_refs": [
+            "f1_sg_quali",
+            "f1_sg_grid"
+          ]
+        }
+      ]
+    },
+    "R": {
+      "summary": "Verstappen controlled a hot/humid, dry Grand Prix from pole and finished 7.335s ahead of Leclerc; Antonelli took third.",
+      "key_moments": [
+        {
+          "text": "Verstappen defended the lead at Turn 1 and retained control on soft-to-medium tyres.",
+          "source_refs": [
+            "f1_sg_race"
+          ]
+        },
+        {
+          "text": "Leclerc finished P2 and Antonelli P3; McLaren finished P4/P5.",
+          "source_refs": [
+            "f1_sg_results"
+          ]
+        },
+        {
+          "text": "Russell recovered to P9 after grid penalties, while Hadjar finished P10 from the pit lane.",
+          "source_refs": [
+            "f1_sg_race",
+            "f1_sg_grid"
+          ]
+        }
+      ]
+    }
+  },
+  "performance_snapshot": {
+    "source": "committed_session_store",
+    "status": "hydrate at query time from committed LatentLap session data"
+  },
+  "driver_insights": {
+    "VER": {
+      "name": "Max Verstappen",
+      "team": "Red Bull",
+      "summary": "Pole and victory in both the Sprint and GP; robust performance across wet and dry conditions, but only the dry GP is eligible for dry-pace weighting.",
+      "details": [
+        {
+          "text": "Won the Grand Prix by 7.335 seconds over Leclerc.",
+          "source_refs": [
+            "f1_sg_results"
+          ]
+        }
+      ]
+    },
+    "LEC": {
+      "name": "Charles Leclerc",
+      "team": "Ferrari",
+      "summary": "SQ P3, Sprint P3, GP qualifying P2 only 0.054s off pole, and GP P2.",
+      "details": [
+        {
+          "text": "A strong weekend across different conditions without a new declared persistent Singapore chassis package in LatentLap history.",
+          "source_refs": [
+            "f1_sg_quali",
+            "local_upgrades"
+          ]
+        }
+      ]
+    },
+    "ANT": {
+      "name": "Kimi Antonelli",
+      "team": "Mercedes",
+      "summary": "Continued with the new-spec package and finished on the GP podium; reports indicate he reverted to an older front wing after practice.",
+      "details": [
+        {
+          "text": "Do not assume he ran the new Singapore front-wing specification across all competitive sessions.",
+          "source_refs": [
+            "f1_sg_merwing_used"
+          ]
+        }
+      ]
+    },
+    "RUS": {
+      "name": "George Russell",
+      "team": "Mercedes",
+      "summary": "Quick in SQ (P2) on the Baku-spec car, crashed in the wet Sprint, qualified sixth, then recovered to P9 after a grid penalty.",
+      "details": [
+        {
+          "text": "The grid penalty affects the final position and should not be mistaken for a one-lap pace deficit.",
+          "source_refs": [
+            "f1_sg_merspec",
+            "f1_sg_grid"
+          ]
+        }
+      ]
+    },
+    "PIA": {
+      "name": "Oscar Piastri",
+      "team": "McLaren",
+      "summary": "Sprint collision with Norris in drying conditions; recovered to fifth in the dry GP.",
+      "details": [
+        {
+          "text": "The wet Sprint position is not representative dry race-pace evidence.",
+          "source_refs": [
+            "f1_sg_sprint",
+            "f1_sg_race"
+          ]
+        }
+      ]
+    }
+  },
+  "team_insights": {
+    "Red Bull": {
+      "summary": "Verstappen took both poles and both wins in Singapore; technical development and driver execution cannot be causally disentangled.",
+      "details": [
+        {
+          "text": "Front wing development was declared, but no isolated lap-time gain is proven.",
+          "source_refs": [
+            "local_upgrades"
+          ]
+        }
+      ]
+    },
+    "Mercedes": {
+      "summary": "A deliberate split-spec test: Russell back on Baku-spec, Antonelli using the newer package.",
+      "details": [
+        {
+          "text": "The new front wing should be treated as tested rather than assumed raced throughout the weekend.",
+          "source_refs": [
+            "f1_sg_merwing_used",
+            "f1_sg_merspec"
+          ]
+        }
+      ]
+    },
+    "McLaren": {
+      "summary": "Wet Sprint contact and a dry GP P4/P5, amid circuit-specific brake-cooling changes.",
+      "details": [
+        {
+          "text": "Cooling configuration is not weighted as a persistent pace upgrade.",
+          "source_refs": [
+            "local_upgrades",
+            "f1_sg_race"
+          ]
+        }
+      ]
+    }
+  },
+  "strategy_and_conditions": [
+    {
+      "text": "Sprint: rain delay, damp/wet track, intermediate tyres; excluded from future normal dry-race pace weighting.",
+      "source_refs": [
+        "f1_sg_sprint"
+      ]
+    },
+    {
+      "text": "Grand Prix: hot/humid dry race, soft-to-medium tyre stint pattern; eligible for dry-race pace weighting.",
+      "source_refs": [
+        "f1_sg_race"
+      ]
+    },
+    {
+      "text": "Russell penalty and Hadjar pit-lane start mean raw finishing order is not a clean one-lap ranking.",
+      "source_refs": [
+        "f1_sg_grid"
+      ]
+    },
+    {
+      "text": "Russell reverted to Baku-spec and Antonelli remained on new Mercedes spec; preserve driver-scoped upgrade provenance.",
+      "source_refs": [
+        "f1_sg_merspec",
+        "f1_sg_merwing_used"
+      ]
+    }
+  ],
+  "performance_interpretation": [
+    {
+      "text": "Verstappen established strong pace in dry SQ, Q and Grand Prix; his wet Sprint win is a result, not direct dry pace evidence.",
+      "source_refs": [
+        "f1_sg_sq",
+        "f1_sg_quali",
+        "f1_sg_race"
+      ]
+    },
+    {
+      "text": "Mercedes component rollout differs between drivers and sessions. Avoid attributing Antonelli’s result to a new Singapore front wing without confirmation of actual race usage.",
+      "source_refs": [
+        "f1_sg_merwing_used"
+      ]
+    }
+  ],
+  "upgrades_and_technical_context": [
+    {
+      "team": "Mercedes",
+      "category": "persistent",
+      "significance": "minor",
+      "text": "Singapore front-wing development was introduced for testing; Antonelli reverted to an older front wing after practice, while Russell ran Baku-spec.",
+      "reported_intent": "Improve front-wake management and aero operating range.",
+      "reported_effect": null,
+      "source_refs": [
+        "local_upgrades",
+        "f1_sg_merwing_used"
+      ]
+    },
+    {
+      "team": "Red Bull",
+      "category": "persistent",
+      "significance": "minor",
+      "text": "Revised front-wing endplate/flap development.",
+      "reported_intent": "Increase local load while keeping flow stable.",
+      "reported_effect": null,
+      "source_refs": [
+        "local_upgrades"
+      ]
+    },
+    {
+      "team": "Red Bull",
+      "category": "circuit_specific",
+      "significance": "minor",
+      "text": "Singapore rear-corner cooling outlet option.",
+      "reported_intent": "Meet high thermal load.",
+      "reported_effect": null,
+      "source_refs": [
+        "local_upgrades"
+      ]
+    },
+    {
+      "team": "McLaren",
+      "category": "circuit_specific",
+      "significance": "minor",
+      "text": "Higher-capacity front brake-duct cooling configuration.",
+      "reported_intent": "Meet braking thermal demand.",
+      "reported_effect": null,
+      "source_refs": [
+        "local_upgrades"
+      ]
+    }
+  ],
+  "prediction_review": {
+    "status": "available",
+    "prediction_references": [
+      "store/predictions/2026_Singapore_sprint_quali_prediction.json",
+      "store/predictions/2026_Singapore_sprint_race_prediction.json",
+      "store/predictions/2026_Singapore_quali_prediction.json",
+      "store/predictions/2026_Singapore_race_prediction.json"
+    ],
+    "overall_assessment": "Retrospective, pre-ingestion replay of the Singapore model state generated AFTER the event, not an independently timestamped pre-event prediction. Comparisons are useful for model diagnostics but must never be reported as genuine pre-event predictive performance. Wet Sprint race classification is confounded by conditions/incidents. Final metrics are calculated locally by finalize_r16_r17_dossiers.py.",
+    "successes": [],
+    "misses": [],
+    "known_exceptions": [
+      {
+        "text": "Singapore predictions were generated after the October 11 race, before any Singapore actual fingerprints were ingested; classify as retrospective replay, not live forecast.",
+        "source_refs": []
+      },
+      {
+        "text": "Wet Sprint pace fingerprints excluded from dry-race predictor.",
+        "source_refs": []
+      },
+      {
+        "text": "Hadjar Q lacked a representative lap, so Q position error is not a pure pace miss.",
+        "source_refs": []
+      }
+    ],
+    "forecast_provenance": {
+      "type": "retrospective_pre_ingestion_replay",
+      "created_after_event": true
+    },
+    "by_session": {
+      "sprint_quali": {
+        "source_prediction_file": "store/predictions/2026_Singapore_sprint_quali_prediction.json",
+        "source_actual_file": "store/predictions/2026_Singapore_sprint_quali_actual.json",
+        "metrics": {
+          "mean_absolute_position_error": 2.18,
+          "classified_drivers_compared": 22,
+          "mean_absolute_position_error_finishers": 2.18,
+          "finishers_compared": 22,
+          "dnf_drivers_count": 0,
+          "mean_absolute_gap_error_s": 1.214,
+          "gap_ranges_inside": 8,
+          "gap_ranges_compared": 22
+        },
+        "largest_position_discrepancies": [
+          {
+            "driver": "LIN",
+            "pred": 11,
+            "actual": 17,
+            "delta_positions": 6,
+            "dnf": false
+          },
+          {
+            "driver": "LAW",
+            "pred": 12,
+            "actual": 8,
+            "delta_positions": -4,
+            "dnf": false
+          },
+          {
+            "driver": "SAI",
+            "pred": 17,
+            "actual": 21,
+            "delta_positions": 4,
+            "dnf": false
+          },
+          {
+            "driver": "ALO",
+            "pred": 19,
+            "actual": 15,
+            "delta_positions": -4,
+            "dnf": false
+          },
+          {
+            "driver": "HAM",
+            "pred": 3,
+            "actual": 6,
+            "delta_positions": 3,
+            "dnf": false
+          }
+        ],
+        "comparison_notes": "Qualifying gap errors compare seconds per lap; penalties and reliability incidents are separate context."
+      },
+      "sprint_race": {
+        "source_prediction_file": "store/predictions/2026_Singapore_sprint_race_prediction.json",
+        "source_actual_file": "store/predictions/2026_Singapore_sprint_race_actual.json",
+        "metrics": {
+          "mean_absolute_position_error": 4.55,
+          "classified_drivers_compared": 22,
+          "mean_absolute_position_error_finishers": 3.62,
+          "finishers_compared": 13,
+          "dnf_drivers_count": 9
+        },
+        "largest_position_discrepancies": [
+          {
+            "driver": "RUS",
+            "pred": 5,
+            "actual": 20,
+            "delta_positions": 15,
+            "dnf": true
+          },
+          {
+            "driver": "HAD",
+            "pred": 6,
+            "actual": 18,
+            "delta_positions": 12,
+            "dnf": true
+          },
+          {
+            "driver": "BEA",
+            "pred": 16,
+            "actual": 6,
+            "delta_positions": -10,
+            "dnf": false
+          },
+          {
+            "driver": "ALO",
+            "pred": 19,
+            "actual": 11,
+            "delta_positions": -8,
+            "dnf": false
+          },
+          {
+            "driver": "COL",
+            "pred": 12,
+            "actual": 19,
+            "delta_positions": 7,
+            "dnf": true
+          }
+        ],
+        "comparison_notes": "Position comparison only: wet/mixed conditions and incidents confound dry-pace interpretation."
+      },
+      "quali": {
+        "source_prediction_file": "store/predictions/2026_Singapore_quali_prediction.json",
+        "source_actual_file": "store/predictions/2026_Singapore_quali_actual.json",
+        "metrics": {
+          "mean_absolute_position_error": 2.64,
+          "classified_drivers_compared": 22,
+          "mean_absolute_position_error_finishers": 2.64,
+          "finishers_compared": 22,
+          "dnf_drivers_count": 0,
+          "mean_absolute_gap_error_s": 0.377,
+          "gap_ranges_inside": 12,
+          "gap_ranges_compared": 21
+        },
+        "largest_position_discrepancies": [
+          {
+            "driver": "HAD",
+            "pred": 8,
+            "actual": 22,
+            "delta_positions": 14,
+            "dnf": false
+          },
+          {
+            "driver": "COL",
+            "pred": 9,
+            "actual": 16,
+            "delta_positions": 7,
+            "dnf": false
+          },
+          {
+            "driver": "RUS",
+            "pred": 1,
+            "actual": 6,
+            "delta_positions": 5,
+            "dnf": false
+          },
+          {
+            "driver": "VER",
+            "pred": 5,
+            "actual": 1,
+            "delta_positions": -4,
+            "dnf": false
+          },
+          {
+            "driver": "BEA",
+            "pred": 16,
+            "actual": 12,
+            "delta_positions": -4,
+            "dnf": false
+          }
+        ],
+        "comparison_notes": "Qualifying gap errors compare seconds per lap; penalties and reliability incidents are separate context."
+      },
+      "race": {
+        "source_prediction_file": "store/predictions/2026_Singapore_race_prediction.json",
+        "source_actual_file": "store/predictions/2026_Singapore_actual.json",
+        "metrics": {
+          "mean_absolute_position_error": 2.82,
+          "classified_drivers_compared": 22,
+          "mean_absolute_position_error_finishers": 2.39,
+          "finishers_compared": 18,
+          "dnf_drivers_count": 4
+        },
+        "largest_position_discrepancies": [
+          {
+            "driver": "COL",
+            "pred": 12,
+            "actual": 21,
+            "delta_positions": 9,
+            "dnf": true
+          },
+          {
+            "driver": "BOR",
+            "pred": 13,
+            "actual": 22,
+            "delta_positions": 9,
+            "dnf": true
+          },
+          {
+            "driver": "HAD",
+            "pred": 6,
+            "actual": 10,
+            "delta_positions": 4,
+            "dnf": false
+          },
+          {
+            "driver": "BEA",
+            "pred": 16,
+            "actual": 12,
+            "delta_positions": -4,
+            "dnf": false
+          },
+          {
+            "driver": "PIA",
+            "pred": 8,
+            "actual": 5,
+            "delta_positions": -3,
+            "dnf": false
+          }
+        ],
+        "comparison_notes": "For races, predicted per-lap gaps must not be compared with cumulative finish gaps."
+      }
+    },
+    "local_metric_limits": []
+  },
+  "knowledge_limits": [
+    {
+      "text": "ERS deployment and battery state cannot be directly observed from public FastF1 telemetry.",
+      "source_refs": []
+    },
+    {
+      "text": "Representative race laps are not a controlled pace experiment: fuel load, tyres, traffic and temperature vary.",
+      "source_refs": []
+    },
+    {
+      "text": "An upgrade declaration demonstrates intent, not an isolated measured lap-time gain.",
+      "source_refs": []
+    },
+    {
+      "text": "Sprint intermediate-tyre pace cannot be treated as representative dry-race pace.",
+      "source_refs": [
+        "f1_sg_sprint"
+      ]
+    },
+    {
+      "text": "Singapore forecast was generated retrospectively after the event, even though the results had not yet been ingested; backtest statistics are not live pre-race validation.",
+      "source_refs": []
+    },
+    {
+      "text": "The exact race-specification use of Antonelli’s new front wing requires caution because he reverted after practice.",
+      "source_refs": [
+        "f1_sg_merwing_used"
+      ]
+    }
+  ],
+  "entities": {
+    "drivers": [
+      "VER",
+      "LEC",
+      "ANT",
+      "RUS",
+      "HAM",
+      "PIA",
+      "NOR",
+      "HAD"
+    ],
+    "teams": [
+      "Red Bull",
+      "Mercedes",
+      "Ferrari",
+      "McLaren"
+    ],
+    "topics": [
+      "sprint",
+      "wet sprint",
+      "dry race",
+      "qualifying",
+      "upgrades",
+      "split specification",
+      "prediction review"
+    ]
+  },
+  "sources": [
+    {
+      "id": "f1_sg_sq",
+      "publisher": "Formula 1",
+      "title": "Verstappen claims Singapore Sprint pole",
+      "url": "https://www.formula1.com/en/latest/article/verstappen-clinches-pole-position-in-singapore-sprint-qualifying-ahead-of-russell.4dvkvpkCXftdhX7sLI2dcQ.4dvkvpkCXftdhX7sLI2dcQ"
+    },
+    {
+      "id": "f1_sg_sprint",
+      "publisher": "Formula 1",
+      "title": "Verstappen wins wet Singapore Sprint",
+      "url": "https://www.formula1.com/en/latest/article/verstappen-wins-dramatic-rain-hit-singapore-sprint-as-russell-crashes-and-mclarens-collide.4r90mH2skljBa5sinFAsyp"
+    },
+    {
+      "id": "f1_sg_quali",
+      "publisher": "Formula 1",
+      "title": "Verstappen beats Leclerc to Singapore GP pole",
+      "url": "https://www.formula1.com/en/latest/article/verstappen-beats-leclerc-to-pole-position-for-the-singapore-gp.7yum1V3S9aSTyj3Zzzs0Y9.7yum1V3S9aSTyj3Zzzs0Y9"
+    },
+    {
+      "id": "f1_sg_race",
+      "publisher": "Formula 1",
+      "title": "Verstappen wins Singapore GP over Leclerc and Antonelli",
+      "url": "https://www.formula1.com/en/latest/article/verstappen-seals-commanding-singapore-grand-prix-victory-from-leclerc-and-antonelli.49wDzysiVqi5cloGjle40A.49wDzysiVqi5cloGjle40A"
+    },
+    {
+      "id": "f1_sg_results",
+      "publisher": "Formula 1",
+      "title": "2026 Singapore Grand Prix classification",
+      "url": "https://www.formula1.com/en/results/2026/races/1296/singapore/race-result"
+    },
+    {
+      "id": "f1_sg_merspec",
+      "publisher": "Formula 1",
+      "title": "Russell reverted to older-spec Mercedes for Singapore",
+      "url": "https://www.formula1.com/en/latest/article/i-can-confirm-the-old-car-is-not-bad-russell-reacts-to-p2-in-singapore-sprint-qualifying-with-downgraded-mercedes.DPwDvyn5ma6L2AnZzdR81"
+    },
+    {
+      "id": "f1_sg_merfront",
+      "publisher": "Formula 1",
+      "title": "Mercedes front wing and split specification in Singapore",
+      "url": "https://www.formula1.com/en/latest/article/antonelli-explains-how-mercedes-will-find-an-answer-to-unlocking-upgrades-in-singapore.6wh8R3l6YtmHaT4J5M6W8T"
+    },
+    {
+      "id": "f1_sg_merwing_used",
+      "publisher": "Formula 1",
+      "title": "Antonelli reverted to old front wing after practice",
+      "url": "https://www.formula1.com/en/latest/article/what-the-teams-said-sprint-qualifying-in-singapore-2026.15FW4Oo4cNZdSNNfnTdyDp"
+    },
+    {
+      "id": "f1_sg_grid",
+      "publisher": "Formula 1",
+      "title": "Official Singapore Grand Prix starting grid",
+      "url": "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-for-the-2026-singapore-grand-prix.4JVD7MzJPal9kXzVlrEXXo"
+    },
+    {
+      "id": "local_upgrades",
+      "publisher": "LatentLap",
+      "title": "R17 Singapore canonical upgrade inventory",
+      "url": "data/upgrade_history.py"
+    },
+    {
+      "id": "local_store",
+      "publisher": "LatentLap",
+      "title": "R17 SQ/S/Q/R FastF1 store",
+      "url": "store/2026_R17_*.json"
+    }
+  ]
+}

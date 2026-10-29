@@ -16,6 +16,36 @@ from models.fingerprint import CarFingerprint, RaceFingerprints
 
 STORE_DIR = os.path.join(os.path.dirname(__file__), "..", "store")
 
+# Explicit review of sessions whose race pace is unsuitable for dry-race forecasts.
+# Store/compare every session normally; only the predictive history loader filters.
+# Key: (year, round, session). Review any additional wet races before forecasting.
+SESSION_PACE_POLICY = {
+    (2026, 16, "R"): {
+        "prediction_eligible": False,
+        "pace_context": "wet_or_mixed",
+        "prediction_exclusion_reason": "Malaysia Grand Prix contained wet running; representative race pace is not comparable to a normal dry race.",
+    },
+    (2026, 17, "S"): {
+        "prediction_eligible": False,
+        "pace_context": "wet",
+        "prediction_exclusion_reason": "Singapore Sprint was wet; intermediate-tyre pace is not comparable to a normal dry race.",
+    },
+    (2026, 17, "R"): {
+        "prediction_eligible": True,
+        "pace_context": "dry",
+        "prediction_exclusion_reason": "",
+    },
+}
+
+
+def _session_prediction_metadata(year: int, round_num: int, session: str) -> dict:
+    # Legacy sessions default to eligible; no historical data are rewritten.
+    return dict(SESSION_PACE_POLICY.get((year, round_num, session), {
+        "prediction_eligible": True,
+        "pace_context": "unflagged",
+        "prediction_exclusion_reason": "",
+    }))
+
 
 def _ensure_store():
     os.makedirs(STORE_DIR, exist_ok=True)
@@ -138,6 +168,7 @@ def save_fingerprints(
         "stint_data": stint_data_map or {},
         "session_results": session_results_map or {},
     }
+    data.update(_session_prediction_metadata(rf.year, rf.race_round, rf.session_type))
 
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
@@ -157,6 +188,7 @@ def _update_index(rf: RaceFingerprints):
         "session_type": rf.session_type,
         "n_fingerprints": len(rf.fingerprints),
         "path": os.path.basename(_race_path(rf.year, rf.race_round, rf.session_type)),
+        **_session_prediction_metadata(rf.year, rf.race_round, rf.session_type),
     }
 
     with open(idx_path, "w", encoding="utf-8") as f:
@@ -250,6 +282,8 @@ def load_fingerprints(year: int, round_num: int, session: str) -> RaceFingerprin
 def load_all_fingerprints(
     year: int = 2026,
     sessions: list | str | None = None,
+    *,
+    prediction_eligible_only: bool = False,
 ) -> list[RaceFingerprints]:
     """Load stored fingerprints for a season, filtered by session type(s).
 
@@ -271,6 +305,13 @@ def load_all_fingerprints(
     result = []
     for _, meta in sorted(index.items()):
         if meta["year"] == year and meta["session_type"] in sessions:
+            if prediction_eligible_only and (
+                meta.get("prediction_eligible") is False
+                or not _session_prediction_metadata(
+                    meta["year"], meta["race_round"], meta["session_type"]
+                )["prediction_eligible"]
+            ):
+                continue
             rf = load_fingerprints(year, meta["race_round"], meta["session_type"])
             if rf:
                 result.append(rf)

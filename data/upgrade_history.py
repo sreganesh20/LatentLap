@@ -19,7 +19,7 @@ Only entries with all of:
     affects_prediction is True
 are consumed by the prediction weighting logic.
 
-The inventory was audited through R16 against official F1/FIA-style weekend
+The inventory was audited through R17 against official F1/FIA-style weekend
 upgrade declarations, with reputable technical reporting used for context and
 significance. Significance is intentionally manual/reviewable rather than LLM-
 generated.
@@ -208,7 +208,8 @@ UPGRADE_HISTORY: list[dict] = [
     {"team":"Mercedes","round":16,"status":"confirmed","category":"persistent","significance":"major","affects_prediction":True,
      "headline":"Major Sepang floor, bodywork, suspension and rear-corner package",
      "detail":"Six declared performance component groups: reprofiled floor board; revised floor leading edge; reworked floor corner slots; re-optimised floor body/diffuser roof, sidewall and winglet; reprofiled rear-suspension fairings; and revised rear-corner winglets. The package targets local load, flow conditioning, robustness across the operating envelope and rear-tyre wake control.",
-     "source":"FIA Doc 12 — Car Presentation Submissions, Bahrain GP in Malaysia 2026"},
+     "source":"FIA Doc 12 — Car Presentation Submissions, Bahrain GP in Malaysia 2026",
+     "inactive_for":{17:["RUS"]}},
 
     {"team":"McLaren","round":16,"status":"confirmed","category":"circuit_specific","significance":"minor","affects_prediction":False,
      "headline":"High-cooling Sepang engine-cover configuration",
@@ -246,6 +247,34 @@ UPGRADE_HISTORY: list[dict] = [
      "source":"FIA Doc 12 — Car Presentation Submissions, Bahrain GP in Malaysia 2026"},
 
     # Williams, Aston Martin, Audi and Cadillac: no updates submitted at R16.
+
+
+    # R17 — Singapore
+    # FIA Doc 9: Car Presentation Submissions, published 2026-10-09.
+
+    {"team":"Mercedes","round":17,"status":"confirmed","category":"persistent","significance":"minor","affects_prediction":True,
+     "headline":"Revised front-wing package for Singapore",
+     "detail":"Revised chord distribution across the front-wing elements together with updated endplate, footplate and diveplane geometry. Declared performance intent was improved operating-envelope performance and front-tyre wake control. Antonelli ran the new package while Russell reverted to the older Baku-spec car for comparison.",
+     "source":"FIA Doc 9 — Car Presentation Submissions, Singapore GP 2026 / F1.com",
+     "drivers":["ANT"]},
+
+    {"team":"McLaren","round":17,"status":"confirmed","category":"circuit_specific","significance":"minor","affects_prediction":False,
+     "headline":"High-capacity front brake-cooling duct",
+     "detail":"New front brake-duct scoop/exit geometry for Singapore's high brake-cooling demand; circuit-specific thermal management rather than a persistent pace step.",
+     "source":"FIA Doc 9 — Car Presentation Submissions, Singapore GP 2026"},
+
+    {"team":"Red Bull","round":17,"status":"confirmed","category":"persistent","significance":"minor","affects_prediction":True,
+     "headline":"Front-wing endplate and flap development",
+     "detail":"Reworked geometry from an existing front-wing assembly to increase local aerodynamic load while maintaining flow stability.",
+     "source":"FIA Doc 9 — Car Presentation Submissions, Singapore GP 2026"},
+
+    {"team":"Red Bull","round":17,"status":"confirmed","category":"circuit_specific","significance":"minor","affects_prediction":False,
+     "headline":"Singapore rear-wheel cooling outlet",
+     "detail":"Enlarged rear-wheel exit duct for Singapore's high braking-energy and cooling demand.",
+     "source":"FIA Doc 9 — Car Presentation Submissions, Singapore GP 2026"},
+
+    # Ferrari, Williams, VCARB, Aston Martin, Haas, Audi, Alpine and Cadillac:
+    # no new components submitted for R17.
 ]
 
 
@@ -266,7 +295,7 @@ def events_for_team(team: str, *, through_round: int | None = None) -> list[dict
     return sorted(events, key=lambda e: (e["round"], e["headline"]))
 
 
-def prediction_events(team: str, driver: str | None = None) -> list[dict]:
+def prediction_events(team: str, driver: str | None = None, target_round: int | None = None) -> list[dict]:
     """Persistent, confirmed events that are allowed to alter prediction weights."""
     out = []
     for e in events_for_team(team):
@@ -277,6 +306,10 @@ def prediction_events(team: str, driver: str | None = None) -> list[dict]:
         scoped = e.get("drivers")
         if scoped and driver is not None and driver not in scoped:
             continue
+        inactive = e.get("inactive_for", {})
+        if target_round is not None and driver is not None:
+            if driver in inactive.get(target_round, []):
+                continue
         out.append(e)
     return out
 

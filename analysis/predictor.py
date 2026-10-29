@@ -147,7 +147,7 @@ def team_upgrade_weight(
     """
     team = target_team or _target_driver_info(driver, target_round).get("team", "Unknown")
     weight = 1.0
-    for upg in prediction_events(team, driver=driver):
+    for upg in prediction_events(team, driver=driver, target_round=target_round):
         if fp_round < upg["round"] <= target_round:
             weight *= SIGNIFICANCE_WEIGHT.get(upg["significance"], 1.0)
     return weight
@@ -236,7 +236,7 @@ def _predict_for_sessions(
     target_round = circuit_cfg["round"]
     target_lineup = lineup_for_round(target_round)
 
-    historical = load_all_fingerprints(year, sessions=sessions)
+    historical = load_all_fingerprints(year, sessions=sessions, prediction_eligible_only=True)
     if not historical:
         return None
 

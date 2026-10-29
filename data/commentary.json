@@ -221,5 +221,39 @@
       "Safety Car",
       "upgrades"
     ]
+  },
+  {
+    "round": 16,
+    "circuit": "Malaysia",
+    "date": "2026-10-04",
+    "headline": "Verstappen wins rain-hit Sepang comeback as Russell retires",
+    "body": "Max Verstappen took pole and won the Bahrain Grand Prix in Malaysia ahead of Kimi Antonelli and Lewis Hamilton. Heavy rain delayed the race and the intermediate-to-slick crossover reshaped strategy; Russell retired late with a power-unit issue. The mixed/wet R16 race is stored for results and strategy but excluded from future dry-race pace weighting.",
+    "tags": [
+      "Malaysia",
+      "Sepang",
+      "Verstappen",
+      "Antonelli",
+      "Hamilton",
+      "wet race",
+      "strategy",
+      "prediction limits"
+    ]
+  },
+  {
+    "round": 17,
+    "circuit": "Singapore",
+    "date": "2026-10-11",
+    "headline": "Verstappen sweeps wet Singapore Sprint and dry Grand Prix",
+    "body": "Max Verstappen took both Singapore poles and won the wet Sprint and the dry Grand Prix. He beat Leclerc and Antonelli in the Grand Prix after a rain-hit Sprint featuring Russell’s crash and late McLaren contact. Mercedes split their car specification between Russell and Antonelli. The wet Sprint is excluded from future dry-race pace weighting; the dry Grand Prix remains eligible.",
+    "tags": [
+      "Singapore",
+      "Verstappen",
+      "Leclerc",
+      "Antonelli",
+      "wet Sprint",
+      "dry race",
+      "Mercedes",
+      "upgrades"
+    ]
   }
 ]

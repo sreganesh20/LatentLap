@@ -1,0 +1,500 @@
+{
+  "review_status": "approved",
+  "metadata": {
+    "year": 2026,
+    "round": 16,
+    "circuit": "Malaysia",
+    "venue": "Sepang International Circuit",
+    "date_range": "2026-10-02 to 2026-10-04",
+    "weekend_type": "standard",
+    "sessions_available": [
+      "Q",
+      "R"
+    ]
+  },
+  "weekend_summary": "At the revived Bahrain Grand Prix in Malaysia, Max Verstappen took pole (1:35.130) and won ahead of Kimi Antonelli and Lewis Hamilton. A major pre-race downpour delayed the start and created an intermediate-to-slick crossover. Verstappen lost the lead at the start but recovered; Ferrari recovered from an early slick-tyre disadvantage; George Russell retired late with a power-unit issue. The mixed-weather race classification is useful for result and strategy analysis but its pooled race-pace fingerprints are excluded from future normal dry-race prediction weighting.",
+  "sessions": {
+    "Q": {
+      "summary": "Verstappen pole in 1:35.130, Hamilton P2 (+0.298s), Hadjar P3 before grid penalty, Antonelli P4, Leclerc P5.",
+      "key_moments": [
+        {
+          "text": "Verstappen topped all three phases of qualifying, taking pole in 1:35.130.",
+          "source_refs": [
+            "f1_mal_quali"
+          ]
+        },
+        {
+          "text": "Hadjar qualified third but was demoted five places for power-unit parts; Colapinto and Lindblad also carried grid penalties.",
+          "source_refs": [
+            "f1_mal_grid"
+          ]
+        }
+      ]
+    },
+    "R": {
+      "summary": "Verstappen won a rain-delayed mixed-weather race over Antonelli (+2.307s) and Hamilton (+4.919s).",
+      "key_moments": [
+        {
+          "text": "Rain delayed the start and teams split between slicks and intermediates.",
+          "source_refs": [
+            "f1_mal_race"
+          ]
+        },
+        {
+          "text": "Early Safety Car gave intermediate starters a favourable crossover to slicks; Ferrari recovered after starting on slicks.",
+          "source_refs": [
+            "f1_mal_race"
+          ]
+        },
+        {
+          "text": "Russell retired near the end with a power-unit problem; Verstappen won ahead of Antonelli and Hamilton.",
+          "source_refs": [
+            "f1_mal_race",
+            "f1_mal_results"
+          ]
+        }
+      ]
+    }
+  },
+  "performance_snapshot": {
+    "source": "committed_session_store",
+    "status": "hydrate at query time from committed LatentLap session data"
+  },
+  "driver_insights": {
+    "VER": {
+      "name": "Max Verstappen",
+      "team": "Red Bull",
+      "summary": "Pole-to-win result despite dropping behind Mercedes at Turn 1; strong race management amid changing conditions.",
+      "details": [
+        {
+          "text": "Won by 2.307s over Antonelli.",
+          "source_refs": [
+            "f1_mal_results"
+          ]
+        }
+      ]
+    },
+    "ANT": {
+      "name": "Kimi Antonelli",
+      "team": "Mercedes",
+      "summary": "Qualified fourth and finished second, extending the championship lead as Russell retired.",
+      "details": [
+        {
+          "text": "Finished second despite mixed-weather disruption.",
+          "source_refs": [
+            "f1_mal_race"
+          ]
+        }
+      ]
+    },
+    "RUS": {
+      "name": "George Russell",
+      "team": "Mercedes",
+      "summary": "Qualified eighth, ran near the front after the start, but retired late due to a power-unit issue.",
+      "details": [
+        {
+          "text": "Race retirement was mechanical rather than a reliable pace indicator.",
+          "source_refs": [
+            "f1_mal_race"
+          ]
+        }
+      ]
+    },
+    "HAM": {
+      "name": "Lewis Hamilton",
+      "team": "Ferrari",
+      "summary": "Qualified second; an early slick-tyre gamble backfired before a recovery to third.",
+      "details": [
+        {
+          "text": "Ferrari lost track position on slicks at the wet start then recovered as the circuit dried.",
+          "source_refs": [
+            "f1_mal_race"
+          ]
+        }
+      ]
+    },
+    "HAD": {
+      "name": "Isack Hadjar",
+      "team": "Red Bull",
+      "summary": "Qualified third on pace but started further back after an engine-component penalty and finished fifth.",
+      "details": [
+        {
+          "text": "Qualifying pace and final grid slot must not be conflated.",
+          "source_refs": [
+            "f1_mal_grid",
+            "f1_mal_race"
+          ]
+        }
+      ]
+    }
+  },
+  "team_insights": {
+    "Red Bull": {
+      "summary": "First Red Bull/Red Bull Ford victory of 2026 through Verstappen.",
+      "details": [
+        {
+          "text": "Pole and win demonstrated competitiveness, but wet-race finishing order is not a dry-pace benchmark.",
+          "source_refs": [
+            "f1_mal_race"
+          ]
+        }
+      ]
+    },
+    "Mercedes": {
+      "summary": "Introduced a substantial floor/rear-corner package; Antonelli finished second and Russell retired.",
+      "details": [
+        {
+          "text": "No isolated causal lap-time gain is asserted for the package.",
+          "source_refs": [
+            "local_upgrades"
+          ]
+        }
+      ]
+    },
+    "Ferrari": {
+      "summary": "Hamilton and Leclerc finished third/fourth after a difficult opening tyre choice.",
+      "details": [
+        {
+          "text": "Intermediate-to-slick crossover timing dominated race-position changes.",
+          "source_refs": [
+            "f1_mal_race"
+          ]
+        }
+      ]
+    }
+  },
+  "strategy_and_conditions": [
+    {
+      "text": "Mixed wet/drying surface at the start, with early Safety Car and crossover to slicks; this was not a representative single-condition dry race.",
+      "source_refs": [
+        "f1_mal_race"
+      ]
+    },
+    {
+      "text": "Race-session classification is retained for outcomes, but R16 R is ineligible as future dry-race pace training evidence.",
+      "source_refs": [
+        "local_store"
+      ]
+    },
+    {
+      "text": "Grid penalties affected Hadjar, Colapinto and Lindblad; forecast pace ordering is not the final grid.",
+      "source_refs": [
+        "f1_mal_grid"
+      ]
+    }
+  ],
+  "performance_interpretation": [
+    {
+      "text": "Verstappen was fastest in dry qualifying; qualifying and wet/mixed race results must be interpreted with different evidentiary weight.",
+      "source_refs": [
+        "f1_mal_quali",
+        "f1_mal_race"
+      ]
+    },
+    {
+      "text": "The wet/dry crossover, Safety Car timing and tyre selection confound per-lap comparability.",
+      "source_refs": [
+        "f1_mal_race"
+      ]
+    }
+  ],
+  "upgrades_and_technical_context": [
+    {
+      "team": "Mercedes",
+      "category": "persistent",
+      "significance": "major",
+      "text": "Six-area Sepang floor/bodywork/rear-suspension/rear-corner package.",
+      "reported_intent": "Improve aerodynamic load and operating range.",
+      "reported_effect": null,
+      "source_refs": [
+        "local_upgrades"
+      ]
+    },
+    {
+      "team": "Red Bull",
+      "category": "persistent",
+      "significance": "minor",
+      "text": "Floor-board performance refinement.",
+      "reported_intent": "Improve local load and flow stability.",
+      "reported_effect": null,
+      "source_refs": [
+        "local_upgrades"
+      ]
+    },
+    {
+      "team": "Ferrari",
+      "category": "persistent",
+      "significance": "minor",
+      "text": "Diffuser outboard winglet-cascade refinement.",
+      "reported_intent": "Increase local load across the operating window.",
+      "reported_effect": null,
+      "source_refs": [
+        "local_upgrades"
+      ]
+    },
+    {
+      "team": "VCARB",
+      "category": "persistent",
+      "significance": "minor",
+      "text": "Rear-wing support refinement; separate circuit-specific front-wing flap.",
+      "reported_intent": "Improve wing efficiency; front flap for local balance.",
+      "reported_effect": null,
+      "source_refs": [
+        "local_upgrades"
+      ]
+    },
+    {
+      "team": "McLaren",
+      "category": "circuit_specific",
+      "significance": "minor",
+      "text": "Higher-capacity engine-cover cooling.",
+      "reported_intent": "Meet Sepang thermal demand.",
+      "reported_effect": null,
+      "source_refs": [
+        "local_upgrades"
+      ]
+    },
+    {
+      "team": "Haas",
+      "category": "circuit_specific",
+      "significance": "minor",
+      "text": "Rear-impact structure aero configuration.",
+      "reported_intent": "Circuit tuning rather than validated lasting gain.",
+      "reported_effect": null,
+      "source_refs": [
+        "local_upgrades"
+      ]
+    },
+    {
+      "team": "Alpine",
+      "category": "circuit_specific",
+      "significance": "minor",
+      "text": "Front drum brake-cooling exit.",
+      "reported_intent": "Thermal management.",
+      "reported_effect": null,
+      "source_refs": [
+        "local_upgrades"
+      ]
+    }
+  ],
+  "prediction_review": {
+    "status": "available",
+    "prediction_references": [
+      "store/predictions/2026_Malaysia_quali_prediction.json",
+      "store/predictions/2026_Malaysia_race_prediction.json"
+    ],
+    "overall_assessment": "Forecast generated before the Malaysia weekend. Qualifying can be compared as one-lap pace; race position differences are strongly weather/strategy confounded. Final local-error metrics are populated from saved JSON artifacts by finalize_r16_r17_dossiers.py.",
+    "successes": [],
+    "misses": [],
+    "known_exceptions": [
+      {
+        "text": "Wet race pace fingerprints are excluded from future dry-race weighting.",
+        "source_refs": []
+      },
+      {
+        "text": "Race gap comparisons are invalid: predicted per-lap delta is not cumulative race gap.",
+        "source_refs": []
+      },
+      {
+        "text": "Qualifying is pace classification; penalised starting-grid changes are separate.",
+        "source_refs": []
+      }
+    ],
+    "by_session": {
+      "quali": {
+        "source_prediction_file": "store/predictions/2026_Malaysia_quali_prediction.json",
+        "source_actual_file": "store/predictions/2026_Malaysia_quali_actual.json",
+        "metrics": {
+          "mean_absolute_position_error": 3.36,
+          "classified_drivers_compared": 22,
+          "mean_absolute_position_error_finishers": 3.36,
+          "finishers_compared": 22,
+          "dnf_drivers_count": 0,
+          "mean_absolute_gap_error_s": 0.599,
+          "gap_ranges_inside": 7,
+          "gap_ranges_compared": 22
+        },
+        "largest_position_discrepancies": [
+          {
+            "driver": "RUS",
+            "pred": 1,
+            "actual": 8,
+            "delta_positions": 7,
+            "dnf": false
+          },
+          {
+            "driver": "ALO",
+            "pred": 19,
+            "actual": 12,
+            "delta_positions": -7,
+            "dnf": false
+          },
+          {
+            "driver": "STR",
+            "pred": 21,
+            "actual": 14,
+            "delta_positions": -7,
+            "dnf": false
+          },
+          {
+            "driver": "LIN",
+            "pred": 10,
+            "actual": 16,
+            "delta_positions": 6,
+            "dnf": false
+          },
+          {
+            "driver": "VER",
+            "pred": 6,
+            "actual": 1,
+            "delta_positions": -5,
+            "dnf": false
+          }
+        ],
+        "comparison_notes": "Qualifying gap errors compare seconds per lap; penalties and reliability incidents are separate context."
+      },
+      "race": {
+        "source_prediction_file": "store/predictions/2026_Malaysia_race_prediction.json",
+        "source_actual_file": "store/predictions/2026_Malaysia_actual.json",
+        "metrics": {
+          "mean_absolute_position_error": 3.64,
+          "classified_drivers_compared": 22,
+          "mean_absolute_position_error_finishers": 3.05,
+          "finishers_compared": 19,
+          "dnf_drivers_count": 3
+        },
+        "largest_position_discrepancies": [
+          {
+            "driver": "RUS",
+            "pred": 2,
+            "actual": 20,
+            "delta_positions": 18,
+            "dnf": true
+          },
+          {
+            "driver": "ALO",
+            "pred": 20,
+            "actual": 8,
+            "delta_positions": -12,
+            "dnf": false
+          },
+          {
+            "driver": "STR",
+            "pred": 22,
+            "actual": 12,
+            "delta_positions": -10,
+            "dnf": false
+          },
+          {
+            "driver": "BOR",
+            "pred": 11,
+            "actual": 18,
+            "delta_positions": 7,
+            "dnf": false
+          },
+          {
+            "driver": "GAS",
+            "pred": 10,
+            "actual": 16,
+            "delta_positions": 6,
+            "dnf": false
+          }
+        ],
+        "comparison_notes": "Position comparison only: wet/mixed conditions and incidents confound dry-pace interpretation."
+      }
+    },
+    "local_metric_limits": []
+  },
+  "knowledge_limits": [
+    {
+      "text": "ERS deployment and battery state cannot be directly observed from public FastF1 telemetry.",
+      "source_refs": []
+    },
+    {
+      "text": "Representative race laps are not a controlled pace experiment: fuel load, tyres, traffic and temperature vary.",
+      "source_refs": []
+    },
+    {
+      "text": "An upgrade declaration demonstrates intent, not an isolated measured lap-time gain.",
+      "source_refs": []
+    },
+    {
+      "text": "Rain, tyre crossover and Safety Car strategy make the R16 race unrepresentative of normal dry-race pace.",
+      "source_refs": [
+        "f1_mal_race"
+      ]
+    },
+    {
+      "text": "Session weather metadata and eligibility should be validated against local indexed session payloads.",
+      "source_refs": [
+        "local_store"
+      ]
+    }
+  ],
+  "entities": {
+    "drivers": [
+      "VER",
+      "ANT",
+      "RUS",
+      "HAM",
+      "LEC",
+      "HAD",
+      "COL"
+    ],
+    "teams": [
+      "Red Bull",
+      "Mercedes",
+      "Ferrari",
+      "McLaren",
+      "VCARB",
+      "Alpine"
+    ],
+    "topics": [
+      "qualifying",
+      "wet race",
+      "strategy",
+      "tyre crossover",
+      "upgrades",
+      "prediction review",
+      "ERS"
+    ]
+  },
+  "sources": [
+    {
+      "id": "f1_mal_quali",
+      "publisher": "Formula 1",
+      "title": "Verstappen takes pole at Bahrain GP in Malaysia",
+      "url": "https://www.formula1.com/en/latest/article/verstappen-seizes-first-pole-position-of-the-season-in-qualifying-for-bahrain-gp-in-malaysia.3BW0zzYBLhG54bsQoNKFvP.3BW0zzYBLhG54bsQoNKFvP"
+    },
+    {
+      "id": "f1_mal_grid",
+      "publisher": "Formula 1",
+      "title": "Official Bahrain Grand Prix in Malaysia starting grid",
+      "url": "https://www.formula1.com/en/latest/article/official-grid-whos-where-for-the-bahrain-gp-as-lindblad-hadjar-and-colapinto-take-penalties.2OZA62x5JUuoxlociRPAxb"
+    },
+    {
+      "id": "f1_mal_race",
+      "publisher": "Formula 1",
+      "title": "Verstappen wins rain-hit Bahrain GP in Malaysia",
+      "url": "https://www.formula1.com/en/latest/article/verstappen-wins-rain-hit-bahrain-gp-in-malaysia-over-antonelli-as-russell-retires-late-on.6qfpIHPch8mIVj2YgfHdCp"
+    },
+    {
+      "id": "f1_mal_results",
+      "publisher": "Formula 1",
+      "title": "2026 Bahrain Grand Prix in Malaysia race classification",
+      "url": "https://www.formula1.com/en/results/2026/races/1308/bahrain/race-result"
+    },
+    {
+      "id": "local_upgrades",
+      "publisher": "LatentLap",
+      "title": "R16 canonical Malaysia FIA-based upgrade inventory",
+      "url": "data/upgrade_history.py"
+    },
+    {
+      "id": "local_store",
+      "publisher": "LatentLap",
+      "title": "R16 qualifying and race FastF1-processed store",
+      "url": "store/2026_R16_Q.json + store/2026_R16_R.json"
+    }
+  ]
+}
