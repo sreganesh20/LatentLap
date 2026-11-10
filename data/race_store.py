@@ -20,6 +20,17 @@ STORE_DIR = os.path.join(os.path.dirname(__file__), "..", "store")
 # Store/compare every session normally; only the predictive history loader filters.
 # Key: (year, round, session). Review any additional wet races before forecasting.
 SESSION_PACE_POLICY = {
+    # LATENTLAP_R19_R20_ROSTER_V1 — Interlagos Q was wet throughout; R changed wet/dry/wet.
+    (2026, 20, "Q"): {
+        "prediction_eligible": False,
+        "pace_context": "wet",
+        "prediction_exclusion_reason": "Sao Paulo qualifying used wet/intermediate tyres throughout; exclude from normal dry-qualifying history.",
+    },
+    (2026, 20, "R"): {
+        "prediction_eligible": False,
+        "pace_context": "wet_or_mixed",
+        "prediction_exclusion_reason": "Sao Paulo GP changed from intermediates to slicks and back to intermediates; not representative dry race pace.",
+    },
     (2026, 18, "R"): {
         "prediction_eligible": True,
         "pace_context": "dry",

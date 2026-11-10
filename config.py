@@ -172,6 +172,9 @@ KNOWN_UPCOMING_UPGRADES = legacy_upcoming_upgrades()
 #  ROUND-SPECIFIC LINEUPS
 # ─────────────────────────────────────────────────────────
 ROUND_LINEUP_OVERRIDES = {
+    # LATENTLAP_R19_R20_ROSTER_V1 — Q/R entrants; not the evergreen CARS roster.
+    19: {"HIR": {"team": "Haas", "pu": "Ferrari", "fastf1_code": "HIR", "name": "Ryo Hirakawa", "number": 50}},
+    20: {"CAM": {"team": "Haas", "pu": "Ferrari", "fastf1_code": "CAM", "name": "Rafael Camara", "number": 51}},
     12: {
         "LAW":{"team":"Red Bull"},
         "TSU":{"team":"VCARB","pu":"RedBullFord","fastf1_code":"TSU","name":"Yuki Tsunoda","number":22},
@@ -187,11 +190,19 @@ ROUND_LINEUP_OVERRIDES = {
 }
 
 
+# LATENTLAP_R19_R20_ROSTER_V1 — Ocon not a Haas starter after FP2 in Mexico.
+# R21-23 seat is NOT officially confirmed as of 2026-11-10; avoid a false OCO forecast.
+ROUND_LINEUP_EXCLUSIONS = {19: ("OCO",), 20: ("OCO",),
+                           21: ("OCO",), 22: ("OCO",), 23: ("OCO",)}
+
+
 def lineup_for_round(round_num: int) -> dict:
-    """Return base driver metadata with round-specific assignments overlaid."""
+    """Return entrants known for a round; never carry a replaced driver forward."""
     merged = {code: dict(car) for code, car in CARS.items()}
     for code, override in ROUND_LINEUP_OVERRIDES.get(round_num, {}).items():
         merged.setdefault(code, {}).update(override)
+    for code in ROUND_LINEUP_EXCLUSIONS.get(round_num, ()):
+        merged.pop(code, None)
     return merged
 
 
@@ -247,6 +258,21 @@ GRID_PENALTIES = {
 }
 
 DRIVER_SUBSTITUTIONS = {
+    # LATENTLAP_R19_R20_ROSTER_V1 — historical actual lineups, no retroactive prediction rewrite.
+    19: {
+        "banner": "After Friday practice, Haas replaced Esteban Ocon with Ryo Hirakawa (#50) for Mexico qualifying and the race (FIA Doc 36, 31 Oct). The original Mexico forecast remains unchanged.",
+        "unavailable": {"OCO": "Replaced by Ryo Hirakawa before qualifying"},
+        "added": [{"code": "HIR", "name": "Ryo Hirakawa", "team": "Haas", "reason": "FIA-authorized driver change after Friday practice"}],
+    },
+    20: {
+        "banner": "Rafael Camara (#51) replaced Esteban Ocon for the Sao Paulo weekend, as confirmed by Haas on 4 Nov 2026.",
+        "unavailable": {"OCO": "Removed from Haas race seat for remainder of 2026"},
+        "added": [{"code": "CAM", "name": "Rafael Camara", "team": "Haas", "reason": "Confirmed debut at Sao Paulo"}],
+    },
+    21: {"banner": "Haas confirmed Ocon will not return in 2026; the Las Vegas replacement has not been officially confirmed in the cited team statement. Finalize the seat before publishing a 22-car forecast.",
+         "unavailable": {"OCO": "Will not race again for Haas in 2026; replacement pending confirmation"}},
+    22: {"unavailable": {"OCO": "Haas replacement pending official confirmation"}},
+    23: {"unavailable": {"OCO": "Haas replacement pending official confirmation"}},
     12: {
         "banner":"Isack Hadjar missed the Dutch Grand Prix with a wrist fracture. Liam Lawson moved to Red Bull and Yuki Tsunoda took the Racing Bulls seat alongside Lindblad. The saved pre-race prediction is preserved as generated; the late lineup change is treated as a documented exception rather than retroactively rerunning the forecast.",
         "unavailable":{"HAD":"Wrist injury — did not race at Zandvoort"},

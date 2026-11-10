@@ -15,6 +15,7 @@ from dataclasses import dataclass, field
 import numpy as np
 
 from data.race_store import load_all_fingerprints
+from data.qualifying_pace_policy import QUALIFYING_PACE_EXCLUSIONS
 from data.upgrade_history import SIGNIFICANCE_WEIGHT, planned_events_at_round, prediction_events
 from config import (
     CIRCUITS,
@@ -241,13 +242,17 @@ def _predict_for_sessions(
     if not historical:
         return None
 
-    historical_codes = {
-        fp.driver_code for rf in historical for fp in rf.fingerprints
-    }
     if drivers is None:
-        # Predict the target-round lineup, not every driver who happened to have
-        # historical fingerprints. Stand-ins without history are naturally skipped.
-        drivers = [d for d in _active_target_drivers(target_round) if d in historical_codes]
+        # LATENTLAP_R19_R20_ROSTER_V1 — include the confirmed target-round entrants even when
+        # a debutant has no personal historic F1 pace. Such entrants receive an
+        # explicitly labelled, low-confidence team-car proxy below.
+        drivers = _active_target_drivers(target_round)
+        if target_round >= 21 and len(drivers) != 22:
+            raise ValueError(
+                f"R{target_round} lineup has only {len(drivers)} confirmed entrants. "
+                "Haas's post-Brazil replacement must be verified and registered "
+                "before a complete 2026 forecast can be published."
+            )
 
     prediction = RacePrediction(
         circuit_name=target_circuit,
@@ -280,27 +285,41 @@ def _predict_for_sessions(
     used_session_keys: set[tuple[int, str]] = set()
 
     for driver in drivers:
-        all_driver_fps = [
-            fp for rf in historical for fp in rf.fingerprints if fp.driver_code == driver
-        ]
-        if not all_driver_fps:
-            continue
-
         target_info = target_lineup.get(driver, {})
         target_team = target_info.get("team")
         target_pu = target_info.get("pu") or target_info.get("pu_name")
-        if not target_team:
-            # Preserve compatibility for explicitly requested historical drivers.
+        all_driver_fps = [
+            fp for rf in historical for fp in rf.fingerprints if fp.driver_code == driver
+        ]
+        if not target_team and all_driver_fps:
+            # Compatibility for an explicitly supplied historical driver.
             latest_fp = max(all_driver_fps, key=lambda f: f.race_round)
             target_team = latest_fp.team
             target_pu = latest_fp.pu_name
+        if not target_team:
+            continue
 
-        # A transfer/substitution should use history from the target car once such
-        # history exists. If none exists yet, fall back to the driver's own history
-        # but flag that the car changed; do not pretend old-team upgrades apply.
-        same_team_fps = [fp for fp in all_driver_fps if fp.team == target_team]
-        using_cross_team_fallback = not same_team_fps
-        driver_fps = same_team_fps or all_driver_fps
+        using_team_proxy = False
+        if all_driver_fps:
+            # Prefer the same car; flag transfers that lack a matching sample.
+            same_team_fps = [fp for fp in all_driver_fps if fp.team == target_team]
+            using_cross_team_fallback = not same_team_fps
+            driver_fps = same_team_fps or all_driver_fps
+        else:
+            # LATENTLAP_R19_R20_ROSTER_V1 — debutant: estimate the team's car baseline,
+            # not the new driver's ability, using known ACTIVE team-mates only.
+            teammates = {
+                code for code, info in target_lineup.items()
+                if code != driver and info.get("team") == target_team
+            }
+            driver_fps = [
+                fp for rf in historical for fp in rf.fingerprints
+                if fp.driver_code in teammates and fp.team == target_team
+            ]
+            if not driver_fps:
+                continue  # No defensible proxy: leave driver unranked.
+            using_cross_team_fallback = False
+            using_team_proxy = True
 
         weighted_gaps: list[tuple[float, float]] = []
         weighted_str: list[tuple[float, float]] = []
@@ -308,6 +327,10 @@ def _predict_for_sessions(
         accepted_keys: set[tuple[int, str]] = set()
 
         for fp in driver_fps:
+            # LATENTLAP_R19_R20_ROSTER_V1 — exclude evidence-compromised driver/session
+            # observations in prediction only; stored actuals remain untouched.
+            if (fp.year, fp.race_round, fp.session_type, fp.driver_code) in QUALIFYING_PACE_EXCLUSIONS:
+                continue
             sim = circuit_similarity(fp.circuit_type, target_type)
             recency = recency_weight(fp.race_round, target_round)
             ep_w = epoch_weight(fp.regulation_epoch, target_round)
@@ -315,7 +338,8 @@ def _predict_for_sessions(
                 1.0
                 if using_cross_team_fallback or fp.team != target_team
                 else team_upgrade_weight(
-                    driver, fp.race_round, target_round, target_team=target_team
+                    fp.driver_code if using_team_proxy else driver,
+                    fp.race_round, target_round, target_team=target_team
                 )
             )
             sess_w = (session_weights or {}).get(fp.session_type, 1.0)
@@ -369,10 +393,19 @@ def _predict_for_sessions(
 
         if target_pu == "Honda" and target_round <= 6:
             uncertainty += 1.5
+        if using_team_proxy:
+            uncertainty = max(uncertainty, 0.75)  # openly uncertain car-based prior
+            reg_notes.append(
+                f"NO PERSONAL F1 PACE HISTORY: {driver} forecast uses {target_team} "
+                f"teammate/car proxy ({n_samples} historical samples). "
+                "Driver skill offset unknown; not a measured driver forecast."
+            )
 
         data_conf = min(0.85, 0.40 + n_samples * 0.03)
         variance_conf = 1.0 / (1.0 + gap_std * 2.0)
         conf = min(0.85, 0.5 * data_conf + 0.5 * variance_conf)
+        if using_team_proxy:
+            conf = min(0.35, conf * 0.55)
 
         driver_predictions.append(
             DriverPrediction(
@@ -385,7 +418,7 @@ def _predict_for_sessions(
                 predicted_straight_gap_kph=str_delta,
                 predicted_harvest_ratio=avg_hrv,
                 confidence=conf,
-                n_races_used=n_samples,
+                n_races_used=0 if using_team_proxy else n_samples,
                 regulation_notes=reg_notes,
             )
         )
