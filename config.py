@@ -255,6 +255,25 @@ GRID_PENALTIES = {
         "BOR": {"penalty":"80-place grid penalty (back-of-grid)","note":"Multiple additional PU components (initial 20-place drop plus 60 more); final grid P21.","known_at_prediction_time":False,"source":"F1.com USA GP 2026 PU penalties / FIA Doc 44 and final grid, Oct 23-25"},
         "STR": {"penalty":"Pit-lane start","note":"Parc-ferme setup and PU changes after qualifying; final starting grid lists pit lane.","known_at_prediction_time":False,"source":"F1.com official USA GP 2026 grid / FIA Doc 50, Oct 25"},
     },
+    # LATENTLAP_R19_R20_FIA_2026_V1 — Retrospective context only.
+    # Mexico baseline prediction was frozen 2026-10-29. None were known then.
+    19: {
+        "BOT": {"penalty":"50-place PU drop; start from back", "note":"Five new PU elements beyond allowance; documented Oct 30 and final Mexico grid.", "known_at_prediction_time":False, "source":"FIA Mexico 2026 / F1 official grid: https://www.formula1.com/en/latest/article/official-grid-who-starts-where-for-the-2026-mexico-city-grand-prix.4AUykgAAZz3GMiI15Fqfir"},
+        "VER": {"penalty":"One-place grid drop", "note":"Collision with Lawson during Mexico FP2; final grid P5.", "known_at_prediction_time":False, "source":"F1 Mexico 2026 official starting grid / stewards"},
+        "LAW": {"penalty":"One-place drop; Q disqualification; pit-lane start", "note":"FP2 collision with Verstappen; qualifying MGU-K power-rule disqualification; subsequent parc-ferme setup/PU changes resulted in pit-lane start. Distinguish qualifying performance from grid classification.", "known_at_prediction_time":False, "source":"F1 official Mexico grid / technical disqualification: https://www.formula1.com/en/latest/article/lawson-disqualified-from-mexico-city-gp-qualifying-for-technical-breach.1LIHCl2P75cYj0cGJgyZhx.1LIHCl2P75cYj0cGJgyZhx"},
+    },
+    # Brazil forecast is retrospective; penalties were post-declaration/event-time.
+    # The final grid is authoritative for grid order; forecast remains pure pace.
+    20: {
+        "RUS": {"penalty":"Five-place PU grid drop", "note":"Additional power-unit element; qualifying P2, final grid P7.", "known_at_prediction_time":False, "source":"FIA Brazil 2026 Doc 59 final starting grid"},
+        "VER": {"penalty":"30-place PU grid drop", "note":"Additional PU elements; started P21.", "known_at_prediction_time":False, "source":"FIA Brazil 2026 Doc 59 final starting grid"},
+        "PER": {"penalty":"30-place PU grid drop", "note":"Additional PU elements; started P22.", "known_at_prediction_time":False, "source":"FIA Brazil 2026 Doc 59 final starting grid"},
+        "LEC": {"penalty":"Ten-place PU grid drop", "note":"Additional PU element; started P14.", "known_at_prediction_time":False, "source":"FIA Brazil 2026 Doc 59 final starting grid"},
+        "HAM": {"penalty":"75-place PU grid drop", "note":"Additional PU elements; started P20.", "known_at_prediction_time":False, "source":"FIA Brazil 2026 Doc 59 final starting grid"},
+        "LIN": {"penalty":"Ten-place PU grid drop", "note":"Additional PU elements; started P18.", "known_at_prediction_time":False, "source":"FIA Brazil 2026 Doc 59 final starting grid"},
+        "BOR": {"penalty":"Ten-place PU grid drop", "note":"Additional PU elements; started P19.", "known_at_prediction_time":False, "source":"FIA Brazil 2026 Doc 59 final starting grid"},
+    },
+
 }
 
 DRIVER_SUBSTITUTIONS = {

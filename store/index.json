@@ -454,5 +454,53 @@
     "prediction_eligible": true,
     "pace_context": "dry",
     "prediction_exclusion_reason": ""
+  },
+  "2026_R19_Q": {
+    "circuit_name": "Mexico",
+    "circuit_type": "power",
+    "race_round": 19,
+    "year": 2026,
+    "session_type": "Q",
+    "n_fingerprints": 22,
+    "path": "2026_R19_Q.json",
+    "prediction_eligible": true,
+    "pace_context": "unflagged",
+    "prediction_exclusion_reason": ""
+  },
+  "2026_R19_R": {
+    "circuit_name": "Mexico",
+    "circuit_type": "power",
+    "race_round": 19,
+    "year": 2026,
+    "session_type": "R",
+    "n_fingerprints": 20,
+    "path": "2026_R19_R.json",
+    "prediction_eligible": true,
+    "pace_context": "unflagged",
+    "prediction_exclusion_reason": ""
+  },
+  "2026_R20_Q": {
+    "circuit_name": "Brazil",
+    "circuit_type": "balanced",
+    "race_round": 20,
+    "year": 2026,
+    "session_type": "Q",
+    "n_fingerprints": 22,
+    "path": "2026_R20_Q.json",
+    "prediction_eligible": false,
+    "pace_context": "wet",
+    "prediction_exclusion_reason": "Sao Paulo qualifying used wet/intermediate tyres throughout; exclude from normal dry-qualifying history."
+  },
+  "2026_R20_R": {
+    "circuit_name": "Brazil",
+    "circuit_type": "balanced",
+    "race_round": 20,
+    "year": 2026,
+    "session_type": "R",
+    "n_fingerprints": 21,
+    "path": "2026_R20_R.json",
+    "prediction_eligible": false,
+    "pace_context": "wet_or_mixed",
+    "prediction_exclusion_reason": "Sao Paulo GP changed from intermediates to slicks and back to intermediates; not representative dry race pace."
   }
 }

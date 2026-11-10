@@ -319,6 +319,49 @@ UPGRADE_HISTORY: list[dict] = [
      "detail":"Mercedes declared no NEW Austin components. Russell and Antonelli were confirmed to run the current upgraded car after split-spec Singapore; existing R16 persistent event already carries this weight. R17 front-wing was a Singapore practice trial, not a Singapore race upgrade; no extra weight assigned here.",
      "source":"Mercedes USGP preview / Sky Sports 2026-10-21; https://www.skysports.com/f1/news/13601825/mercedes-confirm-kimi-antonelli-george-russell-to-both-run-latest-car-upgrades-at-united-states-gp"},
     # Williams, Aston Martin, Haas: no new components declared in R18.
+    # LATENTLAP_R19_R20_FIA_2026_V1 — FIA car-presentation submissions.
+    # Mexico: Oct 30 Doc 12. Brazil: Nov 06 Doc 12. Add exactly one event per
+    # persistent team package; track-only cooling/reliability is non-predictive.
+    # Mexico frozen V1 was generated Oct 29 and MUST NOT be regenerated here.
+
+    # R19 — Mexico City, FIA Doc 12 (2026-10-30)
+    {"team":"McLaren","round":19,"status":"confirmed","category":"circuit_specific","significance":"minor","affects_prediction":False,
+     "headline":"Extended high-altitude engine cooling louvres",
+     "detail":"Larger, forward-extended and reshaped louvres for Mexico PU cooling demands; not a persistent pace update.",
+     "source":"FIA Mexico 2026 Doc 12 (2026-10-30): https://app.tracinginsights.com/fia-docs/2026/mexico-city-grand-prix/car-presentation-submissions"},
+    {"team":"Red Bull","round":19,"status":"confirmed","category":"reliability","significance":"minor","affects_prediction":False,
+     "headline":"Engine-cover cooling exits",
+     "detail":"Larger/optional exit louvres for cooling mass flow, not a proven lasting pace gain.",
+     "source":"FIA Mexico 2026 Doc 12"},
+    {"team":"Red Bull","round":19,"status":"confirmed","category":"persistent","significance":"minor","affects_prediction":True,
+     "headline":"Sidepod / floor-to-sidepod junction aero refinement",
+     "detail":"Revised sidepod and floor-to-sidepod split line to improve airflow beneath the radiator duct inlet and gain local load; no isolated time gain claimed.",
+     "source":"FIA Mexico 2026 Doc 12 (2026-10-30): https://app.tracinginsights.com/fia-docs/2026/mexico-city-grand-prix/car-presentation-submissions"},
+    {"team":"Ferrari","round":19,"status":"confirmed","category":"circuit_specific","significance":"minor","affects_prediction":False,
+     "headline":"Larger engine-cover exit and cooling louvres",
+     "detail":"Mexico-specific higher cooling capacity, with an acknowledged car-efficiency trade-off; not predictive carryover.",
+     "source":"FIA Mexico 2026 Doc 12"},
+    {"team":"VCARB","round":19,"status":"confirmed","category":"circuit_specific","significance":"minor","affects_prediction":False,
+     "headline":"Engine-cover exit and optional cooling louvre panels",
+     "detail":"Greater cooling range under Mexico's ambient/circuit conditions, not a persistent performance package.",
+     "source":"FIA Mexico 2026 Doc 12"},
+    {"team":"Audi","round":19,"status":"confirmed","category":"persistent","significance":"minor","affects_prediction":True,
+     "headline":"Rear brake-duct deflector aerodynamic development",
+     "detail":"Revised rear-corner deflector geometry intended to increase local aerodynamic load.",
+     "source":"FIA Mexico 2026 Doc 12 (2026-10-30): https://app.tracinginsights.com/fia-docs/2026/mexico-city-grand-prix/car-presentation-submissions"},
+    {"team":"Alpine","round":19,"status":"confirmed","category":"reliability","significance":"minor","affects_prediction":False,
+     "headline":"Track-specific exhaust tailpipe vane trimming",
+     "detail":"Tailpipe-vane geometry trimmed for Mexico ambient/aerodynamic operating requirements; no defensible long-term baseline uplift.",
+     "source":"FIA Mexico 2026 Doc 12"},
+    # Mercedes, Williams, Aston Martin, Haas, Cadillac: none declared for R19.
+
+    # R20 — Sao Paulo, FIA Doc 12 (2026-11-06)
+    {"team":"McLaren","round":20,"status":"confirmed","category":"persistent","significance":"major","affects_prediction":True,
+     "headline":"Front/rear/beam wing and floor-furniture aerodynamic package",
+     "detail":"New front wing for floor/bodywork flow conditioning, new rear-wing assembly for efficient load, coordinating beam wing, and revised floor furniture. Declared development; achieved lap-time gain not established.",
+     "source":"FIA Sao Paulo 2026 Doc 12 (2026-11-06): https://app.tracinginsights.com/fia-docs/2026/s%C3%A3o-paulo-grand-prix/car-presentation-submissions"},
+    # All ten other teams declared no new components for R20.
+
 ]
 
 

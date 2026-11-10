@@ -273,5 +273,33 @@
       "upgrades",
       "backtest"
     ]
+  },
+  {
+    "round": 19,
+    "circuit": "Mexico",
+    "date": "2026-11-01",
+    "headline": "Verstappen wins Mexico City as Antonelli clinches the 2026 drivers title",
+    "body": "Lewis Hamilton took pole in Mexico City, with George Russell alongside. Max Verstappen won the Grand Prix ahead of Hamilton and Antonelli. Antonelli finished P3 to seal the 2026 drivers championship. The race featured a red flag following Bottas' heavy accident and a late Safety Car after Lindblad crashed. Haas fielded Ryo Hirakawa for qualifying and the Grand Prix in place of Esteban Ocon.",
+    "tags": [
+      "Mexico",
+      "2026",
+      "prediction review",
+      "Haas substitution",
+      "championship"
+    ]
+  },
+  {
+    "round": 20,
+    "circuit": "Brazil",
+    "date": "2026-11-08",
+    "headline": "Norris wins wet Sao Paulo race as Mercedes take constructors title",
+    "body": "Lando Norris claimed pole in a rain-hit Sao Paulo qualifying session and won the wet-dry-wet Grand Prix from Max Verstappen and Isack Hadjar. Verstappen recovered from grid P21 and Mercedes secured the 2026 constructors championship. Rafael Camara made his Haas race debut alongside Oliver Bearman, replacing Esteban Ocon.",
+    "tags": [
+      "Brazil",
+      "2026",
+      "prediction review",
+      "Haas substitution",
+      "weather"
+    ]
   }
 ]

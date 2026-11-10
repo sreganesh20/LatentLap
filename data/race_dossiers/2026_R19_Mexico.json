@@ -1,0 +1,276 @@
+{
+  "review_status": "approved",
+  "metadata": {
+    "year": 2026,
+    "round": 19,
+    "circuit": "Mexico",
+    "venue": "Autodromo Hermanos Rodriguez",
+    "date_range": "2026-10-30 to 2026-11-01",
+    "weekend_type": "standard",
+    "sessions_available": [
+      "Q",
+      "R"
+    ]
+  },
+  "weekend_summary": "Lewis Hamilton took pole in Mexico City, with George Russell alongside. Max Verstappen won the Grand Prix ahead of Hamilton and Antonelli. Antonelli finished P3 to seal the 2026 drivers championship. The race featured a red flag following Bottas' heavy accident and a late Safety Car after Lindblad crashed. Haas fielded Ryo Hirakawa for qualifying and the Grand Prix in place of Esteban Ocon.",
+  "sessions": {
+    "Q": {
+      "summary": "Hamilton claimed Mexico pole, ahead of Russell. Lawson was later disqualified from qualifying for a technical MGU-K power-rule breach, distinct from the underlying timed-lap pace.",
+      "key_moments": [
+        {
+          "text": "Hamilton claimed Mexico pole, ahead of Russell. Lawson was later disqualified from qualifying for a technical MGU-K power-rule breach, distinct from the underlying timed-lap pace.",
+          "source_refs": [
+            "f1_mx_quali"
+          ]
+        }
+      ]
+    },
+    "R": {
+      "summary": "Verstappen won from Hamilton and Antonelli in a race affected by Bottas' red flag and a late Safety Car.",
+      "key_moments": [
+        {
+          "text": "Verstappen won from Hamilton and Antonelli in a race affected by Bottas' red flag and a late Safety Car.",
+          "source_refs": [
+            "f1_mx_race"
+          ]
+        }
+      ]
+    }
+  },
+  "performance_snapshot": {
+    "source": "committed_session_store",
+    "status": "hydrate at query time from committed LatentLap session data"
+  },
+  "strategy_and_conditions": [
+    {
+      "text": "Mexico Q and R were run in broadly dry conditions; interruptions and penalties affect final classification but do not by themselves make the session uniformly wet.",
+      "source_refs": [
+        "f1_mx_race"
+      ]
+    },
+    {
+      "text": "Haas substitution: Ryo Hirakawa (HIR) drove car 50 in Q/R; Ocon was not a Mexico Q/R entrant. The frozen October 29 V1 forecast predated the substitution, so only overlapping drivers are scored.",
+      "source_refs": [
+        "f1_mx_race"
+      ]
+    },
+    {
+      "text": "Lawson disqualification followed a qualifying MGU-K power-rule infringement. He subsequently started from the pit lane; compare qualifying pace separately from classification.",
+      "source_refs": [
+        "f1_mx_race"
+      ]
+    },
+    {
+      "text": "Bottas received a 50-place PU penalty; Verstappen a one-place drop following the FP2 Lawson clash.",
+      "source_refs": [
+        "fia_mx_grid"
+      ]
+    }
+  ],
+  "performance_interpretation": [
+    {
+      "text": "The October 29 Mexico V1 predictions are immutable pre-weekend forecasts made before the October 30 FIA upgrade declarations. Compare them as issued; do not revise or rescore V1 using later information.",
+      "source_refs": [
+        "latentlap_session_store"
+      ]
+    }
+  ],
+  "upgrades_and_technical_context": [
+    {
+      "team": "McLaren",
+      "category": "circuit_specific",
+      "significance": "minor",
+      "text": "Extended high-altitude engine cooling louvres: Larger, forward-extended and reshaped louvres for Mexico PU cooling demands; not a persistent pace update.",
+      "reported_intent": "Larger, forward-extended and reshaped louvres for Mexico PU cooling demands; not a persistent pace update.",
+      "reported_effect": null,
+      "source_refs": [
+        "fia_mx_upgrades"
+      ]
+    },
+    {
+      "team": "Red Bull",
+      "category": "reliability",
+      "significance": "minor",
+      "text": "Engine-cover cooling exits: Larger/optional exit louvres for cooling mass flow, not a proven lasting pace gain.",
+      "reported_intent": "Larger/optional exit louvres for cooling mass flow, not a proven lasting pace gain.",
+      "reported_effect": null,
+      "source_refs": [
+        "fia_mx_upgrades"
+      ]
+    },
+    {
+      "team": "Red Bull",
+      "category": "persistent",
+      "significance": "minor",
+      "text": "Sidepod / floor-to-sidepod junction aero refinement: Revised sidepod and floor-to-sidepod split line to improve airflow beneath the radiator duct inlet and gain local load; no isolated time gain claimed.",
+      "reported_intent": "Revised sidepod and floor-to-sidepod split line to improve airflow beneath the radiator duct inlet and gain local load; no isolated time gain claimed.",
+      "reported_effect": null,
+      "source_refs": [
+        "fia_mx_upgrades"
+      ]
+    },
+    {
+      "team": "Ferrari",
+      "category": "circuit_specific",
+      "significance": "minor",
+      "text": "Larger engine-cover exit and cooling louvres: Mexico-specific higher cooling capacity, with an acknowledged car-efficiency trade-off; not predictive carryover.",
+      "reported_intent": "Mexico-specific higher cooling capacity, with an acknowledged car-efficiency trade-off; not predictive carryover.",
+      "reported_effect": null,
+      "source_refs": [
+        "fia_mx_upgrades"
+      ]
+    },
+    {
+      "team": "VCARB",
+      "category": "circuit_specific",
+      "significance": "minor",
+      "text": "Engine-cover exit and optional cooling louvre panels: Greater cooling range under Mexico's ambient/circuit conditions, not a persistent performance package.",
+      "reported_intent": "Greater cooling range under Mexico's ambient/circuit conditions, not a persistent performance package.",
+      "reported_effect": null,
+      "source_refs": [
+        "fia_mx_upgrades"
+      ]
+    },
+    {
+      "team": "Audi",
+      "category": "persistent",
+      "significance": "minor",
+      "text": "Rear brake-duct deflector aerodynamic development: Revised rear-corner deflector geometry intended to increase local aerodynamic load.",
+      "reported_intent": "Revised rear-corner deflector geometry intended to increase local aerodynamic load.",
+      "reported_effect": null,
+      "source_refs": [
+        "fia_mx_upgrades"
+      ]
+    },
+    {
+      "team": "Alpine",
+      "category": "reliability",
+      "significance": "minor",
+      "text": "Track-specific exhaust tailpipe vane trimming: Tailpipe-vane geometry trimmed for Mexico ambient/aerodynamic operating requirements; no defensible long-term baseline uplift.",
+      "reported_intent": "Tailpipe-vane geometry trimmed for Mexico ambient/aerodynamic operating requirements; no defensible long-term baseline uplift.",
+      "reported_effect": null,
+      "source_refs": [
+        "fia_mx_upgrades"
+      ]
+    }
+  ],
+  "grid_penalty_context": [
+    {
+      "text": "BOT: 50-place PU drop; start from back. Five new PU elements beyond allowance; documented Oct 30 and final Mexico grid.",
+      "source_refs": [
+        "fia_mx_grid"
+      ]
+    },
+    {
+      "text": "VER: One-place grid drop. Collision with Lawson during Mexico FP2; final grid P5.",
+      "source_refs": [
+        "fia_mx_grid"
+      ]
+    },
+    {
+      "text": "LAW: One-place drop; Q disqualification; pit-lane start. FP2 collision with Verstappen; qualifying MGU-K power-rule disqualification; subsequent parc-ferme setup/PU changes resulted in pit-lane start. Distinguish qualifying performance from grid classification.",
+      "source_refs": [
+        "fia_mx_grid"
+      ]
+    }
+  ],
+  "prediction_review": {
+    "status": "available",
+    "prediction_references": [
+      "store/predictions/2026_Mexico_quali_prediction.json",
+      "store/predictions/2026_Mexico_race_prediction.json"
+    ],
+    "overall_assessment": "Qualifying mean absolute classification error 1.52 places; race error 3.05 places. The October 29 Mexico V1 predictions are immutable pre-weekend forecasts made before the October 30 FIA upgrade declarations. Compare them as issued; do not revise or rescore V1 using later information.",
+    "successes": [],
+    "misses": [],
+    "known_exceptions": [
+      {
+        "text": "Haas substitution: Ryo Hirakawa (HIR) drove car 50 in Q/R; Ocon was not a Mexico Q/R entrant. The frozen October 29 V1 forecast predated the substitution, so only overlapping drivers are scored."
+      },
+      {
+        "text": "Lawson disqualification followed a qualifying MGU-K power-rule infringement. He subsequently started from the pit lane; compare qualifying pace separately from classification."
+      },
+      {
+        "text": "Bottas received a 50-place PU penalty; Verstappen a one-place drop following the FP2 Lawson clash."
+      },
+      {
+        "text": "The October 29 Mexico V1 predictions are immutable pre-weekend forecasts made before the October 30 FIA upgrade declarations. Compare them as issued; do not revise or rescore V1 using later information."
+      }
+    ],
+    "metrics": {
+      "qualifying_mae_places": 1.524,
+      "race_mae_places": 3.048,
+      "race_mae_finishers_only_places": 3.062,
+      "race_finishers": 16
+    }
+  },
+  "knowledge_limits": [
+    {
+      "text": "The theoretical optimizer does not observe actual ERS energy use or battery state."
+    },
+    {
+      "text": "Reported aero upgrades are declared components, not measured causal performance gains."
+    },
+    {
+      "text": "The October 29 Mexico V1 predictions are immutable pre-weekend forecasts made before the October 30 FIA upgrade declarations. Compare them as issued; do not revise or rescore V1 using later information."
+    }
+  ],
+  "entities": {
+    "drivers": [
+      "HAM",
+      "VER",
+      "ANT",
+      "HIR"
+    ],
+    "teams": [
+      "Haas",
+      "Alpine",
+      "Audi",
+      "Ferrari",
+      "McLaren",
+      "Red Bull",
+      "VCARB"
+    ],
+    "topics": [
+      "qualifying",
+      "race",
+      "upgrades",
+      "penalties",
+      "prediction review",
+      "weather",
+      "driver substitution"
+    ]
+  },
+  "sources": [
+    {
+      "id": "f1_mx_quali",
+      "publisher": "Formula 1",
+      "title": "Mexico 2026 qualifying/grid",
+      "url": "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-for-the-2026-mexico-city-grand-prix.4AUykgAAZz3GMiI15Fqfir"
+    },
+    {
+      "id": "f1_mx_race",
+      "publisher": "Formula 1",
+      "title": "Mexico 2026 race report",
+      "url": "https://www.formula1.com/en/latest/article/antonelli-crowned-youngest-ever-f1-champion-as-verstappen-wins-eventful-mexico-city-grand-prix.xpMMeef0KmRURs9IDs3LH.xpMMeef0KmRURs9IDs3LH"
+    },
+    {
+      "id": "fia_mx_upgrades",
+      "publisher": "FIA",
+      "title": "Mexico 2026 car presentation submissions",
+      "url": "https://app.tracinginsights.com/fia-docs/2026/mexico-city-grand-prix/car-presentation-submissions"
+    },
+    {
+      "id": "fia_mx_grid",
+      "publisher": "FIA / Formula 1",
+      "title": "Mexico 2026 final grid and penalties",
+      "url": "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-for-the-2026-mexico-city-grand-prix.4AUykgAAZz3GMiI15Fqfir"
+    },
+    {
+      "id": "latentlap_session_store",
+      "publisher": "LatentLap",
+      "title": "Committed Mexico Q/R store",
+      "url": "store/2026_R19_Q.json + store/2026_R19_R.json"
+    }
+  ]
+}

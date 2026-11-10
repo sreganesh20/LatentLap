@@ -1,0 +1,232 @@
+{
+  "review_status": "approved",
+  "metadata": {
+    "year": 2026,
+    "round": 20,
+    "circuit": "Brazil",
+    "venue": "Autodromo Jose Carlos Pace (Interlagos)",
+    "date_range": "2026-11-06 to 2026-11-08",
+    "weekend_type": "standard",
+    "sessions_available": [
+      "Q",
+      "R"
+    ]
+  },
+  "weekend_summary": "Lando Norris claimed pole in a rain-hit Sao Paulo qualifying session and won the wet-dry-wet Grand Prix from Max Verstappen and Isack Hadjar. Verstappen recovered from grid P21 and Mercedes secured the 2026 constructors championship. Rafael Camara made his Haas race debut alongside Oliver Bearman, replacing Esteban Ocon.",
+  "sessions": {
+    "Q": {
+      "summary": "Norris took pole in heavy rain; the final grid was reshaped by several power-unit penalties.",
+      "key_moments": [
+        {
+          "text": "Norris took pole in heavy rain; the final grid was reshaped by several power-unit penalties.",
+          "source_refs": [
+            "f1_br_quali"
+          ]
+        }
+      ]
+    },
+    "R": {
+      "summary": "Norris won from Verstappen and Hadjar in mixed conditions; Mercedes clinched the constructors championship.",
+      "key_moments": [
+        {
+          "text": "Norris won from Verstappen and Hadjar in mixed conditions; Mercedes clinched the constructors championship.",
+          "source_refs": [
+            "f1_br_race"
+          ]
+        }
+      ]
+    }
+  },
+  "performance_snapshot": {
+    "source": "committed_session_store",
+    "status": "hydrate at query time from committed LatentLap session data"
+  },
+  "strategy_and_conditions": [
+    {
+      "text": "Brazil qualifying was wet and the race transitioned from wet to dry and back to wet. Both Q and R are excluded from ordinary dry-pace predictive history, but the official classifications and race telemetry remain useful retrospectively.",
+      "source_refs": [
+        "f1_br_race"
+      ]
+    },
+    {
+      "text": "Haas substitution: Rafael Camara (CAM), car 51, replaced Ocon for Q/R.",
+      "source_refs": [
+        "f1_br_race"
+      ]
+    },
+    {
+      "text": "The Brazilian wet qualifying and wet-dry-wet race must not contaminate subsequent dry forecasts.",
+      "source_refs": [
+        "f1_br_race"
+      ]
+    },
+    {
+      "text": "PU grid penalties affected Russell, Verstappen, Perez, Leclerc, Hamilton, Lindblad and Bortoleto; positions after penalties are not a pure pace metric.",
+      "source_refs": [
+        "fia_br_grid"
+      ]
+    }
+  ],
+  "performance_interpretation": [
+    {
+      "text": "The Brazil forecast is a retrospective, earlier-round-only diagnostic generated after the weekend. It must never be described as a genuinely pre-race timestamped prediction.",
+      "source_refs": [
+        "latentlap_session_store"
+      ]
+    }
+  ],
+  "upgrades_and_technical_context": [
+    {
+      "team": "McLaren",
+      "category": "persistent",
+      "significance": "major",
+      "text": "Front/rear/beam wing and floor-furniture aerodynamic package: New front wing for floor/bodywork flow conditioning, new rear-wing assembly for efficient load, coordinating beam wing, and revised floor furniture. Declared development; achieved lap-time gain not established.",
+      "reported_intent": "New front wing for floor/bodywork flow conditioning, new rear-wing assembly for efficient load, coordinating beam wing, and revised floor furniture. Declared development; achieved lap-time gain not established.",
+      "reported_effect": null,
+      "source_refs": [
+        "fia_br_upgrades"
+      ]
+    }
+  ],
+  "grid_penalty_context": [
+    {
+      "text": "RUS: Five-place PU grid drop. Additional power-unit element; qualifying P2, final grid P7.",
+      "source_refs": [
+        "fia_br_grid"
+      ]
+    },
+    {
+      "text": "VER: 30-place PU grid drop. Additional PU elements; started P21.",
+      "source_refs": [
+        "fia_br_grid"
+      ]
+    },
+    {
+      "text": "PER: 30-place PU grid drop. Additional PU elements; started P22.",
+      "source_refs": [
+        "fia_br_grid"
+      ]
+    },
+    {
+      "text": "LEC: Ten-place PU grid drop. Additional PU element; started P14.",
+      "source_refs": [
+        "fia_br_grid"
+      ]
+    },
+    {
+      "text": "HAM: 75-place PU grid drop. Additional PU elements; started P20.",
+      "source_refs": [
+        "fia_br_grid"
+      ]
+    },
+    {
+      "text": "LIN: Ten-place PU grid drop. Additional PU elements; started P18.",
+      "source_refs": [
+        "fia_br_grid"
+      ]
+    },
+    {
+      "text": "BOR: Ten-place PU grid drop. Additional PU elements; started P19.",
+      "source_refs": [
+        "fia_br_grid"
+      ]
+    }
+  ],
+  "prediction_review": {
+    "status": "available",
+    "prediction_references": [
+      "store/predictions/2026_Brazil_quali_prediction.json",
+      "store/predictions/2026_Brazil_race_prediction.json"
+    ],
+    "overall_assessment": "Qualifying mean absolute classification error 4.64 places; race error 2.46 places. The Brazil forecast is a retrospective, earlier-round-only diagnostic generated after the weekend. It must never be described as a genuinely pre-race timestamped prediction.",
+    "successes": [],
+    "misses": [],
+    "known_exceptions": [
+      {
+        "text": "Haas substitution: Rafael Camara (CAM), car 51, replaced Ocon for Q/R."
+      },
+      {
+        "text": "The Brazilian wet qualifying and wet-dry-wet race must not contaminate subsequent dry forecasts."
+      },
+      {
+        "text": "PU grid penalties affected Russell, Verstappen, Perez, Leclerc, Hamilton, Lindblad and Bortoleto; positions after penalties are not a pure pace metric."
+      },
+      {
+        "text": "The Brazil forecast is a retrospective, earlier-round-only diagnostic generated after the weekend. It must never be described as a genuinely pre-race timestamped prediction."
+      }
+    ],
+    "metrics": {
+      "qualifying_mae_places": 4.636,
+      "race_mae_places": 2.455,
+      "race_mae_finishers_only_places": 2.571,
+      "race_finishers": 21
+    }
+  },
+  "knowledge_limits": [
+    {
+      "text": "The theoretical optimizer does not observe actual ERS energy use or battery state."
+    },
+    {
+      "text": "Reported aero upgrades are declared components, not measured causal performance gains."
+    },
+    {
+      "text": "The Brazil forecast is a retrospective, earlier-round-only diagnostic generated after the weekend. It must never be described as a genuinely pre-race timestamped prediction."
+    },
+    {
+      "text": "Wet qualifying and wet/mixed race sessions are excluded from later dry-pace weighting at session level."
+    }
+  ],
+  "entities": {
+    "drivers": [
+      "NOR",
+      "VER",
+      "HAD",
+      "CAM"
+    ],
+    "teams": [
+      "Haas",
+      "McLaren"
+    ],
+    "topics": [
+      "qualifying",
+      "race",
+      "upgrades",
+      "penalties",
+      "prediction review",
+      "weather",
+      "driver substitution"
+    ]
+  },
+  "sources": [
+    {
+      "id": "f1_br_quali",
+      "publisher": "Formula 1",
+      "title": "Brazil 2026 qualifying/grid",
+      "url": "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-for-the-2026-sao-paulo-grand-prix.5Xx3QRgvo5BHgAm6lZRbZr"
+    },
+    {
+      "id": "f1_br_race",
+      "publisher": "Formula 1",
+      "title": "Brazil 2026 race report",
+      "url": "https://www.formula1.com/en/latest/article/norris-beats-verstappen-in-wet-sao-paulo-gp-thriller-as-mercedes-win-constructors-championship.7JN7MXLZf5lk5l0C3gfKGI"
+    },
+    {
+      "id": "fia_br_upgrades",
+      "publisher": "FIA",
+      "title": "Brazil 2026 car presentation submissions",
+      "url": "https://app.tracinginsights.com/fia-docs/2026/s%C3%A3o-paulo-grand-prix/car-presentation-submissions"
+    },
+    {
+      "id": "fia_br_grid",
+      "publisher": "FIA / Formula 1",
+      "title": "Brazil 2026 final grid and penalties",
+      "url": "https://app.tracinginsights.com/fia-docs/2026/s%C3%A3o-paulo-grand-prix/final-starting-grid"
+    },
+    {
+      "id": "latentlap_session_store",
+      "publisher": "LatentLap",
+      "title": "Committed Brazil Q/R store",
+      "url": "store/2026_R20_Q.json + store/2026_R20_R.json"
+    }
+  ]
+}
